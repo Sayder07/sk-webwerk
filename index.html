@@ -233,21 +233,56 @@ footer a:hover{color:var(--ink)}
 .zweig .ab{font-size:14px;color:var(--muted)}
 .zweig.dark2 .ab{color:#a9abb2}
 
+/* Betreuungsstufen */
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:stretch}
+@media (max-width:1100px){.tiers{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.tiers{grid-template-columns:1fr}}
+.tier{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:12px;align-content:start;grid-template-rows:auto auto auto 1fr auto}
+.tier.feat{background:var(--ink);color:#f3f3f1;border-color:var(--ink)}
+.tier .kind{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+.tier.feat .kind{color:var(--signal)}
+.tier .amt{font-size:36px;font-weight:500;letter-spacing:-.04em;line-height:1}
+.tier .amt small{font-size:14px;font-weight:400;letter-spacing:0;color:var(--muted)}
+.tier.feat .amt small,.tier.feat p.d{color:#a9abb2}
+.tier p.d{font-size:14.5px;color:var(--muted)}
+.tier ul{list-style:none;margin:0;padding:0;display:grid;gap:7px;align-content:start;font-size:14.5px}
+.tier li{display:flex;gap:9px;align-items:flex-start}
+.tier li::before{content:"";flex:0 0 16px;height:16px;margin-top:3px;border-radius:50%;background:var(--signal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.6 2.5L13 6.5' fill='none' stroke='%23131417' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.tier li.plus{font-weight:500}
+.tier li.plus::before{background:transparent;border:1.5px solid var(--signal)}
+.tier .btn{justify-self:start}
+.tier.feat .btn-primary{background:var(--signal);color:#131417}
+
 /* Zusatzleistungen */
-.extras{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-@media (max-width:860px){.extras{grid-template-columns:1fr}}
-.extra{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,34px);display:grid;gap:14px;align-content:start}
-.extra .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
-.extra h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.02em}
-.extra .pr{font-size:clamp(26px,2.8vw,34px);font-weight:500;letter-spacing:-.03em;white-space:nowrap}
-.extra .pr small{font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
-.extra p{color:var(--muted);font-size:16px}
-.extra ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px}
-.extra li{display:flex;gap:10px;align-items:flex-start}
-.extra li::before{content:"";flex:0 0 7px;height:7px;margin-top:9px;border-radius:50%;background:var(--signal)}
-.extra .inkl{font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
-.extra .inkl b{color:var(--ink);font-weight:500}
-.extra .btn{justify-self:start}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.chips button{font:inherit;font-size:14px;border:1px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:8px 15px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bundles{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:34px}
+@media (max-width:860px){.bundles{grid-template-columns:1fr}}
+.bundle{background:var(--ink);color:#f3f3f1;border-radius:22px;padding:clamp(24px,3vw,32px);display:grid;gap:10px;align-content:start}
+.bundle .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);font-weight:500}
+.bundle h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.02em}
+.bundle p{color:#c3c5cb;font-size:15.5px}
+.bundle .pr{font-size:30px;font-weight:500;letter-spacing:-.03em}
+.bundle .pr s{font-size:16px;color:#8d9097;font-weight:400;margin-left:8px}
+.bundle .btn{justify-self:start;background:var(--signal);color:#131417}
+.xgroup{margin-top:30px}
+.xgroup h3.gt{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:14px}
+.extras{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:1000px){.extras{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.extras{grid-template-columns:1fr}}
+.extra{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;display:grid;gap:10px;align-content:start;grid-template-rows:auto auto 1fr auto}
+.extra .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.extra h4{font-size:18px;font-weight:500;letter-spacing:-.01em;line-height:1.25}
+.extra .pr{font-size:19px;font-weight:500;white-space:nowrap}
+.extra p{color:var(--muted);font-size:14.5px;line-height:1.5}
+.extra ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:14px}
+.extra li{display:flex;gap:9px;align-items:flex-start}
+.extra li::before{content:"";flex:0 0 6px;height:6px;margin-top:8px;border-radius:50%;background:var(--signal)}
+.extra .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.extra .foot small{font-size:12.5px;color:var(--muted)}
+.extra .foot a{font-size:14px;font-weight:500;color:var(--ink);text-decoration:none;white-space:nowrap}
+.extra .foot a:hover{text-decoration:underline}
 </style>
 
 <nav class="nav"><div class="wrap">
@@ -294,7 +329,7 @@ footer a:hover{color:var(--ink)}
   <div class="sec-head reveal"><p class="eyebrow">Zwei Leistungen</p><h2>Besser gefunden. <span class="serif">Weniger Büroarbeit.</span></h2></div>
   <div class="zweige reveal">
     <a class="zweig" href="#preise"><span class="k">Websites</span><h3>Ihre neue Website – <span class="serif">erst sehen, dann zahlen.</span></h3><p>Modern, schnell, fürs Handy gemacht. Sie bekommen vorab einen fertigen Entwurf und entscheiden danach.</p><span class="ab">ab 249 € einmalig</span><span class="go">Preise &amp; Ablauf →</span></a>
-    <a class="zweig dark2" href="ki-assistenten.html"><span class="k">KI-Assistenten</span><h3>Ein digitaler Helfer, <span class="serif">der nie Feierabend hat.</span></h3><p>Beantwortet Kundenfragen auf Ihrer Website, schreibt E-Mails und Angebote vor – eingerichtet auf Ihren Betrieb.</p><span class="ab">ab 199 € einmalig</span><span class="go">Mehr erfahren →</span></a>
+    <a class="zweig dark2" href="ki-assistenten.html"><span class="k">KI-Assistenten</span><h3>Ein digitaler Helfer, <span class="serif">der nie Feierabend hat.</span></h3><p>Beantwortet Kundenfragen auf Ihrer Website, schreibt E-Mails und Angebote vor – eingerichtet auf Ihren Betrieb.</p><span class="ab">ab 299 € einmalig</span><span class="go">Mehr erfahren →</span></a>
   </div>
 </div></section>
 
@@ -326,31 +361,30 @@ footer a:hover{color:var(--ink)}
     </div>
     <div class="price">
       <span class="kind">Betreuung</span>
-      <div class="amt">19 € <small>pro Monat</small></div>
-      <p class="d">Damit Sie sich um nichts kümmern müssen. Monatlich kündbar.</p>
-      <ul><li>Hosting &amp; SSL-Verschlüsselung</li><li>Sicherheits-Updates &amp; Backups</li><li>Änderungen inklusive – z. B. Öffnungszeiten, Stellenanzeigen, Fotos</li><li>Jährlicher Design-Check</li><li>Persönlicher Ansprechpartner per Telefon &amp; WhatsApp</li></ul>
-      <a class="btn btn-ghost" href="#kontakt">Anfragen</a>
+      <div class="amt">19,99 € <small>ab / Monat</small></div>
+      <p class="d">Damit Sie sich um nichts kümmern müssen – in vier Stufen, monatlich kündbar.</p>
+      <ul><li>Hosting &amp; SSL-Verschlüsselung</li><li>Sicherheits-Updates &amp; Backups</li><li>Änderungen je nach Stufe inklusive</li><li>Auf Wunsch Pflege Ihres Google-Profils</li><li>Persönlicher Ansprechpartner</li></ul>
+      <a class="btn btn-ghost" href="#betreuung">Stufen ansehen</a>
     </div>
   </div>
 </div></section>
 
+<section id="betreuung" class="band" style="background:var(--panel)"><div class="wrap">
+  <div class="sec-head reveal"><p class="eyebrow">Betreuung nach dem Start</p><h2>Vier Stufen. <span class="serif">Monatlich kündbar.</span></h2><p class="lead">Wählen Sie, wie viel ich Ihnen abnehmen soll. Sie können jederzeit wechseln – nach oben oder unten.</p></div>
+  <div class="tiers reveal"><div class="tier"><span class="kind">Basis</span><div class="amt">19,99 € <small>/ Monat</small></div><p class="d">Die Website läuft sicher – ohne dass Sie sich kümmern.</p><ul><li>Hosting &amp; SSL-Verschlüsselung</li><li>Sicherheits-Updates &amp; tägliche Backups</li><li>Technische Überwachung</li><li>1 kleine Änderung pro Monat (z. B. Öffnungszeiten)</li><li>Support per E-Mail</li></ul><a class="btn btn-ghost" href="#kontakt" data-extra="Betreuung Basis (19,99 €/Monat)">Wählen</a></div><div class="tier feat"><span class="kind">Plus · beliebt</span><div class="amt">24 € <small>/ Monat</small></div><p class="d">Für Betriebe, bei denen sich öfter etwas ändert.</p><ul><li class="plus">Alles aus Basis</li><li>Bis zu 3 Änderungen pro Monat</li><li>Stellenanzeigen einstellen &amp; austauschen</li><li>Support per Telefon &amp; WhatsApp</li><li>Jährlicher Design-Check</li></ul><a class="btn btn-primary" href="#kontakt" data-extra="Betreuung Plus (24 €/Monat)">Wählen</a></div><div class="tier"><span class="kind">Pro</span><div class="amt">28 € <small>/ Monat</small></div><p class="d">Website und Google-Profil aus einer Hand.</p><ul><li class="plus">Alles aus Plus</li><li>Pflege Ihres Google-Profils</li><li>1 Google-Beitrag pro Monat (z. B. aktuelles Projekt)</li><li>Antwortvorschläge für neue Bewertungen</li><li>Monatlicher Kurzbericht: Aufrufe &amp; Anrufe über Google</li></ul><a class="btn btn-ghost" href="#kontakt" data-extra="Betreuung Pro (28 €/Monat)">Wählen</a></div><div class="tier"><span class="kind">Premium</span><div class="amt">39 € <small>/ Monat</small></div><p class="d">Ihr Online-Auftritt bleibt immer frisch – ich kümmere mich um alles.</p><ul><li class="plus">Alles aus Pro</li><li>Kleine Änderungen ohne Begrenzung</li><li>2 neue Fotos oder Beiträge pro Monat</li><li>Reaktion am selben Werktag</li><li>1 neue Seite oder Aktion pro Jahr inklusive</li><li>Jährlicher Sicherheits- &amp; Barrierefreiheits-Check</li></ul><a class="btn btn-ghost" href="#kontakt" data-extra="Betreuung Premium (39 €/Monat)">Wählen</a></div></div>
+  <p class="note reveal">Alle Preise pro Monat, keine Mindestlaufzeit. Ohne Betreuung bekommen Sie alle Dateien Ihrer Website und können sie selbst betreiben lassen.</p>
+</div></section>
+
 <section id="extras"><div class="wrap">
-  <div class="sec-head reveal"><p class="eyebrow">Zusatzleistungen · einzeln buchbar</p><h2>Mehr Anfragen. <span class="serif">Mehr Bewerber.</span></h2><p class="lead">Auch ohne neue Website – oder als Ergänzung zu Ihrem Paket.</p></div>
-  <div class="extras reveal">
-    <div class="extra">
-      <div class="top"><h3>Google-Unternehmensprofil</h3><span class="pr">99 € <small>einmalig</small></span></div>
-      <p>Wer „Maler in der Nähe“ sucht, sieht zuerst die Karte bei Google – noch vor jeder Website. Ich sorge dafür, dass Ihr Betrieb dort vollständig und überzeugend auftaucht.</p>
-      <ul><li>Einrichtung oder Übernahme Ihres Profils</li><li>Leistungen, Öffnungszeiten, Einzugsgebiet</li><li>Fotos Ihrer Arbeiten und Ihres Teams</li><li>Verknüpfung mit Website und Anruf-Button</li><li>Kurze Anleitung, wie Sie auf Bewertungen antworten</li></ul>
-      <p class="inkl">Im Paket <b>Handwerk</b> bereits enthalten.</p>
-      <a class="btn btn-ghost" href="#kontakt" data-extra="Google-Unternehmensprofil">Anfragen</a>
+  <div class="sec-head reveal"><p class="eyebrow">Zusatzleistungen · 21 Extras einzeln buchbar</p><h2>Mehr Anfragen. <span class="serif">Mehr Bewerber.</span></h2><p class="lead">Auch ohne neue Website – oder als Ergänzung zu Ihrem Paket. Alle Preise einmalig und fest.</p></div>
+  <div class="reveal">
+    <div class="bundles">
+      <div class="bundle"><span class="k">Paket · Sichtbar vor Ort</span><h3>Google-Profil, Bewertungen und Branchenbücher</h3><p>Alles, damit Kunden in Ihrer Gegend Sie finden – und Ihnen vertrauen.</p><div class="pr">199 € <s>267 €</s></div><a class="btn btn-primary" href="#kontakt" data-extra="Paket Sichtbar vor Ort">Anfragen →</a></div>
+      <div class="bundle"><span class="k">Paket · Fachkräfte</span><h3>Karriereseite und Azubi-Paket</h3><p>Für Betriebe, die Gesellen und Auszubildende suchen – online und an Schulen.</p><div class="pr">279 € <s>328 €</s></div><a class="btn btn-primary" href="#kontakt" data-extra="Paket Fachkräfte">Anfragen →</a></div>
     </div>
-    <div class="extra">
-      <div class="top"><h3>Karriereseite &amp; Stellenanzeige</h3><span class="pr">199 € <small>einmalig</small></span></div>
-      <p>Fachkräfte und Azubis schauen sich Ihren Betrieb im Internet an, bevor sie sich bewerben. Eine eigene Karriereseite zeigt, warum es sich lohnt, bei Ihnen anzufangen.</p>
-      <ul><li>Eigene Seite „Arbeiten bei uns“ mit Ihren Vorteilen</li><li>Bis zu 3 Stellenanzeigen (Geselle, Azubi, Helfer)</li><li>Bewerbung per WhatsApp oder in 60 Sekunden per Formular</li><li>Text für die Arbeitsagentur und Kleinanzeigen</li><li>Anzeigen austauschen jederzeit möglich</li></ul>
-      <p class="inkl">Im Paket <b>Handwerk</b> bereits enthalten · mit <b>Betreuung</b> tausche ich Anzeigen kostenlos aus.</p>
-      <a class="btn btn-ghost" href="#kontakt" data-extra="Karriereseite">Anfragen</a>
-    </div>
+    <div class="chips" role="group" aria-label="Filter"><button type="button" aria-pressed="true" data-f="alle">Alle</button><button type="button" aria-pressed="false" data-f="sichtbar">Gefunden werden</button><button type="button" aria-pressed="false" data-f="kunden">Kunden gewinnen</button><button type="button" aria-pressed="false" data-f="team">Mitarbeiter finden</button><button type="button" aria-pressed="false" data-f="auftritt">Auftritt &amp; Marke</button><button type="button" aria-pressed="false" data-f="ausbau">Website ausbauen</button><button type="button" aria-pressed="false" data-f="technik">Technik &amp; Sicherheit</button></div>
+    <div class="xgroup" data-g="sichtbar"><h3 class="gt">Gefunden werden</h3><div class="extras"><div class="extra"><div class="top"><h4>Google-Unternehmensprofil</h4><span class="pr">99 €</span></div><p>Wer „Maler in der Nähe“ sucht, sieht zuerst die Google-Karte – noch vor jeder Website.</p><ul><li>Einrichtung oder Übernahme</li><li>Leistungen, Zeiten, Einzugsgebiet</li><li>Fotos und Verknüpfung zur Website</li></ul><div class="foot"><small>In „Handwerk“ enthalten</small><a href="#kontakt" data-extra="Google-Unternehmensprofil">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Bewertungs-Starter</h4><span class="pr">89 €</span></div><p>Zufriedene Kunden bewerten gern – wenn es einfach ist. Nur echte Bewertungen, nichts Gekauftes.</p><ul><li>Direkter Bewertungslink</li><li>QR-Karten und Theken-Aufsteller (Design)</li><li>Vorlagen für Ihre Antworten</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Bewertungs-Starter">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Branchenbücher-Paket</h4><span class="pr">79 €</span></div><p>Einheitliche Daten überall – das mag Google, und Kunden finden Sie auch in Apple Karten.</p><ul><li>Das Örtliche, Gelbe Seiten, 11880</li><li>Apple Maps und Bing Places</li><li>Alte, falsche Einträge korrigiert</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Branchenbücher-Paket">Anfragen →</a></div></div></div></div><div class="xgroup" data-g="kunden"><h3 class="gt">Kunden gewinnen</h3><div class="extras"><div class="extra"><div class="top"><h4>Online-Terminbuchung</h4><span class="pr">149 €</span></div><p>Kunden buchen Besichtigung oder Beratung selbst – auch abends, ohne Telefon-Pingpong.</p><ul><li>Buchungsseite mit Ihren Zeiten</li><li>Automatische Bestätigung</li><li>Abgleich mit Ihrem Kalender</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Online-Terminbuchung">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Anfrage mit Foto-Upload</h4><span class="pr">129 €</span></div><p>Der Kunde schickt Fotos vom Schaden gleich mit – Sie können einschätzen, bevor Sie hinfahren.</p><ul><li>Kurzes Anfrage-Formular</li><li>Fotos direkt vom Handy</li><li>Weniger Rückfragen, schnellere Angebote</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Anfrage mit Foto-Upload">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>WhatsApp Business</h4><span class="pr">69 €</span></div><p>Viele Kunden schreiben lieber, als anzurufen. Ich richte WhatsApp so ein, dass es professionell wirkt.</p><ul><li>Profil mit Logo und Zeiten</li><li>Abwesenheits- und Begrüßungsnachricht</li><li>Schnellantworten für häufige Fragen</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="WhatsApp Business">Anfragen →</a></div></div></div></div><div class="xgroup" data-g="team"><h3 class="gt">Mitarbeiter finden</h3><div class="extras"><div class="extra"><div class="top"><h4>Karriereseite &amp; Stellenanzeige</h4><span class="pr">199 €</span></div><p>Bewerber schauen sich Ihren Betrieb online an, bevor sie sich melden. Zeigen Sie, warum es sich lohnt.</p><ul><li>Seite „Arbeiten bei uns“</li><li>Bis zu 3 Stellenanzeigen</li><li>Bewerbung per WhatsApp in 60 Sekunden</li></ul><div class="foot"><small>In „Handwerk“ enthalten</small><a href="#kontakt" data-extra="Karriereseite &amp; Stellenanzeige">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Azubi-Paket</h4><span class="pr">129 €</span></div><p>Schüler erreichen Sie nicht mit einer Zeitungsanzeige. Aber mit einer Seite, die sie verstehen.</p><ul><li>Praktikums- und Ausbildungsseite</li><li>Flyer für Schulen und Messen</li><li>3 Beiträge für Instagram</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Azubi-Paket">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Social-Media-Start</h4><span class="pr">149 €</span></div><p>Instagram und Facebook passend zur Website – ohne dass Sie jeden Tag posten müssen.</p><ul><li>Profile einrichten</li><li>10 Beitragsvorlagen im Firmenstil</li><li>Kurze Anleitung für Handyfotos</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Social-Media-Start">Anfragen →</a></div></div></div></div><div class="xgroup" data-g="auftritt"><h3 class="gt">Auftritt &amp; Marke</h3><div class="extras"><div class="extra"><div class="top"><h4>Logo-Auffrischung</h4><span class="pr">149 €</span></div><p>Ihr Logo modern überarbeitet – wiedererkennbar, aber zeitgemäß. Für Website, Auto und Arbeitskleidung.</p><ul><li>2 Entwürfe zur Auswahl</li><li>Alle Dateiformate</li><li>Farben und Schriften festgelegt</li></ul><div class="foot"><small>In „Handwerk“ enthalten</small><a href="#kontakt" data-extra="Logo-Auffrischung">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Visitenkarten &amp; Flyer</h4><span class="pr">99 €</span></div><p>Druckfertige Gestaltung im Stil Ihrer neuen Website – Sie bestellen beim Druckdienst Ihrer Wahl.</p><ul><li>Visitenkarte, Flyer A5</li><li>Mit QR-Code zur Website</li><li>Druckfertige PDF-Dateien</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Visitenkarten &amp; Flyer">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Fahrzeugbeschriftung</h4><span class="pr">129 €</span></div><p>Ihr Firmenwagen ist Werbung, die jeden Tag unterwegs ist. Ich gestalte den Entwurf für den Folierer.</p><ul><li>Entwurf für Ihr Fahrzeugmodell</li><li>Mit Telefonnummer und Website</li><li>Dateien für den Folierer</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Fahrzeugbeschriftung">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Bauschild &amp; Bauzaunbanner</h4><span class="pr">89 €</span></div><p>Jede Baustelle ist ein Schaufenster. Mit einem guten Schild weiß die ganze Straße, wer hier arbeitet.</p><ul><li>Gestaltung Bauschild oder Banner</li><li>Mit QR-Code zu Ihren Referenzen</li><li>Druckfertige Dateien</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Bauschild &amp; Bauzaunbanner">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Digitale Visitenkarte</h4><span class="pr">59 €</span></div><p>Einmal ans Handy halten oder scannen – und Ihre Kontaktdaten sind gespeichert.</p><ul><li>Kontaktseite mit „Speichern“-Knopf</li><li>QR-Code zum Ausdrucken</li><li>NFC-Karte auf Wunsch</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Digitale Visitenkarte">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>E-Mail &amp; Signatur</h4><span class="pr">49 €</span></div><p>info@ihr-betrieb.de statt einer Freemail-Adresse – wirkt sofort professioneller.</p><ul><li>Eigene E-Mail-Adresse</li><li>Einrichtung auf Handy und PC</li><li>Einheitliche Signatur</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="E-Mail &amp; Signatur">Anfragen →</a></div></div></div></div><div class="xgroup" data-g="ausbau"><h3 class="gt">Website ausbauen</h3><div class="extras"><div class="extra"><div class="top"><h4>Lokale Leistungsseiten</h4><span class="pr">149 €</span></div><p>Eigene Seiten wie „Dachsanierung in Wetzlar“ – damit Sie genau dort gefunden werden, wo Sie arbeiten.</p><ul><li>3 Seiten für Leistung + Ort</li><li>Echte Texte, keine Floskeln</li><li>Für Google aufbereitet</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Lokale Leistungsseiten">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Texte &amp; Fotobearbeitung</h4><span class="pr">99 €</span></div><p>Gute Texte und schöne Fotos machen den Unterschied. Sie liefern Stichpunkte und Handyfotos.</p><ul><li>Leistungstexte geschrieben</li><li>Bis zu 20 Fotos bearbeitet</li><li>Einheitlicher Look</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Texte &amp; Fotobearbeitung">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Zweite Sprache</h4><span class="pr">99 €</span></div><p>Ihre Website zusätzlich auf Englisch, Türkisch, Russisch oder Polnisch – für Kunden und Bewerber.</p><ul><li>Übersetzung aller Seiten</li><li>Sprachumschalter</li><li>Durch Muttersprachler prüfbar</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Zweite Sprache">Anfragen →</a></div></div></div></div><div class="xgroup" data-g="technik"><h3 class="gt">Technik &amp; Sicherheit</h3><div class="extras"><div class="extra"><div class="top"><h4>Website-Check</h4><span class="pr">49 €</span></div><p>Wie gut ist Ihre jetzige Seite wirklich? Sie bekommen einen verständlichen Bericht.</p><ul><li>Handy, Tempo, Sicherheit, Google</li><li>Konkrete Verbesserungsliste</li><li>Wird bei Auftrag angerechnet</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Website-Check">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Barrierefreiheits-Check</h4><span class="pr">149 €</span></div><p>Lesbar für alle – auch für ältere Kunden. Mit einer Liste, was sich verbessern lässt.</p><ul><li>Kontraste, Schriftgrößen, Bedienung</li><li>Prüfung am Handy und Computer</li><li>Umsetzung auf Wunsch</li></ul><div class="foot"><small>einmalig</small><a href="#kontakt" data-extra="Barrierefreiheits-Check">Anfragen →</a></div></div><div class="extra"><div class="top"><h4>Umzug &amp; Domain</h4><span class="pr">79 €</span></div><p>Neuer Anbieter oder neue Adresse? Ich ziehe alles um – ohne dass E-Mails verloren gehen.</p><ul><li>Domain-Umzug</li><li>E-Mails bleiben erhalten</li><li>Weiterleitung alter Adressen</li></ul><div class="foot"><small>In „Start“ enthalten</small><a href="#kontakt" data-extra="Umzug &amp; Domain">Anfragen →</a></div></div></div></div>
+    <p class="note">Alle Preise sind Festpreise. Druck-, Folierungs- und Anbieterkosten (z. B. für Buchungstools oder Domains) zahlen Sie direkt, ich sage sie Ihnen vorher.</p>
   </div>
 </div></section>
 
@@ -385,6 +419,7 @@ footer a:hover{color:var(--ink)}
     <details><summary>Muss ich meine Internetadresse ändern?</summary><p>Nein. Ihre neue Website läuft unter Ihrer bisherigen Adresse. Um den Umzug kümmere ich mich.</p></details>
     <details><summary>Was ist mit meinen eigenen Fotos?</summary><p>Ihre Fotos von Baustellen, Team und Betrieb machen die Seite erst richtig persönlich. Sie schicken sie mir einfach per E-Mail oder WhatsApp, ich baue sie ein.</p></details>
     <details><summary>Wie lange dauert es?</summary><p>Den ersten Entwurf haben Sie meist schon, bevor wir das erste Mal sprechen. Nach Ihrer Zusage ist die fertige Seite in der Regel innerhalb von ein bis zwei Wochen online – je nachdem, wie schnell Fotos und Änderungswünsche da sind.</p></details>
+    <details><summary>Muss ich eine Betreuung abschließen?</summary><p>Nein. Die Betreuung ist freiwillig und monatlich kündbar. Ohne Betreuung bekommen Sie alle Dateien Ihrer Website und können sie bei einem Anbieter Ihrer Wahl betreiben. Mit Betreuung ab 19,99 € im Monat kümmere ich mich um Technik, Sicherheit und Änderungen.</p></details>
     <details><summary>Arbeiten Sie nur in Wetzlar?</summary><p>Nein, ich arbeite für Betriebe in ganz Deutschland. Im Raum Wetzlar, Gießen und Lahn-Dill komme ich aber auch gerne persönlich vorbei.</p></details>
   </div>
 </div></section>
@@ -416,6 +451,7 @@ footer a:hover{color:var(--ink)}
 </div></footer>
 
 <script>
+document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){var f=b.dataset.f;document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});document.querySelectorAll('.xgroup').forEach(function(g){g.hidden=!(f==='alle'||g.dataset.g===f)});});});
 document.querySelectorAll('[data-extra]').forEach(function(a){a.addEventListener('click',function(){var m=document.getElementById('k-msg');if(m&&!m.value)m.value='Ich interessiere mich für: '+a.dataset.extra;});});
 (function(){var ba=document.getElementById('ba'),r=document.getElementById('ba-range');
 if(!ba||!r)return;function set(v){ba.style.setProperty('--pos',v+'%')}
