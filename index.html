@@ -232,11 +232,27 @@ footer a:hover{color:var(--ink)}
 .zweig .go{font-weight:500;font-size:15px}
 .zweig .ab{font-size:14px;color:var(--muted)}
 .zweig.dark2 .ab{color:#a9abb2}
+
+/* Zusatzleistungen */
+.extras{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:860px){.extras{grid-template-columns:1fr}}
+.extra{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,34px);display:grid;gap:14px;align-content:start}
+.extra .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.extra h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.02em}
+.extra .pr{font-size:clamp(26px,2.8vw,34px);font-weight:500;letter-spacing:-.03em;white-space:nowrap}
+.extra .pr small{font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
+.extra p{color:var(--muted);font-size:16px}
+.extra ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px}
+.extra li{display:flex;gap:10px;align-items:flex-start}
+.extra li::before{content:"";flex:0 0 7px;height:7px;margin-top:9px;border-radius:50%;background:var(--signal)}
+.extra .inkl{font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.extra .inkl b{color:var(--ink);font-weight:500}
+.extra .btn{justify-self:start}
 </style>
 
 <nav class="nav"><div class="wrap">
   <a class="brand" href="#top"><span class="mark">SK</span><span><b>SK Webwerk</b><small>Websites &amp; KI für Betriebe</small></span></a>
-  <ul><li><a href="#preise">Websites</a></li><li><a href="ki-assistenten.html">KI-Assistenten</a></li><li><a href="#ueber">Über mich</a></li><li><a href="#faq">Fragen</a></li></ul>
+  <ul><li><a href="#preise">Websites</a></li><li><a href="#extras">Extras</a></li><li><a href="ki-assistenten.html">KI-Assistenten</a></li><li><a href="#ueber">Über mich</a></li><li><a href="#faq">Fragen</a></li></ul>
   <a class="btn btn-primary btn-sm" href="#kontakt">Kontakt</a>
 </div></nav>
 
@@ -318,6 +334,26 @@ footer a:hover{color:var(--ink)}
   </div>
 </div></section>
 
+<section id="extras"><div class="wrap">
+  <div class="sec-head reveal"><p class="eyebrow">Zusatzleistungen · einzeln buchbar</p><h2>Mehr Anfragen. <span class="serif">Mehr Bewerber.</span></h2><p class="lead">Auch ohne neue Website – oder als Ergänzung zu Ihrem Paket.</p></div>
+  <div class="extras reveal">
+    <div class="extra">
+      <div class="top"><h3>Google-Unternehmensprofil</h3><span class="pr">99 € <small>einmalig</small></span></div>
+      <p>Wer „Maler in der Nähe“ sucht, sieht zuerst die Karte bei Google – noch vor jeder Website. Ich sorge dafür, dass Ihr Betrieb dort vollständig und überzeugend auftaucht.</p>
+      <ul><li>Einrichtung oder Übernahme Ihres Profils</li><li>Leistungen, Öffnungszeiten, Einzugsgebiet</li><li>Fotos Ihrer Arbeiten und Ihres Teams</li><li>Verknüpfung mit Website und Anruf-Button</li><li>Kurze Anleitung, wie Sie auf Bewertungen antworten</li></ul>
+      <p class="inkl">Im Paket <b>Handwerk</b> bereits enthalten.</p>
+      <a class="btn btn-ghost" href="#kontakt" data-extra="Google-Unternehmensprofil">Anfragen</a>
+    </div>
+    <div class="extra">
+      <div class="top"><h3>Karriereseite &amp; Stellenanzeige</h3><span class="pr">199 € <small>einmalig</small></span></div>
+      <p>Fachkräfte und Azubis schauen sich Ihren Betrieb im Internet an, bevor sie sich bewerben. Eine eigene Karriereseite zeigt, warum es sich lohnt, bei Ihnen anzufangen.</p>
+      <ul><li>Eigene Seite „Arbeiten bei uns“ mit Ihren Vorteilen</li><li>Bis zu 3 Stellenanzeigen (Geselle, Azubi, Helfer)</li><li>Bewerbung per WhatsApp oder in 60 Sekunden per Formular</li><li>Text für die Arbeitsagentur und Kleinanzeigen</li><li>Anzeigen austauschen jederzeit möglich</li></ul>
+      <p class="inkl">Im Paket <b>Handwerk</b> bereits enthalten · mit <b>Betreuung</b> tausche ich Anzeigen kostenlos aus.</p>
+      <a class="btn btn-ghost" href="#kontakt" data-extra="Karriereseite">Anfragen</a>
+    </div>
+  </div>
+</div></section>
+
 <section class="band" style="background:var(--panel)"><div class="wrap">
   <div class="sec-head reveal"><p class="eyebrow">Was drin ist</p><h2>Alles, was eine gute <span class="serif">Handwerker-Website</span> braucht.</h2></div>
   <div class="inc reveal">
@@ -380,6 +416,7 @@ footer a:hover{color:var(--ink)}
 </div></footer>
 
 <script>
+document.querySelectorAll('[data-extra]').forEach(function(a){a.addEventListener('click',function(){var m=document.getElementById('k-msg');if(m&&!m.value)m.value='Ich interessiere mich für: '+a.dataset.extra;});});
 (function(){var ba=document.getElementById('ba'),r=document.getElementById('ba-range');
 if(!ba||!r)return;function set(v){ba.style.setProperty('--pos',v+'%')}
 r.addEventListener('input',function(){set(r.value)});
