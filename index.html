@@ -80,7 +80,7 @@ form.cform{display:grid;gap:14px;background:var(--panel);padding:clamp(24px,3vw,
 /* Footer */
 footer{padding-block:48px 90px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
-footer nav{display:flex;gap:22px}
+footer nav{display:flex;flex-wrap:wrap;gap:10px 22px}
 footer a{text-decoration:none}
 
 /* Entwurfs-Hinweis */
@@ -219,8 +219,8 @@ body{background:var(--bg)}
 footer a:hover{color:var(--ink)}
 
 /* Zwei Geschäftszweige */
-.zweige{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media (max-width:860px){.zweige{grid-template-columns:1fr}}
+.zweige{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:980px){.zweige{grid-template-columns:1fr}}
 .zweig{border-radius:24px;padding:clamp(26px,3.5vw,40px);display:grid;gap:16px;align-content:start;text-decoration:none;border:1px solid var(--line);background:var(--card);transition:transform .25s ease,box-shadow .25s ease}
 .zweig:hover{transform:translateY(-3px);box-shadow:0 24px 50px -30px rgba(19,20,23,.45)}
 .zweig.dark2{background:var(--ink);color:#f3f3f1;border-color:var(--ink)}
@@ -287,7 +287,7 @@ footer a:hover{color:var(--ink)}
 
 <nav class="nav"><div class="wrap">
   <a class="brand" href="#top"><span class="mark">SK</span><span><b>SK Webwerk</b><small>Websites &amp; KI für Betriebe</small></span></a>
-  <ul><li><a href="#preise">Websites</a></li><li><a href="#extras">Extras</a></li><li><a href="ki-assistenten.html">KI-Assistenten</a></li><li><a href="#ueber">Über mich</a></li><li><a href="#faq">Fragen</a></li></ul>
+  <ul><li><a href="#preise">Websites</a></li><li><a href="#extras">Extras</a></li><li><a href="ki-assistenten.html">KI-Assistenten</a></li><li><a href="ki-schulungen.html">Schulungen</a></li><li><a href="#ueber">Über mich</a></li><li><a href="#faq">Fragen</a></li></ul>
   <a class="btn btn-primary btn-sm" href="#kontakt">Kontakt</a>
 </div></nav>
 
@@ -326,10 +326,11 @@ footer a:hover{color:var(--ink)}
 </div></header>
 
 <section id="angebot" style="padding-block:clamp(40px,6vw,72px)"><div class="wrap">
-  <div class="sec-head reveal"><p class="eyebrow">Zwei Leistungen</p><h2>Besser gefunden. <span class="serif">Weniger Büroarbeit.</span></h2></div>
+  <div class="sec-head reveal"><p class="eyebrow">Drei Leistungen</p><h2>Besser gefunden. <span class="serif">Weniger Büroarbeit.</span></h2></div>
   <div class="zweige reveal">
     <a class="zweig" href="#preise"><span class="k">Websites</span><h3>Ihre neue Website – <span class="serif">erst sehen, dann zahlen.</span></h3><p>Modern, schnell, fürs Handy gemacht. Sie bekommen vorab einen fertigen Entwurf und entscheiden danach.</p><span class="ab">ab 249 € einmalig</span><span class="go">Preise &amp; Ablauf →</span></a>
     <a class="zweig dark2" href="ki-assistenten.html"><span class="k">KI-Assistenten</span><h3>Ein digitaler Helfer, <span class="serif">der nie Feierabend hat.</span></h3><p>Beantwortet Kundenfragen auf Ihrer Website, schreibt E-Mails und Angebote vor – eingerichtet auf Ihren Betrieb.</p><span class="ab">ab 299 € einmalig</span><span class="go">Mehr erfahren →</span></a>
+    <a class="zweig" href="ki-schulungen.html"><span class="k">KI-Schulungen</span><h3>KI verstehen – <span class="serif">im Alltag nutzen.</span></h3><p>Praxisnahe Schulungen für Inhaber, Büro und Team: vom 90-Minuten-Impuls bis zur vierwöchigen Begleitung.</p><span class="ab">ab 149 € pauschal</span><span class="go">Formate ansehen →</span></a>
   </div>
 </div></section>
 
@@ -447,7 +448,7 @@ footer a:hover{color:var(--ink)}
 
 <footer><div class="wrap">
   <span>© 2026 SK Webwerk · Sayder Karakaplan · Wetzlar</span>
-  <nav><a href="ki-assistenten.html">KI-Assistenten</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+  <nav><a href="ki-assistenten.html">KI-Assistenten</a><a href="ki-schulungen.html">KI-Schulungen</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
 </div></footer>
 
 <script>
