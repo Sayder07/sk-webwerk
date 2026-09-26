@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Installation &amp; Inbetriebnahme &ndash; SKB-SolarTec GmbH</title>
+<meta name="description" content="Fachgerechte Montage, Verkabelung und Inbetriebnahme von Photovoltaikanlagen durch die SKB-SolarTec GmbH in Biedenkopf-Wallau.">
+<meta name="robots" content="noindex,nofollow">
+<style>*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbf9f3; --ink:#182a3a; --muted:#5b6b78; --panel:#eef4f5; --card:#fff;
+  --line:rgba(24,42,58,.12); --line-strong:rgba(24,42,58,.28);
+  --accent:#f2994a; --accent-2:#ffce54; --green:#219653; --sky:#2f80c9;
+  --on-accent:#182a3a; --nav-bg:rgba(251,249,243,.86);
+  --dark:#0b2842; --dark-2:#123a5a; --on-dark:#eaf3f8; --soft:#b9d3e3; --dim:#7ea3bd;
+}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(20px,5vw,48px)}
+section{padding-block:clamp(56px,8vw,104px)}
+.band{background:var(--panel)}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.02em;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+p{margin:0}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0}
+.lead{color:var(--muted);font-size:18px;max-width:52ch}
+.sec-head{max-width:760px;margin-bottom:clamp(32px,5vw,56px)}
+.sec-head h2{font-size:clamp(28px,3.6vw,44px);margin-top:14px}
+.serif{color:var(--accent)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:14px 26px;font-size:15.5px;font-weight:600;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn-primary{background:linear-gradient(135deg,var(--accent-2),var(--accent));color:var(--on-accent);box-shadow:0 14px 30px -14px rgba(242,153,74,.65)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 36px -14px rgba(242,153,74,.75)}
+.btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-sm{padding:9px 16px;font-size:14px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:var(--nav-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;padding-block:14px;min-height:44px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto}
+.brand span{display:grid;line-height:1.15}
+.brand b{font-weight:700;font-size:16.5px;letter-spacing:-.01em}
+.brand small{font-size:12px;color:var(--muted);font-weight:500}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:500}
+.nav ul a[aria-current="page"]{color:var(--accent)}
+.nav-right{display:flex;gap:10px;align-items:center}
+.menu-btn{display:none;border:1px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:9px 14px;font:inherit;font-size:14px;cursor:pointer}
+.mnav{display:none}
+@media (max-width:900px){
+  .nav ul{display:none}
+  .menu-btn{display:inline-flex}
+  .mnav{display:none;position:fixed;inset:65px 0 auto 0;z-index:49;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(0,0,0,.35);max-height:calc(100vh - 65px);overflow:auto}
+  .mnav.open{display:block}
+  .mnav ul{list-style:none;margin:0;padding:8px clamp(20px,5vw,48px) 20px}
+  .mnav li a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:17px}
+  .mnav li a[aria-current="page"]{font-weight:600;color:var(--accent)}
+  .mnav li.sub a{padding-left:16px;font-size:15px;color:var(--muted)}
+}
+.crumb{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.crumb a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong)}
+
+/* Hero */
+.hero{background:var(--dark);color:var(--on-dark);padding-block:clamp(56px,8vw,108px) 0;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(58% 65% at 82% 20%,rgba(255,206,84,.22),transparent 60%),radial-gradient(50% 60% at 10% 90%,rgba(47,128,201,.24),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative}
+.hero .eyebrow{color:var(--accent-2)}
+.hero h1{font-size:clamp(38px,6vw,72px);line-height:1.04;margin-top:20px}
+.hero h1 .serif{color:var(--accent-2)}
+.hero .lead{color:var(--soft);margin-top:24px;font-size:18.5px}
+.hero .btns{margin-top:34px}
+.hero .btn-ghost{color:var(--on-dark);border-color:rgba(255,255,255,.3)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,72px);align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto}
+.flow{stroke-dasharray:6 9;animation:fl 1.4s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-30}}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12);margin-top:clamp(44px,6vw,76px)}
+.facts div{padding:24px 20px 30px 0;display:grid;gap:4px;min-width:0}
+.facts b{font-weight:600;font-size:clamp(17px,1.9vw,21px);color:#fff}
+.facts span{font-size:13px;color:var(--dim)}
+@media (max-width:760px){.facts{grid-template-columns:1fr 1fr}}
+
+/* Page hero (phero) for inner pages */
+.phero{background:var(--dark);color:var(--on-dark);padding-block:clamp(46px,7vw,92px) clamp(40px,6vw,68px);position:relative;overflow:hidden}
+.phero .crumb{color:var(--dim)} .phero .crumb a{border-color:rgba(255,255,255,.28)}
+.phero .eyebrow{color:var(--accent-2)}
+.phero h1{font-size:clamp(32px,5.6vw,58px);margin-top:14px;max-width:19ch}
+.phero .lead{color:var(--soft);margin-top:20px}
+.phero::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 70% at 90% 10%,rgba(255,206,84,.16),transparent 60%);pointer-events:none}
+.phero .wrap{position:relative}
+
+/* panel grid decoration */
+.panelgrid{position:absolute;right:clamp(-40px,2vw,10px);top:0;bottom:0;width:clamp(160px,26vw,340px);opacity:.5;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.14) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.14) 1px,transparent 1px);
+  background-size:100% 22%,25% 100%;mask-image:linear-gradient(180deg,#000,transparent 92%)}
+@media (max-width:760px){.panelgrid{display:none}}
+
+/* Split / prose / aside */
+.split{display:grid;grid-template-columns:1.6fr 1fr;gap:clamp(36px,6vw,88px);align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr!important}}
+.prose{display:grid;gap:20px;font-size:17.5px;color:var(--muted);min-width:0}
+.prose h2{font-size:clamp(24px,2.8vw,32px);color:var(--ink);margin-top:16px}
+.prose h3{font-size:20px;color:var(--ink);margin-top:6px}
+.prose strong{color:var(--ink);font-weight:600}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:16.5px}
+.checks li::before{content:"";flex:0 0 20px;height:20px;margin-top:3px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.8 2.7L14.5 7' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.aside{position:sticky;top:88px;background:var(--dark);color:var(--on-dark);border-radius:24px;padding:28px;display:grid;gap:14px}
+.aside .eyebrow{color:var(--accent-2)}
+.aside h3{font-size:23px;letter-spacing:-.01em}
+.aside p{color:var(--soft);font-size:15px}
+.aside .num{font-size:26px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.01em;display:block}
+.aside .small{font-size:13px;color:var(--dim)}
+@media (max-width:900px){.aside{position:static}}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cards.c4{grid-template-columns:repeat(4,1fr)}
+.cards.c2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:1000px){.cards,.cards.c4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.cards,.cards.c4,.cards.c2{grid-template-columns:1fr}}
+a.card,div.card{display:grid;gap:12px;align-content:start;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;text-decoration:none;color:var(--ink);transition:transform .25s ease,box-shadow .25s ease,border-color .25s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 24px 50px -32px rgba(11,40,66,.35);border-color:var(--line-strong)}
+.card .ico{width:38px;height:38px;color:var(--accent)}
+.card h3{font-size:20px;letter-spacing:-.01em}
+.card p{color:var(--muted);font-size:15.5px}
+.card .go{font-size:14px;font-weight:600;color:var(--accent)}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:st}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.steps div{border-top:2px solid var(--accent);padding-top:18px;display:grid;gap:8px}
+.steps div::before{counter-increment:st;content:"0" counter(st);font-size:13px;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.steps b{font-size:18.5px;font-weight:600}
+.steps span{color:var(--muted);font-size:15.5px}
+
+/* Team */
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.team{grid-template-columns:1fr}}
+.team div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:8px}
+.team .avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent-2),var(--accent));display:grid;place-items:center;color:var(--on-accent);font-weight:700;font-size:19px;margin-bottom:6px}
+.team b{font-size:19px;font-weight:600;color:var(--ink)}
+.team span{color:var(--muted);font-size:15px}
+.team p{color:var(--muted);font-size:15px;margin-top:4px}
+
+/* Placeholder / gallery */
+.ph{border:2px dashed var(--line-strong);border-radius:22px;min-height:200px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:14.5px;padding:24px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(24,42,58,.035) 14px 28px)}
+.phgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:760px){.phgrid{grid-template-columns:1fr}}
+.projcard{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.projcard .body{padding:24px;display:grid;gap:10px}
+.projcard .tag{display:inline-flex;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:700}
+.projcard h3{font-size:20px}
+.projcard p{color:var(--muted);font-size:15.5px}
+.projcard .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.projcard .meta span{font-size:13px;border:1px solid var(--line-strong);border-radius:999px;padding:5px 12px;color:var(--ink)}
+
+/* About split */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,110px);align-items:center}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.about .txt{display:grid;gap:16px;color:var(--muted)}
+.about .txt strong{color:var(--ink);font-weight:600}
+.slogan{font-style:italic;font-size:clamp(26px,3.2vw,40px);line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+.slogan .c{color:var(--accent)}
+
+/* Why-us tiles on dark band */
+.svc4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:900px){.svc4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.svc4{grid-template-columns:1fr}}
+.svc4 div{background:var(--dark-2);color:var(--on-dark);border-radius:18px;padding:24px 20px;display:grid;gap:10px}
+.svc4 .ico{width:30px;height:30px;color:var(--accent-2)}
+.svc4 b{font-weight:600;font-size:17.5px}
+.svc4 span{color:var(--soft);font-size:14.5px}
+
+/* CTA band */
+.cta{background:var(--dark-2);color:var(--on-dark);border-radius:28px;padding:clamp(32px,5vw,60px);display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(28px,3.6vw,42px)}
+.cta h2 .serif{color:var(--accent-2)}
+.cta p{color:var(--soft);margin-top:14px;max-width:34em}
+.cta .eyebrow{color:var(--accent-2)}
+.cta .box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px;display:grid;gap:10px}
+.cta .box .num{font-size:clamp(22px,2.6vw,28px);font-weight:700;color:#fff;text-decoration:none;display:block}
+.cta .box .small{font-size:13px;color:var(--dim)}
+@media (max-width:860px){.cta{grid-template-columns:1fr}}
+
+/* Contact fields / rows */
+.fields{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+@media (max-width:860px){.fields{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.fields{grid-template-columns:1fr}}
+.fields div{background:var(--card);padding:26px;display:grid;gap:10px}
+.fields .ico{width:32px;height:32px;color:var(--accent)}
+.fields h3{font-size:19px}
+.fields p{font-size:14.5px;color:var(--muted)}
+.rows{border-top:1px solid var(--line)}
+.rows>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(20px,4vw,60px);padding-block:32px;border-bottom:1px solid var(--line)}
+@media (max-width:860px){.rows>div{grid-template-columns:1fr}}
+
+/* Form */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}}
+.form-grid .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-size:14px;color:var(--muted);font-weight:500}
+input,select,textarea{font:inherit;font-size:15.5px;padding:13px 15px;border-radius:12px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+textarea{resize:vertical;min-height:120px}
+.consent{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--muted)}
+.consent input{width:16px;height:16px;margin-top:3px;flex:0 0 auto}
+.cform .ok{margin-top:16px;padding:14px 18px;background:rgba(33,150,83,.12);color:var(--green);border-radius:12px;font-size:14.5px;font-weight:600}
+.map{border-radius:22px;background:var(--dark);color:var(--on-dark);padding:28px;display:grid;gap:12px}
+.map p{color:var(--soft)}
+
+/* Impressum */
+.imp dl{display:grid;grid-template-columns:220px 1fr;gap:10px 24px;margin:0}
+.imp dt{color:var(--muted)} .imp dd{margin:0}
+@media (max-width:600px){.imp dl{grid-template-columns:1fr}.imp dt{margin-top:10px}}
+.note{background:var(--panel);border-radius:16px;padding:18px 20px;font-size:14.5px;color:var(--muted);margin-top:22px}
+
+/* Footer */
+footer{background:var(--dark);color:var(--on-dark);padding-block:40px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-size:14px;color:var(--soft)}
+footer nav{display:flex;flex-wrap:wrap;gap:16px}
+footer nav a{text-decoration:none;color:var(--soft);font-size:14px}
+footer nav a:hover{color:#fff}
+.draft{background:var(--ink);color:var(--dim);text-align:center;font-size:12.5px;padding:10px;letter-spacing:.02em}
+.draft b{color:#fff}
+
+/* Reveal animation */
+.js .reveal.pre{opacity:0;transform:translateY(16px)}
+.reveal{transition:opacity .6s ease,transform .6s ease}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="15" cy="15" r="6" stroke="#f2994a" stroke-width="2.2"/><g stroke="#219653" stroke-width="2.2" stroke-linecap="round"><path d="M15 2v4"/><path d="M15 24v4"/><path d="M2 15h4"/><path d="M24 15h4"/><path d="M5.5 5.5l2.8 2.8"/><path d="M21.7 21.7l2.8 2.8"/><path d="M24.5 5.5l-2.8 2.8"/><path d="M8.3 21.7l-2.8 2.8"/></g></svg><span><b>SKB-SolarTec</b><small>Solarteur &middot; Biedenkopf-Wallau</small></span></a>
+  <ul><li><a href="leistungen.html">Leistungen</a></li><li><a href="team.html">Team</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+  <div class="nav-right"><a class="btn btn-primary btn-sm" href="tel:+4964617587440">06461 75874-0</a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">Men&uuml;</button></div>
+</div>
+<div class="mnav" id="mnav"><ul><li><a href="leistungen.html">Leistungen</a></li><li class="sub"><a href="leistung-pv-planung.html">PV-Planung</a></li><li class="sub"><a href="leistung-installation-inbetriebnahme.html" aria-current="page">Installation &amp; Inbetriebnahme</a></li><li class="sub"><a href="leistung-stromspeicher.html">Stromspeicher</a></li><li class="sub"><a href="leistung-wirtschaftlichkeitsberatung.html">Wirtschaftlichkeitsberatung</a></li><li><a href="team.html">Team</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+</nav>
+<header class="phero"><div class="wrap">
+  <p class="crumb"><a href="index.html">Start</a> / Leistungen</p>
+  <p class="eyebrow">Leistung</p>
+  <h1>Installation &amp; Inbetriebnahme</h1>
+  <p class="lead">Nach der Planung folgt die fachgerechte Umsetzung: Unser Team montiert Ihre Photovoltaikanlage, verkabelt die Technik und nimmt die Anlage in Betrieb.</p>
+</div></header>
+<section><div class="wrap split">
+  <div class="prose reveal">
+    <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M27 8a7 7 0 0 0-9.6 8L8 25.4 12.6 30l9.4-9.4A7 7 0 0 0 30 11l-4.6 4.6-4-4L26 6.4Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <p>Die Installation umfasst die Montage der Module und der Unterkonstruktion sowie die Verkabelung von Wechselrichter und weiterer Anlagentechnik. Dabei arbeiten wir sorgf&auml;ltig und mit Blick auf eine langfristig zuverl&auml;ssige Anlage.</p><p>Nach der Montage folgt die Inbetriebnahme mit Funktionspr&uuml;fung, eine Einweisung in Ihre neue Anlage sowie die zugeh&ouml;rige Dokumentation.</p>
+    <h3>Das geh&ouml;rt dazu</h3>
+    <ul class="checks"><li>Montage von Modulen und Unterkonstruktion</li><li>Verkabelung von Wechselrichter und Anlagentechnik</li><li>Inbetriebnahme mit Funktionspr&uuml;fung</li><li>Einweisung in Ihre Photovoltaikanlage</li><li>&Uuml;bergabe der Anlagendokumentation</li></ul>
+  </div>
+  <aside class="aside reveal">
+    <p class="eyebrow">Kostenlose Ersteinsch&auml;tzung</p>
+    <h3>Termin vereinbaren</h3>
+    <p>Sprechen Sie mit uns &uuml;ber den Ablauf Ihrer Installation &ndash; wir nehmen uns Zeit f&uuml;r Ihre Fragen.</p>
+    <a class="num" href="tel:+4964617587440">06461 75874-0</a>
+    <a class="btn btn-primary btn-sm" href="kontakt.html" style="justify-self:start">Zum Kontaktformular</a>
+    <p class="small">SKB-SolarTec GmbH &middot; Biedenkopf-Wallau</p>
+  </aside>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sec-head reveal"><p class="eyebrow">Weitere Leistungen</p><h2>Passt gut <span class="serif">dazu.</span></h2></div>
+  <div class="cards c2 reveal" style="grid-template-columns:repeat(3,1fr)"><a class="card" href="leistung-pv-planung.html" style="padding:20px"><h3 style="font-size:17px">PV-Planung</h3><span class="go">Ansehen &rarr;</span></a><a class="card" href="leistung-stromspeicher.html" style="padding:20px"><h3 style="font-size:17px">Stromspeicher</h3><span class="go">Ansehen &rarr;</span></a><a class="card" href="leistung-wirtschaftlichkeitsberatung.html" style="padding:20px"><h3 style="font-size:17px">Wirtschaftlichkeitsberatung</h3><span class="go">Ansehen &rarr;</span></a></div>
+</div></section>
+<footer><div class="wrap">
+  <span>&copy; SKB-SolarTec GmbH &middot; Christian-Balzer-Stra&szlig;e 10 &middot; 35216 Biedenkopf-Wallau &middot; Tel. 06461 75874-0</span>
+  <nav><a href="leistungen.html">Leistungen</a><a href="team.html">Team</a><a href="referenzen.html">Referenzen</a><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+</div></footer>
+<div class="draft" role="note"><b>Designentwurf</b> &middot; erstellt von SK Webwerk &middot; unverbindliche Vorschau</div>
+<script>(function(){
+  var d=document.documentElement;
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el);}
+    });
+  }
+  document.querySelectorAll('form.cform').forEach(function(f){
+    f.addEventListener('submit',function(ev){ev.preventDefault();var o=f.querySelector('.ok');if(o){o.hidden=false;}});
+  });
+})();
+(function(){var b=document.querySelector('.menu-btn'),m=document.querySelector('.mnav');if(!b||!m)return;
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schlie\u00dfen':'Men\u00fc'});})();
+</script>
+</body>
+</html>

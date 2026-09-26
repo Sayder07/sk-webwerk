@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Impressum – Glaserei + Bilderrahmung Werner</title>
+<meta name="description" content="Impressum der Glaserei + Bilderrahmung Werner, Untergasse 5, 35037 Marburg.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+:root{
+  --bg:#f4fafb; --bg2:#eaf5f7; --ink:#0d2b30; --muted:#4f6c72;
+  --line:rgba(13,43,48,.14); --line-strong:rgba(13,43,48,.30);
+  --card:rgba(255,255,255,.62); --card-strong:rgba(255,255,255,.82);
+  --accent:#0e7c8c; --accent-2:#0a4a52; --accent-light:#8fe0e8; --on-accent:#fff;
+  --dark:#082327; --dark2:#0c333a; --on-dark:#eaf7f8; --soft:#a9d3d8;
+  --hi:#bfe9ee; --r:20px; --nav-bg:rgba(244,250,251,.72);
+}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:600;line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+p{margin:0}
+.serif{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--accent)}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:36em}
+
+/* Glas-Grundeffekt */
+.glass{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.68),rgba(255,255,255,.26));
+  backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);
+  border:1px solid rgba(255,255,255,.65);box-shadow:0 30px 60px -42px rgba(8,35,39,.4),inset 0 1px 0 rgba(255,255,255,.6)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(118deg,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 34%)}
+.glass-dark{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.03));
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16)}
+.glass-dark::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(118deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 40%)}
+
+/* Navigation */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--nav-bg);
+  backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;letter-spacing:-.01em;font-size:16px;white-space:nowrap}
+.brand small{display:block;font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:1.2}
+.brand b{font-weight:600;display:block;line-height:1.2}
+.brand svg{flex-shrink:0}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:14.5px}
+.nav ul a{text-decoration:none;color:var(--muted);transition:color .2s}
+.nav ul a:hover{color:var(--ink)}
+.nav ul a[aria-current="page"]{color:var(--ink);font-weight:600}
+.nav .nav-right{display:flex;gap:10px;align-items:center}
+@media (max-width:860px){.nav ul{display:none}}
+@media (max-width:560px){.brand small{display:none}.brand b{font-size:15px}
+  .nav a[href^="tel:"].btn-sm{font-size:0;gap:0;padding:11px 16px}
+  .nav a[href^="tel:"].btn-sm::after{content:"Anrufen";font-size:14px}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;
+  font:600 15px/1 -apple-system,sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:var(--on-accent);
+  box-shadow:0 16px 32px -18px rgba(10,74,82,.65)}
+.btn-ghost{border-color:var(--line-strong);color:var(--ink);background:rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+.btn-sm{padding:10px 18px;font-size:14px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Mobiles Menü */
+.menu-btn{display:none;border:1px solid var(--line-strong);background:rgba(255,255,255,.5);color:var(--ink);
+  border-radius:999px;padding:9px 14px;font:inherit;font-size:14px;cursor:pointer}
+.mnav{display:none}
+@media (max-width:860px){
+  .menu-btn{display:inline-flex}
+  .mnav{display:none;position:fixed;inset:68px 0 auto 0;z-index:49;background:var(--bg);border-bottom:1px solid var(--line);
+    box-shadow:0 20px 40px -24px rgba(0,0,0,.3);max-height:calc(100vh - 68px);overflow:auto}
+  .mnav.open{display:block}
+  .mnav ul{list-style:none;margin:0;padding:8px clamp(20px,5vw,48px) 20px}
+  .mnav li a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:17px}
+  .mnav li a[aria-current="page"]{font-weight:600;color:var(--accent)}
+  .mnav li.sub a{padding-left:16px;font-size:15px;color:var(--muted)}
+}
+.crumb{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.crumb a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong)}
+
+/* Sektionen */
+section{padding-block:clamp(68px,9vw,124px)}
+.band{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.sec-head{display:grid;gap:16px;margin-bottom:clamp(40px,6vw,68px);max-width:760px}
+.sec-head h2{font-size:clamp(32px,4.6vw,54px)}
+
+/* Hero */
+.hero{background:radial-gradient(1100px 620px at 82% -10%,#123c44 0%,var(--dark) 62%);color:var(--on-dark);
+  padding-block:clamp(56px,8vw,112px) 0;overflow:hidden;position:relative}
+.hero .eyebrow{color:var(--soft)}
+.hero h1{font-size:clamp(38px,6.8vw,92px);font-weight:600;letter-spacing:-.04em;line-height:1.01;margin-top:20px;max-width:15ch}
+.hero .lead{color:var(--soft);margin-top:26px}
+.hero .btns{margin-top:34px}
+.hero .btn-ghost{color:var(--on-dark);border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)}
+.hero-grid{display:grid;grid-template-columns:1.12fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero-art svg{width:100%;height:auto}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:520px}}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12);margin-top:clamp(44px,6vw,76px)}
+.facts div{padding:24px 20px 28px 0;display:grid;gap:4px;min-width:0}
+.facts b{font-weight:600;font-size:clamp(19px,2vw,26px);letter-spacing:-.01em;color:#fff}
+.facts span{font-size:13.5px;color:var(--soft)}
+@media (max-width:760px){.facts{grid-template-columns:1fr 1fr}}
+
+/* Unterseiten-Kopf */
+.phero{background:radial-gradient(900px 460px at 88% -20%,#123c44 0%,var(--dark) 60%);color:var(--on-dark);
+  padding-block:clamp(46px,7vw,92px) clamp(38px,6vw,68px);position:relative;overflow:hidden}
+.phero .crumb{color:var(--soft)} .phero .crumb a{border-color:rgba(255,255,255,.25)}
+.phero .eyebrow{color:var(--soft)}
+.phero h1{font-size:clamp(32px,5.6vw,72px);font-weight:600;letter-spacing:-.04em;line-height:1.03;margin-top:14px;max-width:18ch}
+.phero .lead{color:var(--soft);margin-top:20px}
+.phero .deco{position:absolute;right:-30px;bottom:-40px;width:min(40vw,420px);opacity:.5;pointer-events:none}
+@media (max-width:700px){.phero .deco{display:none}}
+
+/* Layout */
+.split{display:grid;grid-template-columns:1.6fr 1fr;gap:clamp(34px,6vw,84px);align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr!important}}
+.prose{display:grid;gap:20px;font-size:17.5px;color:var(--muted);min-width:0}
+.prose h2{font-size:clamp(25px,3vw,34px);color:var(--ink);margin-top:16px}
+.prose h3{font-size:20px;color:var(--ink);margin-top:6px}
+.prose strong{color:var(--ink);font-weight:600}
+.prose a{color:var(--accent)}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:16.5px}
+.checks li::before{content:"";flex:0 0 20px;height:20px;margin-top:3px;border-radius:50%;
+  background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.8 2.7L14.5 7' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:14px;border:1px solid var(--line-strong);border-radius:999px;padding:6px 13px;color:var(--ink);background:var(--card-strong)}
+.aside{position:sticky;top:96px;border-radius:24px;padding:28px;display:grid;gap:14px}
+.aside.glass-dark{background:linear-gradient(160deg,#123c44,#082327);color:var(--on-dark)}
+.aside .eyebrow{color:var(--soft)}
+.aside h3{font-size:23px;letter-spacing:-.01em}
+.aside p{color:var(--soft);font-size:15px}
+.aside .num{font-size:27px;font-weight:600;color:#fff;text-decoration:none;letter-spacing:-.01em}
+.aside .btn-primary{justify-self:start}
+.aside .small{font-size:13px;color:var(--soft)}
+@media (max-width:900px){.aside{position:static}}
+
+/* Karten */
+.cards{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:18px}
+@media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.cards{grid-template-columns:1fr}}
+a.card{display:grid;gap:12px;align-content:start;border-radius:var(--r);padding:28px;text-decoration:none;color:var(--ink);
+  transition:transform .25s ease,box-shadow .25s ease}
+a.card:hover{transform:translateY(-4px)}
+a.card h3{font-size:20px;letter-spacing:-.01em}
+a.card p{color:var(--muted);font-size:15.5px}
+a.card .go{font-size:14px;font-weight:600;color:var(--accent)}
+.ico{width:36px;height:36px;color:var(--accent)}
+.more{display:flex;flex-wrap:wrap;gap:10px}
+.more a{font-size:14.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line-strong);border-radius:999px;padding:8px 15px;background:var(--card-strong)}
+.more a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* Zweispaltiges Utility-Layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,84px);align-items:start}
+@media (max-width:800px){.two-col{grid-template-columns:1fr}}
+
+/* Prozess-Schritte */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.steps div{counter-increment:s;border-radius:20px;padding:24px;display:grid;gap:8px;align-content:start}
+.steps div::before{content:counter(s,decimal-leading-zero);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--accent)}
+.steps b{font-size:18px;font-weight:600}
+.steps span{font-size:15px;color:var(--muted)}
+
+/* Über uns / Standorte */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(38px,7vw,104px);align-items:center}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.about .txt{display:grid;gap:18px;color:var(--muted)}
+.about .txt strong{color:var(--ink);font-weight:600}
+.big{font-family:Georgia,serif;font-style:italic;font-size:clamp(28px,3.6vw,46px);line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+.big .c{color:var(--accent)}
+.locations{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:700px){.locations{grid-template-columns:1fr}}
+.locations>div{border-radius:22px;padding:26px;display:grid;gap:8px}
+.locations b{font-size:19px;font-weight:600;color:var(--ink)}
+.locations span{color:var(--muted);font-size:15.5px}
+.locations i{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+
+/* Platzhalter / Referenzen */
+.ph{border-radius:var(--r);min-height:210px;display:grid;place-items:center;text-align:center;color:var(--muted);
+  font-size:15px;padding:24px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.5) 0 14px,rgba(14,124,140,.08) 14px 28px);
+  border:1px dashed var(--line-strong)}
+.ph small{font-size:13px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery .ph.w{grid-column:span 2}
+@media (max-width:760px){.gallery{grid-template-columns:1fr}.gallery .ph.w{grid-column:auto}}
+
+/* CTA */
+.cta{border-radius:28px;padding:clamp(30px,5vw,60px);color:var(--on-dark);display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center;
+  background:linear-gradient(150deg,#123c44,#061a1e)}
+.cta h2{font-size:clamp(28px,3.8vw,44px)}
+.cta p{color:var(--soft);margin-top:12px;max-width:32em}
+.cta .eyebrow{color:var(--soft)}
+.cta .num{font-size:clamp(24px,3vw,36px);font-weight:600;color:#fff;text-decoration:none;display:block}
+@media (max-width:860px){.cta{grid-template-columns:1fr}}
+
+/* Formular */
+.contact{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(38px,6vw,92px);align-items:start}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.cdata{display:grid;gap:24px}
+.cdata dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:4px}
+.cdata dd{margin:0;font-size:clamp(18px,1.8vw,22px);font-weight:500;letter-spacing:-.01em}
+.cdata dd a{text-decoration:none;border-bottom:1px solid var(--line-strong)}
+form.cform{display:grid;gap:14px;border-radius:24px;padding:clamp(24px,3vw,36px)}
+.cform label{font-size:13px;font-weight:600;color:var(--muted);display:grid;gap:6px}
+.cform input,.cform textarea,.cform select{font:inherit;font-size:16px;color:var(--ink);background:rgba(255,255,255,.7);
+  border:1px solid var(--line-strong);border-radius:12px;padding:13px 14px;width:100%}
+.cform textarea{min-height:120px;resize:vertical}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.cform .row{grid-template-columns:1fr}}
+.cform .note{font-size:13px;color:var(--muted)}
+.cform .ok{font-size:14px;color:var(--accent);font-weight:600}
+.hours{display:grid;gap:0;border-top:1px solid var(--line)}
+.hours div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours div span:last-child{color:var(--muted);text-align:right}
+.note-box{border-radius:18px;padding:18px 20px;font-size:14.5px;color:var(--muted);border:1px solid var(--line)}
+
+/* Impressum / Datenschutz */
+.imp dl{display:grid;grid-template-columns:240px 1fr;gap:12px 24px;margin:0}
+.imp dt{color:var(--muted)} .imp dd{margin:0}
+@media (max-width:600px){.imp dl{grid-template-columns:1fr}.imp dt{margin-top:12px}}
+.legal h2{font-size:22px;margin-top:34px;color:var(--ink)}
+.legal p,.legal li{color:var(--muted);font-size:16px}
+.legal ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.fill{color:var(--accent);font-style:italic}
+
+/* Footer */
+footer{padding-block:48px 90px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer nav{display:flex;flex-wrap:wrap;gap:10px 22px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
+
+/* Entwurfs-Hinweis */
+.draft{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;
+  background:rgba(8,35,39,.88);color:#eaf7f8;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  font-size:12.5px;letter-spacing:.02em;padding:9px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 30px rgba(0,0,0,.2)}
+.draft b{font-weight:600}
+
+/* Bewegung */
+.reveal{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.pre{opacity:.001;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .reveal.pre{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="5" y="5" width="15" height="20" rx="2" transform="rotate(-7 12.5 15)" fill="#0e7c8c" fill-opacity=".22" stroke="#0e7c8c" stroke-width="1.6"/><rect x="12" y="8" width="15" height="20" rx="2" transform="rotate(6 19.5 18)" fill="#8fe0e8" fill-opacity=".5" stroke="#0a4a52" stroke-width="1.6"/></svg><span><b>Glaserei Werner</b><small>Glas &amp; Bilderrahmung · Marburg</small></span></a>
+  <ul><li><a href="index.html">Start</a></li><li><a href="leistungen.html">Leistungen</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+  <div class="nav-right"><a class="btn btn-primary btn-sm" href="tel:+49642125456">06421 25456</a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">Menü</button></div>
+</div></nav>
+<div class="mnav" id="mnav"><ul>
+  <li><a href="index.html">Start</a></li>
+  <li><a href="leistungen.html">Leistungen</a></li>
+  <li class="sub"><a href="leistung-glasreparatur.html">Glasreparatur</a></li><li class="sub"><a href="leistung-duschabtrennungen.html">Duschabtrennungen</a></li><li class="sub"><a href="leistung-glastueren-trennwaende.html">Glastüren & Trennwände</a></li><li class="sub"><a href="leistung-bilderrahmung.html">Bilderrahmung</a></li>
+  <li><a href="ueber-uns.html">Über uns</a></li>
+  <li><a href="referenzen.html">Referenzen</a></li>
+  <li><a href="kontakt.html">Kontakt</a></li>
+</ul></div>
+<header class="phero"><div class="wrap"><p class="crumb"><a href="index.html">Start</a> › Impressum</p>
+  <p class="eyebrow">Rechtliches</p><h1>Impressum</h1></div></header>
+<section><div class="wrap imp legal">
+  <dl>
+    <dt>Betrieb</dt><dd>Glaserei + Bilderrahmung Werner<br>Glaserei-Fachbetrieb mit Bilderrahmung</dd>
+    <dt>Hauptsitz</dt><dd>Untergasse 5, 35037 Marburg</dd>
+    <dt>Weitere Betriebsstätte</dt><dd>Im Rudert 9, 35043 Marburg-Cappel</dd>
+    <dt>Telefon</dt><dd>06421 25456</dd>
+    <dt>E-Mail</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+    <dt>Vertretungsberechtigt</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+    <dt>Rechtsform</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+    <dt>Handelsregister</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+    <dt>USt-IdNr.</dt><dd><span class="fill">[wird ergänzt]</span> (nach § 27a Umsatzsteuergesetz)</dd>
+    <dt>Zuständige Handwerkskammer</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+    <dt>Berufshaftpflichtversicherung</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+    <dt>Inhaltlich verantwortlich (§ 18 Abs. 2 MStV)</dt><dd><span class="fill">[wird ergänzt]</span></dd>
+  </dl>
+  <p class="notice glass" style="margin-top:34px;border-radius:18px;padding:18px 20px">Hinweis im Entwurf: Die vorhandenen Angaben stammen aus den bereitgestellten Unternehmensdaten. Vor dem Livegang ergänzen wir gemeinsam die fehlenden Pflichtangaben (z.&nbsp;B. Vertretungsberechtigte, Rechtsform, USt-IdNr. und zuständige Handwerkskammer).</p>
+  <h2>Streitschlichtung</h2>
+  <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a> finden. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und grundsätzlich nicht bereit.</p>
+  <h2>Haftung für Inhalte</h2>
+  <p>Die Inhalte dieser Entwurfsseiten wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden, insbesondere solange einzelne Pflichtangaben noch als „wird ergänzt“ gekennzeichnet sind.</p>
+</div></section>
+<footer><div class="wrap">
+  <span>© Glaserei + Bilderrahmung Werner · Untergasse 5 · 35037 Marburg · Tel. 06421 25456</span>
+  <nav><a href="leistungen.html">Leistungen</a><a href="ueber-uns.html">Über uns</a><a href="referenzen.html">Referenzen</a><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+</div></footer>
+<div class="draft" role="note"><b>Designentwurf</b> · erstellt von SK Webwerk · unverbindliche Vorschau</div>
+<script>(function(){
+  var d=document.documentElement;
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el);}
+    });
+  }
+  document.querySelectorAll('form.cform').forEach(function(f){
+    f.addEventListener('submit',function(ev){ev.preventDefault();var o=f.querySelector('.ok');if(o){o.hidden=false;}});
+  });
+})();
+(function(){var b=document.querySelector('.menu-btn'),m=document.querySelector('.mnav');if(!b||!m)return;
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schließen':'Menü'});})();
+</script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Gardinen & Sonnenschutz – LOCH Raumausstattung</title>
+<meta name="description" content="Gardinen und Sonnenschutz von LOCH Raumausstattung in Marburg: Vorhänge, Plissees, Rollos und Sonnenschutz nach Maß.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:600;line-height:1.1;letter-spacing:-.02em;margin:0;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+p{margin:0}
+.serif{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--senf-ink)}
+.lead{font-size:clamp(17.5px,1.5vw,20px);color:var(--muted);max-width:36em}
+
+:root{
+  --cream:#f7efe1; --cream-deep:#efe0c5; --paper:#fffaf1; --card:#fffdf8;
+  --ink:#2b1a1e; --muted:#6c5951;
+  --line:rgba(43,26,30,.15); --line-strong:rgba(43,26,30,.32);
+  --bordeaux:#7c1f2e; --bordeaux-2:#6a1a27; --bordeaux-dark:#4c1220; --bordeaux-deep:#331019;
+  --senf:#c9971e; --senf-light:#e7c15a; --senf-ink:#8a5f12;
+  --plum:#4a2440;
+  --on-accent:#fbf3df; --on-dark:#f3e9d6; --soft:#d8b98f;
+  --accent:var(--bordeaux);
+  --r:16px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --cream:#241014; --cream-deep:#2c1418; --paper:#2a1216; --card:#2e161a;
+    --ink:#f2e7d8; --muted:#c9ab98;
+    --line:rgba(242,231,216,.14); --line-strong:rgba(242,231,216,.28);
+  }
+}
+:root[data-theme="dark"]{
+  --cream:#241014; --cream-deep:#2c1418; --paper:#2a1216; --card:#2e161a;
+  --ink:#f2e7d8; --muted:#c9ab98;
+  --line:rgba(242,231,216,.14); --line-strong:rgba(242,231,216,.28);
+}
+
+/* Textilstruktur: feine Webmuster als dekorative Überlagerung */
+.weave{position:relative}
+.weave::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.55) 0 1px,transparent 1px 7px),
+                    repeating-linear-gradient(-45deg,rgba(0,0,0,.35) 0 1px,transparent 1px 7px);
+  mix-blend-mode:overlay}
+
+/* Navigation */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(247,239,225,.86);backdrop-filter:saturate(160%) blur(16px);-webkit-backdrop-filter:saturate(160%) blur(16px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;letter-spacing:-.01em;font-size:16.5px;white-space:nowrap;color:var(--ink)}
+.brand small{display:block;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);line-height:1.3}
+.brand b{font-weight:700;display:block;line-height:1.2}
+.brand svg{flex-shrink:0}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14.5px}
+.nav ul a{text-decoration:none;color:var(--muted);transition:color .2s;font-weight:500}
+.nav ul a:hover{color:var(--bordeaux)}
+.nav ul a[aria-current="page"]{color:var(--bordeaux)}
+.nav .nav-right{display:flex;gap:10px;align-items:center}
+@media (max-width:900px){.nav ul{display:none}}
+@media (max-width:560px){.nav a[href^="tel:"].btn-sm{font-size:0;gap:0;padding:11px 15px}.nav a[href^="tel:"].btn-sm::after{content:"Anrufen";font-size:13.5px}.brand{font-size:15px}.brand small{display:none}}
+
+.menu-btn{display:none;border:1px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:9px 14px;font:inherit;font-size:13.5px;font-weight:500;cursor:pointer}
+.mnav{display:none}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .mnav{display:none;position:fixed;inset:66px 0 auto 0;z-index:49;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(0,0,0,.35);max-height:calc(100vh - 66px);overflow:auto}
+  .mnav.open{display:block}
+  .mnav ul{list-style:none;margin:0;padding:8px clamp(20px,5vw,48px) 22px}
+  .mnav li a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:16.5px;font-weight:500}
+  .mnav li a[aria-current="page"]{color:var(--bordeaux)}
+  .mnav li.sub a{padding-left:16px;font-size:15px;color:var(--muted);font-weight:400}
+}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:999px;font:600 14.5px/1 inherit;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--senf);outline-offset:3px}
+.btn-primary{background:var(--bordeaux);color:var(--on-accent);box-shadow:0 10px 26px -14px rgba(76,18,32,.7)}
+.btn-primary:hover{background:var(--bordeaux-2)}
+.btn-ghost{border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-sm{padding:10px 17px;font-size:13.5px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Sektionen */
+section{padding-block:clamp(64px,9vw,120px)}
+.band{background:var(--cream-deep)}
+.sec-head{display:grid;gap:16px;margin-bottom:clamp(38px,6vw,68px);max-width:740px}
+.sec-head h2{font-size:clamp(30px,4.4vw,50px)}
+.crumb{font-size:13.5px;color:var(--soft);margin-bottom:16px}
+.crumb a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+
+/* Hero */
+.hero{background:radial-gradient(120% 140% at 15% -10%,var(--bordeaux-2) 0%,var(--bordeaux-deep) 55%,#26050d 100%);color:var(--on-dark);padding-block:clamp(52px,8vw,104px) 0;overflow:hidden;position:relative}
+.hero .eyebrow{color:var(--soft)}
+.hero h1{font-size:clamp(38px,6.6vw,80px);letter-spacing:-.03em;line-height:1.03;margin-top:20px;max-width:15ch;color:#fff}
+.hero h1 .serif{color:var(--senf-light)}
+.hero .lead{color:var(--soft);margin-top:24px;max-width:38em}
+.hero .btns{margin-top:32px}
+.hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.32)}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,5vw,64px);align-items:center;position:relative;z-index:1}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr}}
+
+/* Stoffmuster-Fächer (dekorativ) */
+.fan{position:relative;height:300px}
+.fan .swatch{position:absolute;left:50%;margin-left:-59px;width:118px;height:210px;border-radius:14px;bottom:-30px;box-shadow:0 22px 40px -20px rgba(0,0,0,.55);border:2px dashed rgba(255,255,255,.35);transform-origin:bottom center}
+.fan .s1{background:linear-gradient(160deg,#5c1420,#7c1f2e);transform:rotate(-24deg) translateX(-130px)}
+.fan .s2{background:repeating-linear-gradient(45deg,#4a2440,#4a2440 8px,#5b2e4f 8px 16px);transform:rotate(-11deg) translateX(-64px)}
+.fan .s3{background:linear-gradient(160deg,#efe0c5,#d8b98f);border-color:rgba(51,16,25,.35);transform:rotate(2deg);display:flex;align-items:flex-end;justify-content:center;padding-bottom:14px}
+.fan .s3 span{font-family:Georgia,serif;font-style:italic;color:var(--bordeaux-deep);font-size:14px}
+.fan .s4{background:repeating-linear-gradient(0deg,#7c1f2e,#7c1f2e 10px,#8f2937 10px 20px);transform:rotate(15deg) translateX(64px)}
+.fan .s5{background:linear-gradient(160deg,#e7c15a,#c9971e);border-color:rgba(51,16,25,.4);transform:rotate(27deg) translateX(130px)}
+.fan .pin{position:absolute;left:50%;transform:translateX(-50%);bottom:6px;width:16px;height:16px;border-radius:50%;background:var(--senf-light);box-shadow:0 0 0 3px var(--bordeaux-deep);z-index:2}
+@media (max-width:920px){.fan{height:230px;transform:scale(.82)}}
+
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.14);margin-top:clamp(46px,6vw,78px);position:relative;z-index:1}
+.facts div{padding:24px 20px 30px 0;display:grid;gap:5px;min-width:0}
+.facts b{font-weight:600;font-size:clamp(16px,1.7vw,19px);letter-spacing:-.01em;color:#fff}
+.facts span{font-size:13px;color:var(--soft)}
+@media (max-width:760px){.facts{grid-template-columns:1fr 1fr}}
+
+/* Unterseiten-Kopf */
+.phero{background:radial-gradient(120% 140% at 85% -10%,var(--bordeaux-2) 0%,var(--bordeaux-deep) 55%,#26050d 100%);color:var(--on-dark);padding-block:clamp(46px,7vw,88px) clamp(38px,6vw,64px);position:relative;overflow:hidden}
+.phero .eyebrow{color:var(--soft)}
+.phero h1{font-size:clamp(32px,5.6vw,64px);letter-spacing:-.03em;line-height:1.05;margin-top:12px;max-width:18ch;color:#fff}
+.phero h1 .serif{color:var(--senf-light)}
+.phero .lead{color:var(--soft);margin-top:18px}
+
+/* Karten */
+.cards{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:18px}
+@media (max-width:960px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.cards{grid-template-columns:1fr}}
+a.card,.card{display:grid;gap:12px;align-content:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;text-decoration:none;color:var(--ink);transition:transform .25s ease,box-shadow .25s ease,border-color .25s;position:relative}
+a.card:hover{transform:translateY(-3px);box-shadow:0 26px 50px -32px rgba(51,16,25,.5);border-color:var(--line-strong)}
+a.card .ico,.card .ico{width:38px;height:38px;color:var(--bordeaux)}
+a.card h3,.card h3{font-size:20.5px;letter-spacing:-.01em}
+a.card p,.card p{color:var(--muted);font-size:15.5px}
+a.card .go{font-size:14px;font-weight:600;color:var(--bordeaux)}
+.more{display:flex;flex-wrap:wrap;gap:10px}
+.more a{font-size:14px;text-decoration:none;color:var(--ink);border:1px solid var(--line-strong);border-radius:999px;padding:8px 15px;background:var(--card);font-weight:500}
+.more a:hover{border-color:var(--ink)}
+
+/* Prosa / Detailseiten */
+.split{display:grid;grid-template-columns:1.55fr 1fr;gap:clamp(34px,6vw,80px);align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr!important}}
+.prose{display:grid;gap:20px;font-size:17px;color:var(--muted);min-width:0}
+.prose h2{font-size:clamp(24px,3vw,32px);color:var(--ink);margin-top:14px}
+.prose h3{font-size:20px;color:var(--ink);margin-top:6px}
+.prose strong{color:var(--ink);font-weight:600}
+.prose a{color:var(--bordeaux)}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:16.5px}
+.checks li::before{content:"";flex:0 0 20px;height:20px;margin-top:3px;border-radius:6px;background:var(--senf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.8 2.7L14.5 7' fill='none' stroke='%232b1a1e' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:13.5px;border:1px solid var(--line-strong);border-radius:999px;padding:6px 13px;color:var(--ink);background:var(--card)}
+.aside{position:sticky;top:88px;background:linear-gradient(160deg,var(--bordeaux-dark),var(--bordeaux-deep));color:var(--on-dark);border-radius:24px;padding:28px;display:grid;gap:14px}
+.aside .eyebrow{color:var(--soft)}
+.aside h3{font-size:22px;letter-spacing:-.01em;color:#fff}
+.aside p{color:var(--soft);font-size:15px}
+.aside .num{font-size:26px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.01em}
+.aside .btn-primary{background:var(--senf);color:var(--bordeaux-deep);justify-self:start}
+.aside .btn-primary:hover{background:var(--senf-light)}
+.aside .small{font-size:13px;color:var(--soft)}
+@media (max-width:900px){.aside{position:static}}
+
+/* Zitat-Band */
+.quote{background:radial-gradient(120% 160% at 50% 0%,var(--bordeaux-2),var(--bordeaux-deep));color:var(--on-dark);text-align:center;position:relative;overflow:hidden}
+.quote .wrap{position:relative;z-index:1}
+.quote .q{font-size:clamp(24px,3.4vw,38px);max-width:26ch;margin-inline:auto;line-height:1.3}
+.quote .q .serif{color:var(--senf-light)}
+.quote .sub{color:var(--soft);margin-top:20px;max-width:44ch;margin-inline:auto}
+
+/* Werte / Warum-wir */
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:960px){.values{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.values{grid-template-columns:1fr}}
+.value{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:8px;min-width:0}
+.value .ico{width:32px;height:32px;color:var(--bordeaux)}
+.value b{font-size:17px;font-weight:600}
+.value span{color:var(--muted);font-size:15px}
+
+/* CTA */
+.cta{background:linear-gradient(155deg,var(--bordeaux-dark),var(--bordeaux-deep));color:var(--on-dark);border-radius:28px;padding:clamp(30px,5vw,60px);display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(28px,3.6vw,44px);color:#fff}
+.cta h2 .serif{color:var(--senf-light)}
+.cta p{color:var(--soft);margin-top:14px;max-width:32em}
+.cta .eyebrow{color:var(--soft)}
+.cta .num{font-size:clamp(24px,3vw,34px);display:block;color:#fff;text-decoration:none;font-weight:700}
+.cta .btn-primary{background:var(--senf);color:var(--bordeaux-deep)}
+.cta .btn-primary:hover{background:var(--senf-light)}
+@media (max-width:860px){.cta{grid-template-columns:1fr}}
+
+/* Referenzen-Platzhalter */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.gallery{grid-template-columns:1fr}}
+.ph{border-radius:var(--r);min-height:190px;display:grid;place-items:center;text-align:center;color:var(--on-dark);font-size:14.5px;padding:22px;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--bordeaux-dark),var(--bordeaux-2))}
+.ph span{position:relative;z-index:1}
+.ph b{display:block;font-size:16px;margin-bottom:4px;color:#fff}
+.ph small{font-size:12.5px;color:var(--soft)}
+
+/* Kontakt / Formular */
+.contact{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(36px,6vw,90px);align-items:start}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+.cdata{display:grid;gap:24px}
+.cdata dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:4px}
+.cdata dd{margin:0;font-size:clamp(19px,2vw,24px);font-weight:500;letter-spacing:-.01em}
+.cdata dd a{text-decoration:none;color:var(--bordeaux);border-bottom:1px solid var(--line-strong)}
+.hours{border-top:1px solid var(--line);padding-top:18px;display:grid;gap:6px;font-size:15px}
+.hours div{display:flex;justify-content:space-between;gap:16px;color:var(--muted)}
+.hours div b{color:var(--ink);font-weight:500}
+form.cform{display:grid;gap:14px;background:var(--card);padding:clamp(24px,3vw,34px);border-radius:22px;border:1px solid var(--line)}
+.cform label{font-size:13px;font-weight:600;color:var(--muted);display:grid;gap:6px}
+.cform input,.cform textarea,.cform select{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--line-strong);border-radius:12px;padding:13px 14px;width:100%}
+.cform textarea{min-height:120px;resize:vertical}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.cform .row{grid-template-columns:1fr}}
+.cform .note{font-size:12.5px;color:var(--muted)}
+.cform .ok{font-size:14px;color:var(--bordeaux);font-weight:600}
+.map{border-radius:var(--r);background:linear-gradient(160deg,var(--bordeaux-dark),var(--bordeaux-deep));color:var(--on-dark);padding:26px;display:grid;gap:10px;margin-top:26px}
+.map .eyebrow{color:var(--soft)}
+.map p{color:var(--soft);font-size:15px}
+
+/* Impressum / Datenschutz */
+.imp dl{display:grid;grid-template-columns:220px 1fr;gap:11px 24px;margin:0}
+.imp dt{color:var(--muted)} .imp dd{margin:0}
+@media (max-width:600px){.imp dl{grid-template-columns:1fr}.imp dt{margin-top:10px}}
+.notice{border:1px solid var(--line-strong);border-radius:16px;padding:18px 20px;font-size:14.5px;color:var(--muted);background:var(--card)}
+.legal h2{font-size:21px;margin-top:8px;color:var(--ink)}
+.legal p,.legal li{color:var(--muted);font-size:15.5px}
+.legal ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.legal section+section{margin-top:6px}
+
+/* Footer */
+footer{padding-block:44px 96px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .fwrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer .fcol{display:grid;gap:6px;max-width:340px}
+footer .fcol b{color:var(--ink);font-weight:600}
+footer nav{display:flex;flex-wrap:wrap;gap:9px 20px;align-content:start}
+footer nav a{text-decoration:none}
+footer nav a:hover{color:var(--bordeaux)}
+footer .legalnav{margin-top:10px;display:flex;gap:16px;font-size:13px}
+
+/* Entwurfs-Hinweis */
+.draft{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:rgba(30,12,17,.9);color:#f6ecd9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:12.5px;letter-spacing:.02em;padding:9px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.draft b{font-weight:700}
+
+/* Reveal-Animation */
+.reveal{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.pre{opacity:.001;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .reveal.pre{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13.5" fill="#f7efe1" stroke="#7c1f2e" stroke-width="1.4"/><ellipse cx="15" cy="9" rx="8" ry="2.8" fill="#c9971e"/><ellipse cx="15" cy="21" rx="8" ry="2.8" fill="#7c1f2e"/><rect x="13.6" y="9" width="2.8" height="12" fill="#4c1220"/></svg><span><b>LOCH</b><small>Raumausstattung · Marburg</small></span></a>
+  <ul><li><a href="leistungen.html">Leistungen</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+  <div class="nav-right"><a class="btn btn-primary btn-sm" href="tel:+49642164313">06421 64313</a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">Menü</button></div>
+</div></nav>
+<div class="mnav" id="mnav"><ul><li><a href="leistungen.html">Leistungen</a></li><li class="sub"><a href="leistung-bodenbelaege.html">Bodenbeläge</a></li><li class="sub"><a href="leistung-polsterei.html">Polsterei</a></li><li class="sub"><a href="leistung-gardinen-sonnenschutz.html" aria-current="page">Gardinen &amp; Sonnenschutz</a></li><li class="sub"><a href="leistung-tapeten-wandbespannung.html">Tapeten &amp; Wandbespannung</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+<header class="phero weave"><div class="wrap">
+  <p class="crumb"><a href="index.html">Start</a> › <a href="leistungen.html">Leistungen</a> › Gardinen & Sonnenschutz</p>
+  <p class="eyebrow">Leistung</p>
+  <h1>Gardinen <span class="serif">&amp; Sonnenschutz.</span></h1>
+  <p class="lead">Vorhänge, Plissees, Rollos und Sonnenschutz nach Maß – für Wohnräume, Büros und andere Objekträume.</p>
+</div></header>
+
+<section><div class="wrap split">
+  <div class="prose reveal">
+    <p>Gardinen und Vorhänge sind mehr als Dekoration: Sie schaffen Atmosphäre, sorgen für Sichtschutz und beeinflussen den Lichteinfall im Raum. Wir beraten Sie zu Stoffen, Machart und Aufhängung und fertigen nach Maß.</p><p>Ergänzend planen wir passenden Sonnenschutz – von innenliegenden Lösungen wie Plissees und Rollos bis zu weiteren Systemen – abgestimmt auf Fenster, Raum und Nutzung.</p>
+    <h2>Leistungen im Überblick</h2>
+    <ul class="checks"><li>Gardinen und Dekostoffe nach Maß</li><li>Plissees und Rollos</li><li>Sonnenschutzlösungen für Wohn- und Objekträume</li><li>Beratung zu Stoffen, Farben und Lichtdurchlässigkeit</li><li>Montage vor Ort</li></ul>
+    <h3>Passende Stichworte</h3>
+    <div class="chips"><span>Gardinen</span><span>Vorhänge</span><span>Plissee</span><span>Rollo</span><span>Sonnenschutz</span><span>Raffrollo</span><span>Maßanfertigung</span></div>
+  </div>
+  <aside class="aside reveal">
+    <p class="eyebrow">Beratung zu Gardinen</p>
+    <p>Wir kommen zu Ihnen, nehmen Maß und zeigen passende Stoffe und Systeme.</p>
+    <a class="num" href="tel:+49642164313">06421 64313</a>
+    <a class="btn btn-primary" href="kontakt.html">Beratung anfragen</a>
+    <p class="small">Emil-von-Behring-Straße, 35041 Marburg</p>
+  </aside>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sec-head reveal"><p class="eyebrow">Weitere Leistungen</p><h2>Auch interessant <span class="serif">für Sie.</span></h2></div>
+  <div class="more reveal"><a href="leistung-bodenbelaege.html">Bodenbeläge</a><a href="leistung-polsterei.html">Polsterei</a><a href="leistung-tapeten-wandbespannung.html">Tapeten &amp; Wandbespannung</a></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="cta reveal"><div><p class="eyebrow">Kontakt</p><h2>Termin <span class="serif">vereinbaren?</span></h2><p style="margin-top:14px">Wir beraten Sie gerne persönlich – rufen Sie an oder nutzen Sie das Kontaktformular.</p></div><div style="display:grid;gap:14px"><a class="num" href="tel:+49642164313">06421 64313</a><a class="btn btn-primary" href="kontakt.html">Zum Kontakt <span aria-hidden="true">→</span></a></div></div>
+</div></section>
+<footer><div class="wrap fwrap">
+  <div class="fcol"><b>LOCH Raumausstattung</b><span>Emil-von-Behring-Straße, 35041 Marburg</span><span>Telefon <a href="tel:+49642164313" style="text-decoration:none;border-bottom:1px solid var(--line-strong)">06421 64313</a></span><span>© LOCH Raumausstattung</span></div>
+  <div>
+    <nav><a href="leistungen.html">Leistungen</a><a href="ueber-uns.html">Über uns</a><a href="referenzen.html">Referenzen</a><a href="kontakt.html">Kontakt</a></nav>
+    <div class="legalnav"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+  </div>
+</div></footer>
+<div class="draft" role="note"><b>Designentwurf</b> · erstellt von SK Webwerk · unverbindliche Vorschau</div>
+<script>
+(function(){
+  var d=document.documentElement;
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el);}
+    });
+  }
+  document.querySelectorAll('form.cform').forEach(function(f){
+    f.addEventListener('submit',function(ev){ev.preventDefault();var o=f.querySelector('.ok');if(o){o.hidden=false;}});
+  });
+})();
+(function(){var b=document.querySelector('.menu-btn'),m=document.querySelector('.mnav');if(!b||!m)return;
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schließen':'Menü'});})();
+
+</script>
+</body>
+</html>

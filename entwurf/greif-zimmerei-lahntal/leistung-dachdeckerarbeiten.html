@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dachdeckerarbeiten &ndash; Greif Zimmerei &amp; Dachdeckerei</title>
+<meta name="description" content="Dacheindeckung, Dämmung und Abdichtung – fachgerecht und wetterfest ausgeführt. Greif GmbH &amp; Co. KG, Lahntal-Sterzhausen, Landkreis Marburg-Biedenkopf.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{
+  --bg:#f6efe1; --ink:#241f19; --muted:#6d6153; --panel:#ece0c8; --card:#fffcf4;
+  --line:rgba(36,31,25,.13); --line-strong:rgba(36,31,25,.30);
+  --wood:#8a5327; --amber:#d98d33; --amber-ink:#2a1d0f;
+  --dark:#211d18; --dark-ink:#f4ede0; --dark-muted:#a89680; --dark-soft:#cdbca2;
+  --nav-bg:rgba(246,239,225,.88);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:600;line-height:1.09;letter-spacing:-.02em;margin:0;hyphens:auto;overflow-wrap:break-word}
+p{margin:0}
+.serif{font-family:ui-serif,Georgia,"Iowan Old Style","Times New Roman",serif;font-style:italic;font-weight:500;color:var(--amber);letter-spacing:-.005em}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--wood)}
+.lead{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:36em}
+
+/* Navigation */
+.site-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--nav-bg);
+  backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom:1px solid var(--line)}
+.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:66px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;white-space:nowrap}
+.brand .mark{flex-shrink:0}
+.brand b{font-weight:700;display:block;line-height:1.2;font-size:16.5px;letter-spacing:-.01em}
+.brand small{display:block;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:1.3;margin-top:1px}
+.main-links{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14.5px}
+.main-links a{text-decoration:none;color:var(--muted);transition:color .2s}
+.main-links a:hover{color:var(--ink)}
+.main-links a[aria-current="page"]{color:var(--ink);font-weight:600}
+.nav-right{display:flex;gap:10px;align-items:center}
+@media (max-width:900px){.main-links{display:none}}
+@media (max-width:540px){.brand small{display:none}.brand b{font-size:15px}
+  .nav-right a.btn[href^="tel:"]{font-size:0;gap:0;padding:11px 15px}
+  .nav-right a.btn[href^="tel:"]::after{content:"Anrufen";font-size:14px}}
+
+.menu-btn{display:none;border:1px solid var(--line-strong);background:transparent;color:var(--ink);
+  border-radius:999px;padding:9px 15px;font:inherit;font-size:14px;cursor:pointer}
+@media (max-width:900px){.menu-btn{display:inline-flex}}
+.mobile-nav{display:none;position:fixed;inset:66px 0 auto 0;z-index:49;background:var(--bg);
+  border-bottom:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(0,0,0,.35);
+  max-height:calc(100vh - 66px);overflow:auto}
+.mobile-nav.open{display:block}
+.mobile-nav ul{list-style:none;margin:0;padding:8px clamp(20px,5vw,48px) 22px}
+.mobile-nav li a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:17px}
+.mobile-nav li a[aria-current="page"]{font-weight:700;color:var(--wood)}
+.mobile-nav li.sub a{padding-left:16px;font-size:15px;color:var(--muted)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:999px;
+  font:600 15px/1 inherit;text-decoration:none;border:1px solid transparent;cursor:pointer;
+  transition:transform .18s ease,background .18s ease,border-color .18s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.btn-primary{background:var(--amber);color:var(--amber-ink)}
+.btn-ghost{border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost.on-dark{color:var(--dark-ink);border-color:rgba(244,237,224,.32)}
+.btn-sm{padding:10px 18px;font-size:14px}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Sections */
+section{padding-block:clamp(68px,9vw,124px)}
+.band{background:var(--panel)}
+.sec-head{display:grid;gap:16px;margin-bottom:clamp(38px,6vw,64px);max-width:760px}
+.sec-head h2{font-size:clamp(32px,4.6vw,54px)}
+.crumbs{font-size:13.5px;color:var(--muted);margin-bottom:16px}
+.crumbs a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong)}
+
+/* Hero */
+.hero{background:var(--dark);color:var(--dark-ink);padding-block:clamp(52px,7vw,100px) 0;
+  overflow:hidden;position:relative;
+  background-image:repeating-linear-gradient(115deg,rgba(217,141,51,.05) 0 2px,transparent 2px 34px)}
+.hero .grid{display:grid;grid-template-columns:1.08fr 1fr;gap:clamp(28px,4vw,56px);align-items:end}
+@media (max-width:900px){.hero .grid{grid-template-columns:1fr}}
+.hero .eyebrow{color:var(--dark-muted)}
+.hero h1{font-size:clamp(40px,6.6vw,84px);letter-spacing:-.04em;line-height:1.01;margin-top:20px}
+.hero .lead{color:var(--dark-soft);margin-top:24px}
+.hero .btn-row{margin-top:32px}
+.hero .art svg{width:100%;height:auto}
+.badge-stamp{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(217,141,51,.5);
+  color:var(--amber);border-radius:999px;padding:7px 15px;font-size:13px;letter-spacing:.04em}
+.badge-stamp i{width:8px;height:8px;border-radius:50%;background:var(--amber);display:block}
+.facts-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(244,237,224,.14);margin-top:clamp(36px,5vw,56px)}
+.facts-row div{padding:24px 20px 30px 0;display:grid;gap:5px}
+.facts-row b{font-weight:700;font-size:clamp(18px,1.9vw,22px);letter-spacing:-.01em}
+.facts-row span{font-size:13.5px;color:var(--dark-muted)}
+@media (max-width:760px){.facts-row{grid-template-columns:1fr 1fr}}
+
+/* Page hero (inner pages) */
+.page-hero{background:var(--dark);color:var(--dark-ink);padding-block:clamp(46px,7vw,92px) clamp(38px,6vw,68px);
+  position:relative;overflow:hidden}
+.page-hero .wrap{position:relative;z-index:1}
+.page-hero .crumbs{color:var(--dark-muted)}
+.page-hero .crumbs a{border-color:rgba(244,237,224,.3)}
+.page-hero .eyebrow{color:var(--dark-muted)}
+.page-hero h1{font-size:clamp(32px,5.6vw,68px);letter-spacing:-.04em;line-height:1.04;margin-top:14px;max-width:18ch}
+.page-hero .lead{color:var(--dark-soft);margin-top:20px}
+.page-hero .deco{position:absolute;right:-20px;bottom:-28px;width:min(42vw,460px);opacity:.85;pointer-events:none}
+@media (max-width:700px){.page-hero .deco{opacity:.22;width:78vw}}
+
+/* Service tiles / cards */
+.tile-grid{display:grid;grid-template-columns:repeat(var(--cols,4),1fr);gap:18px}
+@media (max-width:980px){.tile-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.tile-grid{grid-template-columns:1fr}}
+a.tile{display:grid;gap:12px;align-content:start;background:var(--card);border:1px solid var(--line);
+  border-radius:20px;padding:26px;text-decoration:none;color:var(--ink);
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+a.tile:hover{transform:translateY(-3px);box-shadow:0 22px 46px -30px rgba(36,31,25,.45);border-color:var(--line-strong)}
+a.tile .ico{width:38px;height:38px;color:var(--wood)}
+a.tile h3{font-size:20px;letter-spacing:-.01em}
+a.tile p{color:var(--muted);font-size:15.5px}
+a.tile .go{font-size:14px;font-weight:600;color:var(--wood);margin-top:auto}
+
+/* Values */
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.value-grid div{padding:30px 26px 32px 0;border-bottom:1px solid var(--line);display:grid;gap:9px;align-content:start}
+.value-grid b{font-size:19px;font-weight:700}
+.value-grid span{color:var(--muted);font-size:15.5px}
+.value-grid .n{font-size:12.5px;letter-spacing:.14em;color:var(--wood);font-weight:700}
+@media (max-width:860px){.value-grid{grid-template-columns:1fr}}
+
+/* Split layout */
+.split{display:grid;grid-template-columns:1.6fr 1fr;gap:clamp(34px,6vw,84px);align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr!important}}
+.prose{display:grid;gap:20px;font-size:17.5px;color:var(--muted);min-width:0}
+.prose h2{font-size:clamp(25px,3vw,34px);color:var(--ink);margin-top:16px}
+.prose h3{font-size:20px;color:var(--ink);margin-top:6px}
+.prose strong{color:var(--ink);font-weight:700}
+.prose ul:not(.checks){margin:0;padding-left:1.2em;display:grid;gap:6px}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:16.5px}
+.checks li::before{content:"";flex:0 0 20px;height:20px;margin-top:3px;border-radius:50%;
+  background:var(--wood) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.8 2.7L14.5 7' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.ask-list{counter-reset:q;display:grid;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.ask-list li{counter-increment:q;display:grid;grid-template-columns:38px 1fr;gap:10px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--ink);font-size:16.5px}
+.ask-list li::before{content:counter(q);color:var(--wood);font-weight:700}
+.hint-box{border-left:3px solid var(--amber);background:var(--card);padding:18px 20px;border-radius:0 14px 14px 0;color:var(--muted);font-size:16px}
+.hint-box b{color:var(--ink);font-weight:700}
+.photo-ph{border:2px dashed var(--line-strong);border-radius:20px;min-height:200px;display:grid;place-items:center;
+  text-align:center;color:var(--muted);font-size:15px;padding:24px;
+  background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(36,31,25,.035) 14px 28px)}
+.photo-ph small{font-size:13px}
+
+/* Aside contact box */
+.contact-aside{position:sticky;top:90px;background:var(--dark);color:var(--dark-ink);border-radius:22px;
+  padding:28px;display:grid;gap:14px}
+.contact-aside .eyebrow{color:var(--dark-muted)}
+.contact-aside h3{font-size:22px;letter-spacing:-.01em}
+.contact-aside p{color:var(--dark-soft);font-size:15px}
+.contact-aside .num{font-size:26px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.01em}
+.contact-aside .btn-primary{justify-self:start}
+.contact-aside .small{font-size:13px;color:var(--dark-muted)}
+@media (max-width:900px){.contact-aside{position:static}}
+
+/* More links row */
+.more-links{display:flex;flex-wrap:wrap;gap:10px}
+.more-links a{font-size:14.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line-strong);
+  border-radius:999px;padding:8px 16px;background:var(--card)}
+.more-links a:hover{border-color:var(--ink)}
+
+/* List rows (Leistungen overview) */
+.list-rows>div{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(24px,5vw,72px);padding-block:32px;border-top:1px solid var(--line)}
+@media (max-width:860px){.list-rows>div{grid-template-columns:1fr}}
+.list-rows h2{font-size:clamp(24px,3vw,32px);margin-top:10px}
+.list-rows .ico{color:var(--wood)}
+
+/* Timeline / tiles */
+.people-grid{display:grid;grid-template-columns:repeat(var(--tc,2),1fr);gap:16px}
+@media (max-width:700px){.people-grid{grid-template-columns:1fr}}
+.people-grid>div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:6px}
+.people-grid b{font-size:19px;font-weight:700;color:var(--ink)}
+.people-grid span{color:var(--muted);font-size:15px}
+
+/* Reference grid */
+.ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.ref-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.ref-grid{grid-template-columns:1fr}}
+.ref-grid .photo-ph{min-height:190px;align-content:center;gap:6px}
+.ref-grid .photo-ph b{display:block;color:var(--ink);font-weight:700;font-size:15.5px}
+
+/* CTA band */
+.cta-band{background:var(--dark);color:var(--dark-ink);border-radius:26px;padding:clamp(30px,5vw,60px);
+  display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.cta-band h2{font-size:clamp(28px,4vw,44px)}
+.cta-band p{color:var(--dark-soft);margin-top:12px;max-width:32em}
+.cta-band .eyebrow{color:var(--dark-muted)}
+.cta-band .num{font-size:clamp(26px,3.2vw,38px);display:block;color:#fff;text-decoration:none;font-weight:700;letter-spacing:-.01em}
+.cta-band .num small{display:block;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-muted);font-weight:600;margin-bottom:6px}
+@media (max-width:860px){.cta-band{grid-template-columns:1fr}}
+
+/* Contact page */
+.contact-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,90px);align-items:start}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.contact-data{display:grid;gap:24px}
+.contact-data dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:4px}
+.contact-data dd{margin:0;font-size:clamp(19px,2.1vw,24px);font-weight:500;letter-spacing:-.01em}
+.contact-data dd a{text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.hours-table{display:grid;grid-template-columns:1fr auto;gap:6px 18px;font-size:16px;margin-top:6px}
+.hours-table span:nth-child(odd){color:var(--muted)}
+.hours-table span:nth-child(even){font-weight:600}
+form.contact-form{display:grid;gap:14px;background:var(--panel);padding:clamp(24px,3vw,34px);border-radius:22px;border:1px solid var(--line)}
+.contact-form label{font-size:13px;font-weight:600;color:var(--muted);display:grid;gap:6px}
+.contact-form input,.contact-form textarea,.contact-form select{font:inherit;font-size:16px;color:var(--ink);
+  background:var(--bg);border:1px solid var(--line-strong);border-radius:12px;padding:13px 14px;width:100%}
+.contact-form textarea{min-height:120px;resize:vertical}
+.contact-form .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.contact-form .row2{grid-template-columns:1fr}}
+.contact-form .note{font-size:13px;color:var(--muted)}
+.contact-form .ok{font-size:14px;color:var(--wood);font-weight:600}
+.map-box{border-radius:22px;background:var(--dark);color:var(--dark-ink);padding:28px;display:grid;gap:12px}
+.map-box p{color:var(--dark-soft)}
+.map-box .eyebrow{color:var(--dark-muted)}
+
+/* Legal pages */
+.legal dl{display:grid;grid-template-columns:230px 1fr;gap:10px 24px;margin:0}
+.legal dt{color:var(--muted)}
+.legal dd{margin:0}
+@media (max-width:600px){.legal dl{grid-template-columns:1fr}.legal dt{margin-top:12px}}
+.note-box{border:1px solid var(--line-strong);border-radius:18px;padding:20px 22px;font-size:15px;color:var(--muted);background:var(--card)}
+.placeholder-value{color:var(--wood);font-style:italic}
+
+/* Footer */
+.site-footer{padding-block:46px 88px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:10px 22px}
+.site-footer a{text-decoration:none}
+
+/* Draft badge */
+.draft-badge{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);
+  z-index:60;background:rgba(33,29,24,.9);color:var(--dark-ink);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  font-size:12.5px;letter-spacing:.02em;padding:9px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 30px rgba(0,0,0,.2)}
+.draft-badge b{font-weight:700;color:var(--amber)}
+
+/* Motion */
+.reveal{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.pre{opacity:.001;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .reveal.pre{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav class="site-nav"><div class="wrap">
+  <a class="brand" href="index.html"><svg class="mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="9" fill="#211d18"/><path d="M8 22 17 10l9 12" stroke="#d98d33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 10v12M12.5 22l3-5M21.5 22l-3-5M8 22h18" stroke="#f4ede0" stroke-width="1.6" stroke-linecap="round"/></svg><span><b>Greif</b><small>Zimmerei &middot; Dachdeckerei &middot; Lahntal</small></span></a>
+  <ul class="main-links"><li><a href="index.html">Start</a></li><li><a href="leistungen.html">Leistungen</a></li><li><a href="betrieb.html">Der Betrieb</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+  <div class="nav-right"><a class="btn btn-primary btn-sm" href="tel:+49642093322">06420 93322</a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menü</button></div>
+</div></nav>
+<div class="mobile-nav" id="mobile-nav"><ul><li><a href="index.html">Start</a></li><li><a href="leistungen.html">Leistungen</a></li><li class="sub"><a href="leistung-zimmererarbeiten.html">Zimmererarbeiten &amp; Holzbau</a></li><li class="sub"><a href="leistung-dachstuehle.html">Dachstühle</a></li><li class="sub"><a href="leistung-dachdeckerarbeiten.html" aria-current="page">Dachdeckerarbeiten</a></li><li class="sub"><a href="leistung-altbausanierung.html">Altbausanierung</a></li><li><a href="betrieb.html">Der Betrieb</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+<header class="page-hero"><svg class="deco" viewBox="0 0 420 260" fill="none" aria-hidden="true">
+  <g stroke="#d98d33" stroke-width="3" opacity=".5" stroke-linejoin="round"><path d="M20 248 210 88 400 248Z"/><path d="M210 88v160M112 248l55-108M308 248l-55-108"/></g>
+  <g stroke="#a89680" stroke-width="1.6" opacity=".5"><path d="M330 34 210 88" stroke-dasharray="3 6"/><path d="M330 34v-24"/></g>
+</svg><div class="wrap">
+  <p class="crumbs"><a href="index.html">Start</a> &rsaquo; <a href="leistungen.html">Leistungen</a> &rsaquo; Dachdeckerarbeiten</p>
+  <p class="eyebrow">Leistung</p>
+  <h1>Dachdeckerarbeiten</h1>
+  <p class="lead">Dacheindeckung, Dämmung und Abdichtung aus einer Hand mit dem Holzbau.</p>
+</div></header>
+<section><div class="wrap split">
+  <div class="prose reveal">
+    <p><strong>Erst die fachgerechte Eindeckung macht ein Dach wetterfest und dauerhaft dicht.</strong></p>
+    <p>Ob Neueindeckung, Umdeckung im Bestand oder die Eindeckung eines neu errichteten Dachstuhls: Wir führen Dachdeckerarbeiten fachgerecht aus – inklusive der notwendigen Dämmung und Abdichtung. Weil Zimmerei und Dachdeckerei bei uns aus einem Betrieb kommen, sitzt jeder Handgriff dort, wo er hingehört.</p>
+    <p class="hint-box"><b>Zimmerei und Dachdeckerei aus einer Hand:</b> Wir denken Holzbau und Eindeckung von Anfang an zusammen &ndash; das spart Ihnen Abstimmung zwischen mehreren Firmen. <a href="leistungen.html">Alle Leistungen im Überblick &rarr;</a></p>
+    <h2>So gehen wir vor</h2>
+    <ul class="checks"><li>Beratung zu Eindeckungsart und Material passend zu Ihrem Dach.</li><li>Fachgerechte Dämmung und Abdichtung nach aktuellem Stand der Technik.</li><li>Eindeckung durch unser eingespieltes Team.</li><li>Abstimmung mit vorausgegangenen Zimmererarbeiten aus einer Hand.</li></ul>
+    <h2>Gut vorbereitet ins Gespräch</h2>
+    <p>Diese Fragen klären wir gemeinsam &ndash; wenn Sie vorab schon Antworten haben, umso besser:</p>
+    <ol class="ask-list"><li>Geht es um eine Neueindeckung, eine Umdeckung oder eine Reparatur?</li><li>Ist Ihnen eine bestimmte Eindeckungsart bereits wichtig?</li><li>Gibt es Auffälligkeiten wie Feuchtigkeit oder Schäden am Bestand?</li><li>Soll die Dämmung im Zuge der Arbeiten mit erneuert werden?</li></ol>
+    <div class="photo-ph">Platz für Projektfotos zu &bdquo;Dachdeckerarbeiten&ldquo;<br><small>(wird mit Ihren eigenen Fotos ergänzt)</small></div>
+  </div>
+  <aside class="contact-aside"><p class="eyebrow">Persönliche Beratung</p>
+      <h3>Sprechen Sie mit unserem Team.</h3>
+      <p>Für Ihre Fragen oder ein persönliches Beratungsgespräch stehen wir Ihnen gerne zur Verfügung.</p>
+      <a class="num" href="tel:+49642093322">06420 93322</a>
+      <a class="btn btn-primary" href="kontakt.html">Anfrage stellen <span aria-hidden="true">&rarr;</span></a>
+      <span class="small">Lahnstraße 1, 35094 Lahntal-Sterzhausen</span></aside>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="sec-head reveal"><p class="eyebrow">Passt dazu</p><h2>Weitere Leistungen <span class="serif">aus einer Hand.</span></h2></div>
+  <div class="more-links reveal"><a href="leistung-dachstuehle.html">Dachstühle</a><a href="leistung-altbausanierung.html">Altbausanierung</a><a href="leistung-zimmererarbeiten.html">Zimmererarbeiten &amp; Holzbau</a><a href="leistungen.html">Alle Leistungen</a></div>
+</div></section>
+
+<footer class="site-footer"><div class="wrap">
+  <span>&copy; Greif GmbH &amp; Co. KG – Zimmerei und Dachdeckerei &middot; Lahnstraße 1, 35094 Lahntal-Sterzhausen &middot; Tel. 06420 93322</span>
+  <nav><a href="leistungen.html">Leistungen</a><a href="betrieb.html">Der Betrieb</a><a href="referenzen.html">Referenzen</a><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+</div></footer>
+<div class="draft-badge" role="note"><b>Designentwurf</b> &middot; erstellt von SK Webwerk &middot; unverbindliche Vorschau</div>
+<script>(function(){
+  var d=document.documentElement;
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el);}
+    });
+  }
+  document.querySelectorAll('form.contact-form').forEach(function(f){
+    f.addEventListener('submit',function(ev){ev.preventDefault();var o=f.querySelector('.ok');if(o){o.hidden=false;}});
+  });
+  var b=document.querySelector('.menu-btn'),m=document.querySelector('.mobile-nav');
+  if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schließen':'Menü';});}
+})();</script>
+</body>
+</html>
