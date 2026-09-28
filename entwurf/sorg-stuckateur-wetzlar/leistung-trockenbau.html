@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Trockenbau – Wände, Decken, Dachausbau | Sorg Wetzlar</title>
+<meta name="description" content="Trockenbau von Sorg Maler- und Stukkateurmeister: Wände, Decken und Dachgeschossausbau, sauber geplant und verarbeitet, im Raum Wetzlar und Lahn-Dill-Kreis.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#f7f2ea;
+  --bg-soft:#efe3d0;
+  --panel:#ffffff;
+  --ink:#2b2723;
+  --muted:#6d6255;
+  --line:#e3d7c2;
+  --line-strong:#cdb994;
+  --terracotta:#bf5b3a;
+  --terracotta-dark:#9a4830;
+  --graphite:#211e19;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,"Times New Roman",serif;
+}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+h1,h2,h3{font-family:var(--serif);color:var(--graphite);font-weight:700;line-height:1.15;margin:0}
+p{margin:0 0 1em}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--terracotta);color:#fff;padding:12px 18px;border-radius:0 0 10px 0;z-index:100}
+.skip-link:focus{left:0}
+
+.nav{position:sticky;top:0;z-index:30;background:rgba(247,242,234,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:16px}
+.brand{display:flex;flex-direction:column;line-height:1.2;text-decoration:none;color:var(--graphite)}
+.brand b{font-family:var(--serif);font-size:20px}
+.brand small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav a{text-decoration:none;font-size:15px;color:var(--ink)}
+.nav a:hover{color:var(--terracotta-dark)}
+.nav a[aria-current="page"]{color:var(--terracotta-dark);font-weight:700}
+.nav-actions{display:flex;align-items:center;gap:14px}
+@media (max-width:900px){.nav ul{display:none}}
+@media (max-width:480px){.brand small{display:none}}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:700;text-decoration:none;border:1.5px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease,color .15s ease}
+.btn-primary{background:var(--terracotta);color:#fff}
+.btn-primary:hover{background:var(--terracotta-dark);transform:translateY(-1px)}
+.btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--terracotta);color:var(--terracotta-dark)}
+.btn-sm{padding:10px 18px;font-size:14px}
+.btn-on-dark{border-color:rgba(255,255,255,.35);color:#f4ede1}
+.btn-on-dark:hover{border-color:#fff;color:#fff}
+
+.eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--terracotta-dark);font-weight:700;margin-bottom:14px}
+.lead{font-size:clamp(16.5px,1.6vw,19px);color:var(--muted);max-width:46ch}
+
+.hero{padding-block:clamp(48px,9vw,104px) clamp(44px,7vw,80px)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,5.6vw,58px);letter-spacing:-.01em;margin:0 0 20px;max-width:14ch}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero-facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:38px;padding-top:28px;border-top:1px solid var(--line)}
+.hero-facts div b{display:block;font-family:var(--serif);font-size:26px;color:var(--graphite)}
+.hero-facts div span{font-size:13px;color:var(--muted)}
+.hero-art{width:100%;max-width:420px;justify-self:end}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{display:none}}
+
+.phero{padding-block:38px 52px;background:var(--bg-soft);border-bottom:1px solid var(--line)}
+.crumb{font-size:13px;color:var(--muted);margin:0 0 16px}
+.crumb a{color:var(--muted);text-decoration:none}
+.crumb a:hover{color:var(--terracotta-dark)}
+.phero h1{font-size:clamp(30px,5vw,44px);margin:0 0 14px;max-width:18ch}
+.phero .lead{max-width:56ch}
+
+section{padding-block:clamp(46px,8vw,84px)}
+section.tight{padding-block:clamp(24px,4vw,44px)}
+.section-soft{background:var(--bg-soft)}
+.sec-head{max-width:740px;margin-bottom:clamp(30px,5vw,52px)}
+.sec-head h2{font-size:clamp(26px,3.6vw,38px);margin:10px 0 14px}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:980px){.services{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.services{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.card:hover{border-color:var(--terracotta);transform:translateY(-3px);box-shadow:0 18px 32px -26px rgba(33,30,25,.4)}
+.card .icon{width:42px;height:42px;color:var(--terracotta)}
+.card h3{font-size:19px;margin:0}
+.card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55}
+.card .more{margin-top:auto;font-size:14px;font-weight:700;color:var(--terracotta-dark)}
+
+.values{display:grid;grid-template-columns:repeat(2,1fr);gap:30px 36px}
+@media (max-width:760px){.values{grid-template-columns:1fr}}
+.value{display:flex;gap:16px;align-items:flex-start}
+.value .num{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--terracotta);flex:none;width:44px}
+.value h3{font-size:17px;margin:0 0 6px}
+.value p{margin:0;color:var(--muted);font-size:14.5px}
+
+.cta-split{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;background:var(--graphite);color:#f4ede1;border-radius:26px;padding:clamp(28px,4vw,50px)}
+.cta-split h2{color:#fff;font-size:clamp(24px,3.2vw,34px);margin:8px 0 14px}
+.cta-split p{color:#cfc6b8}
+.cta-split .eyebrow{color:#e2ab8f}
+.cta-split-actions{display:flex;gap:14px;flex-wrap:wrap}
+@media (max-width:820px){.cta-split{grid-template-columns:1fr}}
+
+.timeline{display:grid;gap:0;max-width:780px}
+.tl-item{display:grid;grid-template-columns:104px 1fr;gap:20px;padding-block:22px;border-top:1px solid var(--line)}
+.tl-item:first-child{border-top:none;padding-top:0}
+.tl-year{font-family:var(--serif);font-weight:700;color:var(--terracotta-dark);font-size:22px}
+.tl-item h3{font-size:17px;margin:0 0 6px}
+.tl-item p{margin:0;color:var(--muted);font-size:14.5px}
+
+.refs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (max-width:760px){.refs{grid-template-columns:1fr}}
+.ref-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+.ref-card .tag{display:inline-block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--terracotta-dark);font-weight:700;margin-bottom:10px}
+.ref-card h3{font-size:18px;margin:0 0 8px}
+.ref-card p{margin:0;color:var(--muted);font-size:14.5px}
+.ref-card ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+
+.note-box{background:var(--bg-soft);border:1px dashed var(--line-strong);border-radius:14px;padding:16px 20px;font-size:14px;color:var(--muted)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.contact-info{display:grid;gap:22px;align-content:start}
+.contact-info dl{display:grid;gap:14px;margin:0}
+.contact-info dt{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.contact-info dd{margin:2px 0 0;font-size:16px}
+.contact-info dd a{text-decoration:none;color:var(--ink)}
+.contact-info dd a:hover{color:var(--terracotta-dark)}
+
+form.cform{display:grid;gap:14px;background:var(--panel);padding:clamp(22px,3vw,34px);border-radius:20px;border:1px solid var(--line)}
+.cform label{font-size:13px;font-weight:700;color:var(--muted);display:grid;gap:6px}
+.cform input,.cform textarea,.cform select{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:10px;padding:12px 14px;width:100%}
+.cform textarea{min-height:120px;resize:vertical}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.cform .row{grid-template-columns:1fr}}
+.cform .fine{font-size:12.5px;color:var(--muted)}
+
+.imp dl{display:grid;grid-template-columns:220px 1fr;gap:10px 20px;max-width:700px;margin:0}
+.imp dt{color:var(--muted);font-size:14px}
+.imp dd{margin:0}
+.imp section+section{margin-top:6px}
+@media (max-width:600px){.imp dl{grid-template-columns:1fr}.imp dt{margin-top:12px}}
+.missing{color:var(--terracotta-dark);font-style:italic}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:980px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+.step .num{font-family:var(--serif);font-size:22px;color:var(--terracotta);font-weight:700;display:block;margin-bottom:8px}
+.step h3{font-size:16px;margin:0 0 6px}
+.step p{margin:0;color:var(--muted);font-size:14px}
+
+.feature-list{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.feature-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink)}
+.feature-list li::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--terracotta);margin-top:7px}
+
+footer{background:var(--graphite);color:#cfc6b8;padding-block:48px 26px;margin-top:64px}
+footer .wrap{display:grid;gap:26px}
+.foot-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot-brand b{font-family:var(--serif);color:#fff;font-size:19px;display:block;margin-bottom:6px}
+.foot-brand p{color:#a89d8c;font-size:14px;max-width:34ch;margin:0}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer nav a{color:#e8e0d2;text-decoration:none;font-size:14px}
+footer nav a:hover{color:#fff}
+.fine{font-size:13px;color:#8b8172;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;margin-top:6px}
+.fine a{color:#8b8172;text-decoration:none}
+.fine a:hover{color:#e8e0d2}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><b>Sorg</b><small>Maler- &amp; Stukkateurmeister</small></a>
+  <ul><li><a href="index.html">Start</a></li><li><a href="leistungen.html" aria-current="page">Leistungen</a></li><li><a href="betrieb.html">Betrieb</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+  <div class="nav-actions"><a class="btn btn-primary btn-sm" href="tel:+49644123583">06441 23583</a></div>
+</div></nav>
+<main id="main">
+
+<header class="phero"><div class="wrap">
+  <p class="crumb"><a href="index.html">Start</a> › Leistungen</p>
+  <h1>Trockenbau</h1>
+  <p class="lead">Wände, Decken und der Ausbau des Dachgeschosses – passgenau geplant und sauber verarbeitet.</p>
+</div></header>
+<section><div class="wrap">
+  <div class="split">
+    <div>
+      <p>Trockenbau schafft in kurzer Zeit neue Raumaufteilungen, abgehängte Decken oder zusätzlichen Wohnraum im Dachgeschoss – ohne lange Trocknungszeiten und mit wenig Schmutz auf der Baustelle.</p><p>Wir setzen Trockenbauwände und -decken so um, dass Anschlüsse an Bestandswände sauber sitzen und die Oberfläche direkt zum Verputzen oder Streichen bereit ist.</p>
+    </div>
+    <div>
+      <h3 style="margin-bottom:14px">Trockenbau im Überblick</h3>
+      <ul class="feature-list">
+        <li>Trennwände und Vorsatzschalen</li><li>Abgehängte Decken</li><li>Dachgeschossausbau inklusive Dämmebene</li><li>Anpassung an Schall- und Brandschutzanforderungen</li><li>Spachtelung und Übergabe verputzfertiger Flächen</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="section-soft"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">Ablauf</p><h2>So gehen wir vor.</h2></div>
+  <div class="steps">
+    <div class="step"><span class="num">01</span><h3>Planungsgespräch</h3><p>Gemeinsam legen wir Raumaufteilung und Anforderungen fest.</p></div><div class="step"><span class="num">02</span><h3>Unterkonstruktion</h3><p>Aufbau von Profilen und Ständerwerk nach Vorgabe.</p></div><div class="step"><span class="num">03</span><h3>Beplankung & Dämmung</h3><p>Einbringen von Platten und Dämmmaterial je nach Anforderung.</p></div><div class="step"><span class="num">04</span><h3>Spachtelung</h3><p>Verspachteln der Fugen für eine verputz- oder tapezierfertige Oberfläche.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">Weitere Leistungen</p><h2>Auch das gehört zu unserem Angebot.</h2><p class="lead">Nach dem Trockenbau übernehmen wir auf Wunsch direkt den Innenputz – aus einer Hand geplant.</p></div>
+  <div class="services"><a class="card" href="leistung-stuckarbeiten.html">
+      <span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="19"/><circle cx="24" cy="24" r="11.5"/><circle cx="24" cy="24" r="4"/><path d="M24 3v4.5M24 40.5V45M3 24h4.5M40.5 24H45M9.3 9.3l3.1 3.1M35.6 35.6l3.1 3.1M9.3 38.7l3.1-3.1M35.6 12.4l3.1-3.1"/></svg></span>
+      <h3>Stuckarbeiten</h3>
+      <p>Zierprofile, Rosetten und historische Stuckelemente – neu angefertigt oder fachgerecht restauriert.</p>
+      <span class="more">Mehr erfahren →</span>
+    </a><a class="card" href="leistung-innenputz-aussenputz.html">
+      <span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="36" height="30" rx="2"/><path d="M10 18c4-3.2 8 3.2 12 0s8-3.2 12 0 8 3.2 12 0"/><path d="M10 28c4-3.2 8 3.2 12 0s8-3.2 12 0 8 3.2 12 0"/></svg></span>
+      <h3>Innen- und Außenputz</h3>
+      <p>Kalk-, Lehm- und Edelputze für Wohnräume und Fassaden, individuell auf den Untergrund abgestimmt.</p>
+      <span class="more">Mehr erfahren →</span>
+    </a><a class="card" href="leistung-waermedaemmverbundsysteme.html">
+      <span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="9" height="30"/><rect x="15" y="9" width="7" height="30"/><rect x="22" y="9" width="20" height="30" rx="2"/><path d="M28 17h9M28 24h9M28 31h9"/></svg></span>
+      <h3>Wärmedämmverbundsysteme</h3>
+      <p>WDVS-Fassaden für spürbar weniger Energieverbrauch und ein gepflegtes Erscheinungsbild.</p>
+      <span class="more">Mehr erfahren →</span>
+    </a><a class="card" href="leistung-fachwerksanierung.html">
+      <span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 23L24 8l18 15"/><rect x="10" y="23" width="28" height="17"/><path d="M10 23l14 17M38 23L24 40M24 23v17M10 23h28"/></svg></span>
+      <h3>Fachwerksanierung</h3>
+      <p>Balken, Ausfachung und Putz im Gefüge historischer Fachwerkhäuser – behutsam instand gesetzt.</p>
+      <span class="more">Mehr erfahren →</span>
+    </a></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="cta-split">
+    <div><p class="eyebrow">Kontakt</p><h2>Interesse an Trockenbau?</h2><p>Schildern Sie uns Ihr Vorhaben – wir melden uns mit einer ersten Einschätzung.</p></div>
+    <div class="cta-split-actions">
+      <a class="btn btn-primary" href="kontakt.html">Anfrage stellen <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost btn-on-dark" href="tel:+49644123583">06441 23583</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+<footer><div class="wrap">
+  <div class="foot-top">
+    <div class="foot-brand"><b>Sorg Maler- und Stukkateurmeister</b><p>Stuck, Trockenbau und Putz aus Wetzlar-Nauborn – Meisterbetrieb seit 1978, gegründet 1947.</p></div>
+    <nav><a href="leistungen.html">Leistungen</a><a href="betrieb.html">Betrieb</a><a href="referenzen.html">Referenzen</a><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+  </div>
+  <div class="fine"><span>© 2026 Sorg Maler- und Stukkateurmeister, Inh. Dieter Sorg · Hofmannstraße 12, 35580 Wetzlar-Nauborn</span><span><a href="tel:+49644123583">06441 23583</a></span></div>
+</div></footer>
+</body>
+</html>

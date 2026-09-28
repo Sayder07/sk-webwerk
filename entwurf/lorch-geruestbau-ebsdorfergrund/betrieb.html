@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Der Betrieb – T. Lorch Gerüstbau GmbH seit 1993</title>
+<meta name="description" content="T. Lorch Gerüstbau GmbH: 1993 von Thomas Lorch gegründet, seit 2003 GmbH, heute 8 bis 14 Mitarbeiter im Landkreis Marburg-Biedenkopf.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{
+  --ink:#181c21;
+  --steel-900:#181c21;
+  --steel-800:#232932;
+  --steel-700:#2f3742;
+  --steel-600:#454f5c;
+  --steel-500:#5c6773;
+  --steel-300:#9aa4af;
+  --steel-150:#dde1e5;
+  --steel-100:#eceef0;
+  --bg:#f1f2f3;
+  --paper:#ffffff;
+  --orange:#e0620c;
+  --orange-dark:#a94a08;
+  --yellow:#f5c400;
+  --line:#d7dbdf;
+  --muted:#59616b;
+  --radius:3px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{margin:0 0 .5em;font-weight:800;letter-spacing:-.01em;color:var(--steel-900)}
+h1{font-size:clamp(30px,4.6vw,50px);line-height:1.08}
+h2{font-size:clamp(24px,3.2vw,34px);line-height:1.15}
+h3{font-size:19px}
+p{margin:0 0 1em;color:var(--muted)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.14em;color:var(--orange);margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:3px;background:var(--yellow);display:inline-block}
+
+/* --- Hazard-Leiste --- */
+.hazard{height:9px;
+  background:repeating-linear-gradient(135deg,var(--steel-900) 0 16px,var(--yellow) 16px 32px);
+  background-size:45.3px 45.3px}
+.hazard.thin{height:6px}
+
+/* --- Kopfzeile / Top-Bar --- */
+.topbar{background:var(--steel-900);color:var(--steel-300);font-size:13.5px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;height:38px;flex-wrap:wrap}
+.topbar a{color:var(--steel-150);text-decoration:none}
+.topbar .tb-right{display:flex;gap:22px;align-items:center}
+.topbar .tb-right a:hover{color:var(--yellow)}
+.topbar strong{color:#fff}
+.topbar svg{width:15px;height:15px;vertical-align:-3px;margin-right:4px}
+
+/* --- Hauptnavigation --- */
+header.site{background:var(--steel-800);position:relative;z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0;position:relative}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.brand .mark{width:42px;height:42px;flex:0 0 auto}
+.brand .name{line-height:1.15}
+.brand .name b{display:block;font-size:18px;font-weight:800;letter-spacing:.01em}
+.brand .name span{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow)}
+.navlinks{display:flex;align-items:center;gap:2px;list-style:none;margin:0;padding:0}
+.navlinks a{display:block;padding:10px 15px;text-decoration:none;color:var(--steel-150);
+  font-size:14.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-bottom:3px solid transparent}
+.navlinks a:hover{color:#fff;border-color:var(--steel-500)}
+.navlinks a.active{color:#fff;border-color:var(--orange)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:var(--radius);
+  font-weight:800;font-size:14.5px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;
+  border:2px solid transparent;white-space:nowrap}
+.btn svg{width:16px;height:16px}
+.btn-orange{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btn-orange:hover{background:var(--orange-dark);border-color:var(--orange-dark)}
+.btn-ghost{background:transparent;color:#fff;border-color:var(--steel-500)}
+.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--steel-900);color:#fff;border-color:var(--steel-900)}
+.btn-dark:hover{background:#000}
+#navtoggle{display:none}
+.burger{display:none}
+
+@media (max-width:900px){
+  .navlinks{position:absolute;top:100%;left:0;right:0;background:var(--steel-800);flex-direction:column;
+    align-items:stretch;padding:0;border-top:0;max-height:0;overflow:hidden;transition:max-height .25s ease}
+  .navlinks a{padding:12px 24px;border-bottom:1px solid var(--steel-700)}
+  .navlinks a.active{border-left:4px solid var(--orange)}
+  #navtoggle:checked ~ .navlinks{max-height:600px;border-top:1px solid var(--steel-700)}
+  .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:30px;height:30px;cursor:pointer}
+  .burger span{display:block;height:3px;background:#fff;border-radius:2px}
+  .nav-cta .cta-text{display:none}
+}
+@media (min-width:901px){ .burger{display:none} }
+
+/* --- Hero --- */
+.hero{background:linear-gradient(155deg,var(--steel-900) 0%,var(--steel-800) 55%,var(--steel-700) 100%);
+  color:#fff;position:relative;overflow:hidden}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:center;
+  padding-top:64px;padding-bottom:56px}
+.hero h1{color:#fff}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.lead{color:var(--steel-150);font-size:18.5px;max-width:52ch}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.hero-art{position:relative}
+.hero-facts{display:flex;gap:0;margin-top:34px;border-top:1px solid rgba(255,255,255,.16);padding-top:20px;flex-wrap:wrap}
+.hero-facts div{padding-right:26px;margin-right:26px;border-right:1px solid rgba(255,255,255,.16)}
+.hero-facts div:last-child{border-right:none;margin-right:0;padding-right:0}
+.hero-facts b{display:block;font-size:24px;color:var(--yellow);font-weight:800}
+.hero-facts span{font-size:12.5px;color:var(--steel-300);text-transform:uppercase;letter-spacing:.06em}
+@media (max-width:900px){ .hero .wrap{grid-template-columns:1fr;padding-top:38px} .hero-art{order:-1;max-width:340px;margin:0 auto} }
+
+/* --- Seitenkopf (Unterseiten) --- */
+.pagehead{background:linear-gradient(150deg,var(--steel-900),var(--steel-700));color:#fff;padding:46px 0 40px}
+.pagehead .crumb{font-size:13px;color:var(--steel-300);margin-bottom:10px}
+.pagehead .crumb a{color:var(--steel-150);text-decoration:none}
+.pagehead .crumb a:hover{color:var(--yellow)}
+.pagehead h1{color:#fff;margin-bottom:10px}
+.pagehead p{color:var(--steel-150);max-width:60ch;margin:0}
+
+/* --- Sektionen --- */
+section{padding:64px 0}
+section.tight{padding:44px 0}
+.section-head{max-width:640px;margin:0 0 36px}
+.band{background:var(--steel-100)}
+.band-dark{background:var(--steel-900);color:#fff}
+.band-dark h2{color:#fff}
+.band-dark p{color:var(--steel-300)}
+
+/* --- Karten / Grids --- */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:900px){ .grid3{grid-template-columns:1fr} .grid2{grid-template-columns:1fr;gap:30px} .grid4{grid-template-columns:1fr 1fr} }
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+  position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--orange)}
+.card .ic{width:46px;height:46px;color:var(--orange);margin-bottom:16px}
+.card h3{margin-bottom:8px}
+.card a.more{display:inline-flex;align-items:center;gap:7px;font-weight:800;font-size:14px;color:var(--steel-900);
+  text-decoration:none;margin-top:10px;text-transform:uppercase;letter-spacing:.03em}
+.card a.more svg{width:15px;height:15px}
+.card a.more:hover{color:var(--orange)}
+
+.tile{background:var(--paper);border:1px solid var(--line);padding:22px;border-radius:var(--radius);text-align:center}
+.tile b{display:block;font-size:30px;color:var(--orange);font-weight:800}
+.tile span{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+
+ul.checklist{list-style:none;margin:0;padding:0}
+ul.checklist li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist svg{flex:0 0 auto;width:24px;height:24px;color:var(--orange);margin-top:2px}
+ul.checklist b{display:block;color:var(--steel-900);font-size:16px}
+ul.checklist p{margin:2px 0 0}
+
+.panel-art{background:var(--steel-800);border-radius:var(--radius);padding:26px;color:#fff;position:relative}
+.panel-art .cap{margin-top:14px;font-size:12.5px;color:var(--steel-300);text-align:center;letter-spacing:.03em}
+
+/* --- Kontakt-Teaser Band --- */
+.cta-band{background:var(--steel-900);color:#fff;position:relative;overflow:hidden}
+.cta-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:44px 24px}
+.cta-band h2{color:#fff;margin-bottom:6px;font-size:26px}
+.cta-band p{color:var(--steel-300);margin:0}
+.cta-band .actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* --- Formular --- */
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.formgrid .full{grid-column:1/-1}
+label{display:block;font-size:13.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--steel-700);margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:var(--radius);
+  font-family:inherit;font-size:15px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--orange)}
+textarea{resize:vertical;min-height:130px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--muted)}
+.consent input{width:auto;margin-top:3px}
+.formnote{font-size:13px;color:var(--steel-500);margin-top:10px}
+
+table.infotab{width:100%;border-collapse:collapse}
+table.infotab td{padding:11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.infotab td:first-child{width:190px;font-weight:800;color:var(--steel-800)}
+
+.contact-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.contact-card .row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.contact-card .row:last-child{border-bottom:none}
+.contact-card svg{width:26px;height:26px;color:var(--orange);flex:0 0 auto}
+.contact-card b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--steel-500)}
+
+/* --- Footer --- */
+footer.site{background:var(--steel-900);color:var(--steel-300);padding:52px 0 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:38px}
+.fgrid h4{color:#fff;font-size:13.5px;text-transform:uppercase;letter-spacing:.07em;margin-bottom:16px}
+.fgrid ul{list-style:none;margin:0;padding:0}
+.fgrid li{margin-bottom:10px}
+.fgrid a{color:var(--steel-300);text-decoration:none;font-size:14.5px}
+.fgrid a:hover{color:var(--yellow)}
+.fbrand{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fbrand .mark{width:38px;height:38px}
+.fbrand b{color:#fff;font-size:17px}
+footer.site .bottom{border-top:1px solid var(--steel-700);padding:18px 0;font-size:13px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer.site .bottom a{color:var(--steel-300);text-decoration:none;margin-left:18px}
+footer.site .bottom a:hover{color:var(--yellow)}
+@media (max-width:900px){ .fgrid{grid-template-columns:1fr 1fr} }
+@media (max-width:560px){ .fgrid{grid-template-columns:1fr} .cta-band .wrap{flex-direction:column;align-items:flex-start} }
+
+/* --- Rechtstexte --- */
+.legal{max-width:820px}
+.legal h2{margin-top:38px}
+.legal p, .legal li{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg> Kirchstraße 3a &middot; 35085 Ebsdorfergrund-Wermertshausen</div>
+  <div class="tb-right">
+    <a href="tel:+49640790133"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 12l5 2v3a2 2 0 0 1-2 2C10.5 19 5 13.5 5 6a2 2 0 0 1 1-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><strong>06407 90133</strong></a>
+    <a href="kontakt.html">Angebot anfragen</a>
+  </div>
+</div></div>
+<header class="site"><div class="wrap nav">
+  <a class="brand" href="index.html">
+    <span class="mark"><svg viewBox="0 0 42 42" fill="none"><rect width="42" height="42" fill="#e0620c"/>
+      <g stroke="#181c21" stroke-width="2.4"><line x1="10" y1="8" x2="10" y2="34"/><line x1="32" y1="8" x2="32" y2="34"/>
+      <line x1="10" y1="16" x2="32" y2="16"/><line x1="10" y1="26" x2="32" y2="26"/>
+      <line x1="10" y1="16" x2="21" y2="26"/><line x1="21" y1="16" x2="10" y2="26"/></g></svg></span>
+    <span class="name"><b>T. Lorch Gerüstbau</b><span>GmbH &middot; Ebsdorfergrund</span></span>
+  </a>
+  <input type="checkbox" id="navtoggle">
+  <label class="burger" for="navtoggle"><span></span><span></span><span></span></label>
+  <ul class="navlinks"><li><a href="index.html">Start</a></li><li><a href="leistungen.html">Leistungen</a></li><li><a class="active" href="betrieb.html">Betrieb</a></li><li><a href="referenzen.html">Referenzen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+  <div class="nav-cta"><a class="btn btn-orange" href="kontakt.html"><span class="cta-text">Angebot anfragen</span></a></div>
+</div></header>
+<div class="hazard thin"></div>
+
+<div class="pagehead"><div class="wrap">
+      <div class="crumb"><a href="index.html">Start</a> / Betrieb</div>
+      <div class="eyebrow" style="color:var(--yellow)">Der Betrieb</div>
+      <h1>Über T. Lorch Gerüstbau</h1>
+      <p>Aus einem Einzelunternehmen wurde ein etablierter Gerüstbaubetrieb im Landkreis Marburg-Biedenkopf &ndash; seit 1993 im Auf- und Abbau von Gerüsten zuhause.</p>
+    </div></div><div class="hazard"></div>
+<section><div class="wrap">
+  <div class="grid2">
+    <div>
+      <div class="eyebrow">Geschichte</div>
+      <h2>Von der Einzelfirma zur GmbH</h2>
+      <p>Thomas Lorch gründete das Unternehmen 1993 als Einzelunternehmen in Ebsdorfergrund-Wermertshausen. Aus dieser Gründung entwickelte sich über die Jahre ein Betrieb mit festem Kundenstamm im Landkreis Marburg-Biedenkopf und der näheren Umgebung.</p>
+      <p>2003 wurde das Unternehmen in die T. Lorch Gerüstbau GmbH umgewandelt &ndash; ein Schritt, der die gewachsene Struktur und Größe des Betriebs widerspiegelte. Bis heute ist das Unternehmen am Standort Kirchstraße 3a in Ebsdorfergrund-Wermertshausen ansässig.</p>
+    </div>
+    <div class="panel-art">
+      <svg viewBox="0 0 400 220" fill="none" role="img" aria-hidden="true">
+        <defs><pattern id="hz2-75530" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+          <rect width="16" height="16" fill="#232932"/><rect width="8" height="16" fill="#f5c400"/></pattern></defs>
+        <g stroke="#7b8794" stroke-width="2">
+          <line x1="30" y1="20" x2="30" y2="200"/><line x1="130" y1="10" x2="130" y2="200"/>
+          <line x1="230" y1="20" x2="230" y2="200"/><line x1="330" y1="10" x2="330" y2="200"/>
+          <line x1="370" y1="20" x2="370" y2="200"/>
+        </g>
+        <g stroke="#454f5c" stroke-width="1.8">
+          <line x1="30" y1="60" x2="370" y2="60"/><line x1="30" y1="110" x2="370" y2="110"/>
+          <line x1="30" y1="160" x2="370" y2="160"/>
+        </g>
+        <g stroke="#e0620c" stroke-width="1.8">
+          <line x1="30" y1="60" x2="130" y2="110"/><line x1="130" y1="60" x2="30" y2="110"/>
+          <line x1="230" y1="110" x2="330" y2="160"/><line x1="330" y1="110" x2="230" y2="160"/>
+        </g>
+        <rect x="0" y="200" width="400" height="10" fill="url(#hz2-75530)"/>
+      </svg>
+      <div class="cap">Firmensitz in Ebsdorfergrund-Wermertshausen</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="grid4">
+    <div class="tile"><b>1993</b><span>Gründung als Einzelunternehmen</span></div>
+    <div class="tile"><b>2003</b><span>Umfirmierung zur GmbH</span></div>
+    <div class="tile"><b>8&ndash;14</b><span>Mitarbeitende im Team</span></div>
+    <div class="tile"><b>30+</b><span>Jahre Betriebserfahrung</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="grid2">
+    <div class="panel-art">
+      <svg viewBox="0 0 400 220" fill="none" role="img" aria-hidden="true">
+        <defs><pattern id="hz2-37574" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+          <rect width="16" height="16" fill="#232932"/><rect width="8" height="16" fill="#f5c400"/></pattern></defs>
+        <g stroke="#7b8794" stroke-width="2">
+          <line x1="30" y1="20" x2="30" y2="200"/><line x1="130" y1="10" x2="130" y2="200"/>
+          <line x1="230" y1="20" x2="230" y2="200"/><line x1="330" y1="10" x2="330" y2="200"/>
+          <line x1="370" y1="20" x2="370" y2="200"/>
+        </g>
+        <g stroke="#454f5c" stroke-width="1.8">
+          <line x1="30" y1="60" x2="370" y2="60"/><line x1="30" y1="110" x2="370" y2="110"/>
+          <line x1="30" y1="160" x2="370" y2="160"/>
+        </g>
+        <g stroke="#e0620c" stroke-width="1.8">
+          <line x1="30" y1="60" x2="130" y2="110"/><line x1="130" y1="60" x2="30" y2="110"/>
+          <line x1="230" y1="110" x2="330" y2="160"/><line x1="330" y1="110" x2="230" y2="160"/>
+        </g>
+        <rect x="0" y="200" width="400" height="10" fill="url(#hz2-37574)"/>
+      </svg>
+      <div class="cap">Ein eingespieltes Team für Auf- und Abbau</div>
+    </div>
+    <div>
+      <div class="eyebrow">Das Team</div>
+      <h2>8 bis 14 Mitarbeiter im täglichen Einsatz</h2>
+      <p>Je nach Auftragslage sind zwischen 8 und 14 Mitarbeiterinnen und Mitarbeiter für die T. Lorch Gerüstbau GmbH im Auf- und Abbau von Gerüsten unterwegs. Als überschaubarer Betrieb legen wir Wert auf kurze Wege, klare Absprachen und einen persönlichen Ansprechpartner für Ihr Bauvorhaben.</p>
+      <p>Geführt wird das Unternehmen von Thomas Lorch, der den Betrieb seit der Gründung 1993 aufgebaut hat.</p>
+      <a class="btn btn-dark" href="referenzen.html">Beispielprojekte ansehen <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</div></section>
+
+
+<div class="cta-band"><div class="wrap">
+  <div><h2>Bereit für Ihr nächstes Bauvorhaben?</h2><p>Fordern Sie unverbindlich ein Angebot für Ihr Gerüst an &ndash; wir melden uns zeitnah zurück.</p></div>
+  <div class="actions">
+    <a class="btn btn-orange" href="kontakt.html">Angebot anfragen <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="btn btn-ghost" href="tel:+49640790133"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 12l5 2v3a2 2 0 0 1-2 2C10.5 19 5 13.5 5 6a2 2 0 0 1 1-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> 06407 90133</a>
+  </div>
+</div></div>
+<footer class="site"><div class="wrap">
+  <div class="fgrid">
+    <div>
+      <div class="fbrand"><span class="mark"><svg viewBox="0 0 42 42" fill="none"><rect width="42" height="42" fill="#e0620c"/>
+      <g stroke="#181c21" stroke-width="2.4"><line x1="10" y1="8" x2="10" y2="34"/><line x1="32" y1="8" x2="32" y2="34"/>
+      <line x1="10" y1="16" x2="32" y2="16"/><line x1="10" y1="26" x2="32" y2="26"/>
+      <line x1="10" y1="16" x2="21" y2="26"/><line x1="21" y1="16" x2="10" y2="26"/></g></svg></span><b>T. Lorch Gerüstbau GmbH</b></div>
+      <p style="margin:0 0 6px">Gerüstbau und Gerüstvermietung für Bau- und Renovierungsarbeiten &ndash; seit 1993 im Landkreis Marburg-Biedenkopf.</p>
+      <p style="margin:0">Kirchstraße 3a<br>35085 Ebsdorfergrund-Wermertshausen</p>
+    </div>
+    <div><h4>Leistungen</h4><ul>
+      <li><a href="leistung-fassadengeruest.html">Fassadengerüst</a></li>
+      <li><a href="leistung-geruestvermietung.html">Gerüstvermietung</a></li>
+      <li><a href="leistung-industriegeruest.html">Industriegerüst</a></li>
+      <li><a href="leistungen.html">Alle Leistungen</a></li>
+    </ul></div>
+    <div><h4>Unternehmen</h4><ul>
+      <li><a href="betrieb.html">Der Betrieb</a></li>
+      <li><a href="referenzen.html">Referenzen</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul></div>
+    <div><h4>Kontakt</h4><ul>
+      <li><a href="tel:+49640790133">Tel. 06407 90133</a></li>
+      <li>Mo&ndash;Fr 7:00&ndash;17:00 Uhr</li>
+      <li><a href="kontakt.html">Angebot anfragen</a></li>
+    </ul></div>
+  </div>
+  <div class="bottom">
+    <span>&copy; 2026 T. Lorch Gerüstbau GmbH</span>
+    <span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
+  </div>
+</div></footer>
+
+</body>
+</html>
