@@ -1,2 +1,17 @@
+# Link-Vorschau-Dienste (WhatsApp, Facebook, LinkedIn, X, Slack, Telegram, Discord, Apple)
+# dürfen die Entwürfe lesen, damit geteilte Links eine Vorschau mit Bild zeigen.
+# Suchmaschinen bleiben ausgesperrt; die Entwürfe tragen zusätzlich noindex.
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: WhatsApp
+User-agent: LinkedInBot
+User-agent: Twitterbot
+User-agent: Slackbot
+User-agent: Slackbot-LinkExpanding
+User-agent: TelegramBot
+User-agent: Discordbot
+User-agent: Applebot
+Allow: /
+
 User-agent: *
 Disallow: /entwurf/
