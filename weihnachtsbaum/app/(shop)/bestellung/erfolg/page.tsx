@@ -5,6 +5,7 @@ import { completeOrder } from '@/lib/complete';
 import { dateLong, euro, slotLabel } from '@/lib/format';
 import { getOrder } from '@/lib/orders';
 import { isSessionPaid, stripeEnabled } from '@/lib/stripe';
+import { totalLabel } from '@/lib/texts';
 
 export const metadata: Metadata = { title: 'Bestellung', robots: { index: false } };
 export const dynamic = 'force-dynamic';
@@ -56,7 +57,7 @@ export default async function SuccessPage({ searchParams }: { searchParams: Prom
           {order.lineItems.map((i) => (
             <li key={i.id}><span>{i.label}</span><span>{euro(i.amount)}</span></li>
           ))}
-          <li className="summe"><span>Gesamt inkl. MwSt.</span><span>{euro(order.totalCents)}</span></li>
+          <li className="summe"><span>{totalLabel()}</span><span>{euro(order.totalCents)}</span></li>
         </ul>
         <p className="infozeile">
           <strong>Liefertermin:</strong> {dateLong(order.deliveryDate)}, {slotLabel(order.slotId)}<br />

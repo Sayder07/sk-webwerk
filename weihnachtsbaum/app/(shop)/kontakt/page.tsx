@@ -13,7 +13,8 @@ export default function ContactPage() {
       <p className="lead">Fragen zur Bestellung, mehrere Bäume, Lieferung außerhalb des Gebiets? Wir antworten persönlich und so schnell wie möglich.</p>
       <p>
         {c.name} · {c.owner}<br />
-        Telefon: {c.phone} · E-Mail: {c.email}
+        {c.street}, {c.zipCity}<br />
+        Telefon: <a href={`tel:${c.phone.replace(/\s/g, '')}`}>{c.phone}</a> · E-Mail: <a href={`mailto:${c.email}`}>{c.email}</a>
         {c.whatsapp && <><br /><a href={`https://wa.me/${c.whatsapp}`} rel="noopener">Per WhatsApp schreiben</a></>}
       </p>
       <InquiryForm kind="kontakt" submitLabel="Nachricht senden" />

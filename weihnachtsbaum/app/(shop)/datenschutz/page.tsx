@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <h1>Datenschutzerklärung</h1>
       <LegalNote />
       <h2>1. Verantwortlicher</h2>
-      <p>{c.name}, {c.owner}, {c.street}, {c.zipCity} · {c.email} · {c.phone}</p>
+      <p>{c.name} – ein Angebot von {c.legalName}, Inhaber {c.owner}, {c.street}, {c.zipCity} · {c.email} · {c.phone}</p>
 
       <h2>2. Welche Daten wir verarbeiten</h2>
       <h3>Besuch der Website</h3>

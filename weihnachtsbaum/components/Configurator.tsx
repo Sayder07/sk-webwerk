@@ -5,6 +5,7 @@ import { shopConfig } from '@/config/shop.config';
 import { loadCart, saveCart } from '@/lib/cart';
 import { euro, euroShort } from '@/lib/format';
 import { findShape, findTree, lowestDeliveryFee, priceSelection } from '@/lib/pricing';
+import { taxShort } from '@/lib/texts';
 import { Steps } from './StepsBar';
 import { SizeScene } from './TreeArt';
 
@@ -102,7 +103,7 @@ export function Configurator({ initialTreeId }: { initialTreeId: string }) {
         <div className="preisleiste" aria-live="polite">
           <div className="preisleiste-summe">
             <strong>{euro(subtotal)}</strong>
-            <span>inkl. MwSt., zzgl. Lieferung ab {euroShort(lowestDeliveryFee())}</span>
+            <span>{taxShort()}, zzgl. Lieferung ab {euroShort(lowestDeliveryFee())}</span>
           </div>
           <button type="button" className="btn" onClick={next}>Weiter zur Lieferung</button>
         </div>

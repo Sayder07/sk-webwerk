@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { shopConfig } from '@/config/shop.config';
 import { isTestMode } from '@/lib/stripe';
+import { taxSentence } from '@/lib/texts';
 import { MobileMenu } from './MobileMenu';
 import { BrandMark } from './TreeArt';
 
@@ -49,7 +50,7 @@ export function Footer() {
           <div>
             <h3>{c.name}</h3>
             <p>Echte Nordmanntannen, frisch vom Förster aus der Region – geliefert zum Wunschtermin in Wetzlar und Umgebung.</p>
-            <p>{c.owner}<br />{c.street}<br />{c.zipCity}</p>
+            <p>Ein Angebot von {c.legalName}<br />{c.owner}<br />{c.street}, {c.zipCity}</p>
           </div>
           <div>
             <h3>Service</h3>
@@ -71,7 +72,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="fuss-unten">© {shopConfig.season.year} {c.name} · Alle Preise inkl. MwSt., zzgl. Lieferkosten je nach Zone.</div>
+        <div className="fuss-unten">© {shopConfig.season.year} {c.name} · {taxSentence()} Zzgl. Lieferkosten je nach Zone.</div>
       </div>
     </footer>
   );

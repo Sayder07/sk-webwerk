@@ -1,9 +1,11 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { shopConfig } from '@/config/shop.config';
 import { useCart } from '@/lib/cart';
 import { dateLong, euro, slotLabel } from '@/lib/format';
 import { findZone, normalizeSelection, priceSelection } from '@/lib/pricing';
+import { totalLabel } from '@/lib/texts';
 import { Steps } from './StepsBar';
 
 export function CheckoutForm({ demo }: { demo: boolean }) {
@@ -67,8 +69,9 @@ export function CheckoutForm({ demo }: { demo: boolean }) {
           {priced.items.map((i) => (
             <li key={i.id}><span>{i.label}</span><span>{euro(i.amount)}</span></li>
           ))}
-          <li className="summe"><span>Gesamt inkl. MwSt.</span><span>{euro(priced.total)}</span></li>
+          <li className="summe"><span>{totalLabel()}</span><span>{euro(priced.total)}</span></li>
         </ul>
+        {shopConfig.company.smallBusiness && <p className="leise klein" style={{ margin: '6px 0 0' }}>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</p>}
         <p className="infozeile">
           <strong>Lieferung:</strong> {dateLong(cart.date)}, {slotLabel(cart.slotId)} · {cart.plz} {cart.ort}<br />
           <Link href="/lieferung">Termin ändern</Link> · <Link href={`/baeume/${selection.treeId}`}>Baum ändern</Link>

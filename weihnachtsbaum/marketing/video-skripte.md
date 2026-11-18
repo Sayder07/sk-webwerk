@@ -107,7 +107,7 @@ Jetzt Wunschtermin sichern: tannentaxi.de
 | 21–26 s | Preisliste als Grafik eingeblendet (alle sechs Größen) | Immer Nordmanntanne in Premium-Qualität. Die Lieferung kommt je nach Zone dazu. | Alle Größen: 39 € · 49 € · 59 € · 69 € · 79 € · 89 € – zzgl. Lieferung |
 | 26–30 s | Endkarte mit Tannentaxi, tannentaxi.de | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · tannentaxi.de |
 
-**Preisgrafik für Szene 21–26 s (vollständig, inkl. MwSt.):**
+**Preisgrafik für Szene 21–26 s (vollständig, Endpreise):**
 
 | Größe | Preis |
 |---|---|

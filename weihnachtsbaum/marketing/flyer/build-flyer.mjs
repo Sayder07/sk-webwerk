@@ -122,7 +122,7 @@ h1, h2 { font-family: Fraunces, serif; font-weight: 600; line-height: 1.05; lett
     <div>
       <h2>Jetzt Wunschtermin sichern</h2>
       <p>QR-Code scannen oder direkt bestellen:<br><span class="url">${url.replace(/^https?:\/\//, '')}</span></p>
-      <p class="firma">${firma} · Wetzlar-Garbenheim · Alle Preise inkl. MwSt. · Weitere Größen online</p>
+      <p class="firma">${firma} · ein Angebot von SK Webwerk, Wetzlar · Endpreise, keine USt. gem. § 19 UStG · Weitere Größen online</p>
     </div>
   </div>
 </section>

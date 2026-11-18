@@ -17,7 +17,7 @@ export default function WithdrawalPage() {
       </div>
       <h2>Widerrufsrecht</h2>
       <p>Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag, an dem du oder ein von dir benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen hast bzw. hat.</p>
-      <p>Um dein Widerrufsrecht auszuüben, musst du uns ({c.name}, {c.owner}, {c.street}, {c.zipCity}, Telefon {c.phone}, E-Mail {c.email}) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren.</p>
+      <p>Um dein Widerrufsrecht auszuüben, musst du uns ({c.name} – {c.legalName}, Inhaber {c.owner}, {c.street}, {c.zipCity}, Telefon {c.phone}, E-Mail {c.email}) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren.</p>
       <h2>Folgen des Widerrufs</h2>
       <p>[Text nach gesetzlichem Muster eintragen: Rückzahlung, Rücksendung bzw. Abholung, Wertersatz.]</p>
       <h2>Ausschluss bzw. Erlöschen des Widerrufsrechts</h2>

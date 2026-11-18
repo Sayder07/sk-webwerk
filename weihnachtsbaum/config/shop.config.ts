@@ -5,7 +5,7 @@
  * Firmendaten, Preise, Extras, Lieferzonen, PLZ-Liste, Liefertage,
  * Zeitfenster und Kapazitäten.
  *
- * Alle Preise in CENT und inkl. MwSt. (3900 = 39,00 €).
+ * Alle Preise in CENT und als Endpreise (3900 = 39,00 €).
  * Nach einer Änderung: Seite neu deployen (git push), fertig.
  */
 
@@ -50,18 +50,24 @@ function slots(...ranges: [string, string][]): Slot[] {
 
 export const shopConfig = {
   /* ------------------------------------------------------------------ */
-  /* Firmendaten – PLATZHALTER, vor dem Launch ausfüllen                 */
+  /* Firmendaten – Tannentaxi ist ein Angebot von SK Webwerk             */
   /* ------------------------------------------------------------------ */
   company: {
     name: 'Tannentaxi',
     claim: 'Weihnachtsbaum-Lieferservice Wetzlar',
+    /** rechtlicher Betreiber (Einzelunternehmen), erscheint in Impressum, AGB, E-Mails */
+    legalName: 'SK Webwerk',
     owner: 'Sayder Karakaplan',
-    street: '[Straße und Hausnummer]',
-    zipCity: '[PLZ] Wetzlar-Garbenheim',
-    phone: '[Telefonnummer]',
-    email: '[E-Mail-Adresse]',
-    /** z. B. 'DE123456789' oder Hinweis auf Kleinunternehmerregelung */
-    vatId: '[USt-IdNr. oder Hinweis § 19 UStG]',
+    street: 'Kreisstraße 69',
+    zipCity: '35583 Wetzlar',
+    phone: '0176 80183064',
+    email: 'info@tannentaxi.de',
+    /**
+     * Kleinunternehmer nach § 19 UStG: true = keine Umsatzsteuer, Hinweis statt „inkl. MwSt.“.
+     * Bei Wechsel zur Regelbesteuerung auf false stellen und vatId eintragen (z. B. 'DE123456789').
+     */
+    smallBusiness: true,
+    vatId: '',
     /** Optional: WhatsApp-Nummer im internationalen Format ohne +, z. B. '4915112345678' */
     whatsapp: '',
     instagram: '',

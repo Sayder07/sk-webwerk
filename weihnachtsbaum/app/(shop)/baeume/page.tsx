@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { shopConfig } from '@/config/shop.config';
 import { TreeCardArt } from '@/components/TreeArt';
 import { euroShort } from '@/lib/format';
+import { taxSentence } from '@/lib/texts';
 
 export const metadata: Metadata = { title: 'Baum aussuchen', description: 'Nordmanntannen von 1,25 m bis 2,75 m – Größe wählen und im Konfigurator Form und Extras bestimmen.' };
 
@@ -25,7 +26,7 @@ export default function TreesPage() {
             </Link>
           ))}
         </div>
-        <p className="leise klein" style={{ marginTop: 20 }}>Alle Preise inkl. MwSt., zzgl. Lieferung je nach Zone ({shopConfig.zones.map((z) => euroShort(z.fee)).join(' / ')}). Die Bilder sind Illustrationen – jeder Baum ist ein Naturprodukt und ein Einzelstück.</p>
+        <p className="leise klein" style={{ marginTop: 20 }}>{taxSentence()} Zzgl. Lieferung je nach Zone ({shopConfig.zones.map((z) => euroShort(z.fee)).join(' / ')}). Die Bilder sind Illustrationen – jeder Baum ist ein Naturprodukt und ein Einzelstück.</p>
       </div>
     </section>
   );

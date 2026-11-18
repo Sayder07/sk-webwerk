@@ -52,7 +52,7 @@ Reel-Nummern beziehen sich auf `video-skripte.md`, Caption- und Gruppentext-Numm
 | Di 01.12. | IG, FB | Story | Frist-Erinnerung | Heute letzter Bestelltag für Sa 05.12. | Jetzt Wunschtermin sichern |
 | Di 01.12. | TikTok | Reel | Skript 2 erneut bzw. Kurzfassung „3 Schritten" | Bestellen dauert nur wenige Minuten | Jetzt Wunschtermin sichern |
 | Mi 02.12. | IG, TikTok, FB | Reel | Skript 3 „Welche Größe passt zu dir?" | Sechs Größen von 1,25 m bis 2,75 m, 39 € bis 89 € | Jetzt Wunschtermin sichern |
-| Do 03.12. | IG, FB | Post (Karussell) | Preisliste komplett (Caption 4) | Klare Preise inkl. MwSt., Form ohne Aufpreis, Lieferung je Zone | Jetzt Wunschtermin sichern |
+| Do 03.12. | IG, FB | Post (Karussell) | Preisliste komplett (Caption 4) | Klare Endpreise, Form ohne Aufpreis, Lieferung je Zone | Jetzt Wunschtermin sichern |
 | Do 03.12. | IG, FB | Story | Frist-Erinnerung | Heute letzter Bestelltag für Mo 07.12. | Jetzt Wunschtermin sichern |
 | Fr 04.12. | IG, FB | Story | Erster Liefertag – echte Clips von unterwegs | Heute rollen die ersten Bäume durch Wetzlar und Umgebung | Nächste Termine: 11., 12., 14.12. – jetzt Wunschtermin sichern |
 | Sa 05.12. | IG, TikTok, FB | Reel | Lieferimpressionen vom ersten Wochenende (echtes Material) | So sieht's aus, wenn dein Baum ankommt | Jetzt Wunschtermin sichern |
@@ -130,7 +130,7 @@ Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 4 – Preisliste (Do 03.12.)
 
-Klare Preise, keine Überraschungen. Alle Preise inkl. MwSt.:
+Klare Preise, keine Überraschungen. Alle Preise sind Endpreise:
 
 1,25–1,50 m – 39 €
 1,50–1,75 m – 49 €
@@ -272,7 +272,7 @@ Kurz, freundlich, immer mit Link. Nichts zusagen, was nicht im Angebot steht (ke
 
 ### Preis – „Was kostet ein Baum?"
 
-> Hi! Unsere Nordmanntannen gibt es ab 39 € (1,25–1,50 m) bis 89 € (2,50–2,75 m), jeweils inkl. MwSt. Die Lieferung kommt je nach Zone dazu, in Wetzlar sind das 12,90 €. Alle Größen und Preise findest du hier: tannentaxi.de
+> Hi! Unsere Nordmanntannen gibt es ab 39 € (1,25–1,50 m) bis 89 € (2,50–2,75 m), jeweils als Endpreis. Die Lieferung kommt je nach Zone dazu, in Wetzlar sind das 12,90 €. Alle Größen und Preise findest du hier: tannentaxi.de
 
 Preise zum Nachschlagen: 39 € · 49 € · 59 € · 69 € · 79 € · 89 € (in 25-cm-Schritten von 1,25 m bis 2,75 m). Form schlank/normal/breit ohne Aufpreis.
 

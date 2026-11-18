@@ -22,3 +22,20 @@ export function seasonRangeText(): string {
   if (dates.length === 0) return '';
   return `${dayAndMonth(dates[0])} bis ${dayAndMonth(dates[dates.length - 1])}`;
 }
+
+const small = () => shopConfig.company.smallBusiness;
+
+/** kurzer Zusatz hinter Preisen: "Endpreis" bzw. "inkl. MwSt." */
+export function taxShort(): string {
+  return small() ? 'Endpreis' : 'inkl. MwSt.';
+}
+
+/** Beschriftung der Gesamtsumme */
+export function totalLabel(): string {
+  return small() ? 'Gesamt (Endpreis)' : 'Gesamt inkl. MwSt.';
+}
+
+/** ganzer Satz für Fußzeile, AGB, E-Mails */
+export function taxSentence(): string {
+  return small() ? 'Alle Preise sind Endpreise. Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.' : 'Alle Preise inkl. MwSt.';
+}

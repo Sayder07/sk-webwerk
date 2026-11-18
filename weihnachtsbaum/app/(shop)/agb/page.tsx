@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { shopConfig } from '@/config/shop.config';
 import { LegalNote } from '@/components/Legal';
-import { deliveryDaysText, deliveryHoursText } from '@/lib/texts';
+import { deliveryDaysText, deliveryHoursText, taxSentence } from '@/lib/texts';
 
 export const metadata: Metadata = { title: 'AGB' };
 
@@ -12,11 +12,11 @@ export default function TermsPage() {
       <h1>Allgemeine Geschäftsbedingungen</h1>
       <LegalNote />
       <h2>1. Geltungsbereich und Anbieter</h2>
-      <p>Diese Bedingungen gelten für alle Bestellungen über diese Website bei {c.name}, Inhaber {c.owner}, {c.street}, {c.zipCity}.</p>
+      <p>Diese Bedingungen gelten für alle Bestellungen über diese Website bei {c.name}, einem Angebot von {c.legalName}, Inhaber {c.owner}, {c.street}, {c.zipCity}.</p>
       <h2>2. Vertragsschluss</h2>
       <p>Die Darstellung der Bäume und Leistungen ist kein rechtlich bindendes Angebot. Mit Klick auf „Zahlungspflichtig bestellen“ gibst du eine verbindliche Bestellung ab. [Regelung zum Zustandekommen des Vertrags – z. B. mit der Bestellbestätigung per E-Mail – eintragen.]</p>
       <h2>3. Preise und Lieferkosten</h2>
-      <p>Alle Preise sind Endpreise in Euro inklusive der gesetzlichen Mehrwertsteuer. Lieferkosten werden je nach Lieferzone gesondert berechnet und vor Abschluss der Bestellung angezeigt.</p>
+      <p>{taxSentence()} Alle Preise verstehen sich in Euro. Lieferkosten werden je nach Lieferzone gesondert berechnet und vor Abschluss der Bestellung angezeigt.</p>
       <h2>4. Zahlung</h2>
       <p>Die Zahlung erfolgt online bei der Bestellung über den Zahlungsdienstleister Stripe mit den dort angebotenen Zahlarten.</p>
       <h2>5. Lieferung</h2>

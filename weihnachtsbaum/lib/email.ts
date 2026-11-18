@@ -3,6 +3,7 @@ import { shopConfig } from '../config/shop.config.ts';
 import { dateLong, euro, slotLabel } from './format.ts';
 import type { Inquiry, Order } from './orders.ts';
 import { findZone } from './pricing.ts';
+import { taxSentence, totalLabel } from './texts.ts';
 
 /**
  * E-Mail-Versand über Resend (https://resend.com).
@@ -53,7 +54,7 @@ function layout(title: string, body: string): string {
 ${body}
 </td></tr>
 <tr><td style="padding:18px 28px;background:#f1e9d8;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#5b6159">
-${esc(c.name)} · ${esc(c.owner)} · ${esc(c.street)}, ${esc(c.zipCity)}<br>Telefon ${esc(c.phone)} · ${esc(c.email)}
+${esc(c.name)} – ein Angebot von ${esc(c.legalName)} · ${esc(c.owner)} · ${esc(c.street)}, ${esc(c.zipCity)}<br>Telefon ${esc(c.phone)} · ${esc(c.email)}
 </td></tr></table></td></tr></table></body></html>`;
 }
 
@@ -62,7 +63,7 @@ function itemsTable(order: Order): string {
     .map((i) => `<tr><td style="padding:6px 0;border-bottom:1px solid #eee4d0">${esc(i.label)}</td><td align="right" style="padding:6px 0;border-bottom:1px solid #eee4d0;white-space:nowrap">${euro(i.amount)}</td></tr>`)
     .join('');
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:15px">${rows}
-<tr><td style="padding:10px 0;font-weight:bold">Gesamt (inkl. MwSt.)</td><td align="right" style="padding:10px 0;font-weight:bold;white-space:nowrap">${euro(order.totalCents)}</td></tr></table>`;
+<tr><td style="padding:10px 0;font-weight:bold">${totalLabel()}</td><td align="right" style="padding:10px 0;font-weight:bold;white-space:nowrap">${euro(order.totalCents)}</td></tr></table>${shopConfig.company.smallBusiness ? `<p style="font-size:12px;color:#5b6159;margin:4px 0 0">${esc(taxSentence())}</p>` : ''}`;
 }
 
 function deliveryBlock(order: Order): string {
