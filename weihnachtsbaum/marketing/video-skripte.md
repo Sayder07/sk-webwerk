@@ -1,8 +1,8 @@
-# Video-Skripte: Reels & TikToks für [Firmenname]
+# Video-Skripte: Reels & TikToks für Tannentaxi
 
 Stand: 18.11.2026 · Saison 2026 · Format: Hochformat 9:16, 1080 × 1920 px
 
-**Call to Action in jedem Video:** „Jetzt Wunschtermin sichern" → [domain.de] (Link im Profil)
+**Call to Action in jedem Video:** „Jetzt Wunschtermin sichern" → tannentaxi.de (Link im Profil)
 
 ## So liest du die Skripte
 
@@ -37,11 +37,11 @@ Stand: 18.11.2026 · Saison 2026 · Format: Hochformat 9:16, 1080 × 1920 px
 | 2–7 s | Nahaufnahme: dichte, sattgrüne Zweige einer Nordmanntanne, Hand streicht drüber | Wir bringen dir deine Nordmanntanne – frisch vom Förster aus der Region. | Echte Nordmanntanne · frisch vom Förster |
 | 7–12 s | Baum wird an eine Haustür gebracht, Tür geht auf, freundliche Begrüßung | Direkt an die Haustür, zu deinem Wunschtermin in Wetzlar und Umgebung. | Lieferung zum Wunschtermin · Wetzlar & Umgebung |
 | 12–16 s | Baum steht aufgestellt im Wohnzimmer (ungeschmückt) | Auf Wunsch stellen wir ihn gleich fertig auf. | Auf Wunsch fertig aufgestellt |
-| 16–20 s | Endkarte: Logo-Platzhalter [Firmenname], [domain.de] | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · [domain.de] |
+| 16–20 s | Endkarte: Logo-Platzhalter Tannentaxi, tannentaxi.de | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · tannentaxi.de |
 
 **Caption:**
 Kein Schleppen, kein Stress: Dein Weihnachtsbaum kommt dieses Jahr zu dir. Echte Nordmanntanne in Premium-Qualität, frisch vom Förster aus der Region, geliefert an deine Haustür in Wetzlar und Umgebung – auf Wunsch fertig aufgestellt. Liefertermine vom 4. bis 21. Dezember.
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 **Hashtags:**
 #Wetzlar #Garbenheim #Gießen #Lahnau #Aßlar #Mittelhessen #Weihnachtsbaum #Nordmanntanne #WeihnachtsbaumLieferung #Weihnachten2026
@@ -68,14 +68,14 @@ Jetzt Wunschtermin sichern: [domain.de]
 | Zeit | Bild/Bildidee | Voiceover-Text | Untertitel/On-Screen-Text |
 |---|---|---|---|
 | 0–2 s | Baum im Türrahmen, große „3" im Bild | Dein Baum – drei Schritte. | Dein Baum in 3 Schritten |
-| 2–8 s | Handy in der Hand, Shop-Seite: Größe und Form werden angetippt (Screen-Aufnahme von [domain.de]) | Eins: Größe und Form aussuchen – schlank, normal oder breit, ohne Aufpreis. | 1 · Größe & Form wählen – schlank, normal, breit |
+| 2–8 s | Handy in der Hand, Shop-Seite: Größe und Form werden angetippt (Screen-Aufnahme von tannentaxi.de) | Eins: Größe und Form aussuchen – schlank, normal oder breit, ohne Aufpreis. | 1 · Größe & Form wählen – schlank, normal, breit |
 | 8–14 s | Kalenderansicht, Finger tippt auf einen Liefertag | Zwei: Wunschtermin wählen. Wir liefern montags, freitags und samstags, neun bis sechzehn Uhr. | 2 · Wunschtermin wählen – Mo, Fr, Sa · 9–16 Uhr |
 | 14–20 s | Haustür geht auf, Baum wird übergeben | Drei: Tür aufmachen. Deine Nordmanntanne kommt frisch vom Förster zu dir. | 3 · Tür aufmachen |
-| 20–25 s | Endkarte mit [Firmenname], [domain.de] | Bestell mindestens vier Tage vorher. Jetzt Wunschtermin sichern. | Mind. 4 Tage vorher bestellen · Jetzt Wunschtermin sichern |
+| 20–25 s | Endkarte mit Tannentaxi, tannentaxi.de | Bestell mindestens vier Tage vorher. Jetzt Wunschtermin sichern. | Mind. 4 Tage vorher bestellen · Jetzt Wunschtermin sichern |
 
 **Caption:**
 So einfach geht's: Größe und Form aussuchen, Wunschtermin wählen, Tür aufmachen. Wir liefern montags, freitags und samstags von 9 bis 16 Uhr, vom 4. bis 21. Dezember. Wichtig: Bestell mindestens 4 Tage vor deinem Wunschtermin.
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 **Hashtags:**
 #Wetzlar #Gießen #Lahnau #Aßlar #Mittelhessen #Weihnachtsbaum #Nordmanntanne #WeihnachtsbaumOnline #Lieferservice #Advent2026
@@ -105,7 +105,7 @@ Jetzt Wunschtermin sichern: [domain.de]
 | 8–15 s | Mittelgroßer Baum im Wohnzimmer, Person daneben zum Größenvergleich | Der Klassiker fürs Wohnzimmer: eins fünfundsiebzig bis zwei Meter für neunundfünfzig Euro. | 1,75–2,00 m · 59 € |
 | 15–21 s | Großer Baum in Raum mit hoher Decke (Altbau, Treppenhaus, Büro-Empfang) | Hohe Decken? Bis zwei Meter fünfundsiebzig ist alles drin – für neunundachtzig Euro. | 2,50–2,75 m · 89 € |
 | 21–26 s | Preisliste als Grafik eingeblendet (alle sechs Größen) | Immer Nordmanntanne in Premium-Qualität. Die Lieferung kommt je nach Zone dazu. | Alle Größen: 39 € · 49 € · 59 € · 69 € · 79 € · 89 € – zzgl. Lieferung |
-| 26–30 s | Endkarte mit [Firmenname], [domain.de] | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · [domain.de] |
+| 26–30 s | Endkarte mit Tannentaxi, tannentaxi.de | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · tannentaxi.de |
 
 **Preisgrafik für Szene 21–26 s (vollständig, inkl. MwSt.):**
 
@@ -120,7 +120,7 @@ Jetzt Wunschtermin sichern: [domain.de]
 
 **Caption:**
 Welche Größe passt zu dir? Unsere Nordmanntannen gibt es von 1,25 m bis 2,75 m – ab 39 €. Schlank, normal oder breit: Die Form suchst du dir ohne Aufpreis aus. Tipp: Deckenhöhe messen und den Ständer mit einrechnen. Lieferung je nach Zone ab 12,90 €.
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 **Hashtags:**
 #Wetzlar #Gießen #Lahnau #Aßlar #Mittelhessen #Weihnachtsbaum #Nordmanntanne #Tannenbaum #Weihnachtsdeko #Weihnachten2026
@@ -150,11 +150,11 @@ Jetzt Wunschtermin sichern: [domain.de]
 | 2–7 s | Baum wird ins Wohnzimmer getragen und in den Ständer gesetzt | Wir liefern deine Nordmanntanne und stellen sie direkt im Ständer auf. | Aufbau im Ständer |
 | 7–12 s | Netz wird aufgeschnitten, Zweige entfalten sich, Baum steht gerade | Für neunzehn Euro neunzig steht er fertig in deinem Wohnzimmer. | Aufbau-Service · 19,90 € |
 | 12–16 s | Kalenderblatt „Januar", Baum wird wieder hinausgetragen | Im Januar holen wir ihn auf Wunsch wieder ab. | Abholung im Januar · 14,90 € |
-| 16–20 s | Endkarte mit [Firmenname], [domain.de] | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · [domain.de] |
+| 16–20 s | Endkarte mit Tannentaxi, tannentaxi.de | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · tannentaxi.de |
 
 **Caption:**
 Baum liefern lassen ist gut. Baum fertig aufgestellt bekommen ist besser. Unser Aufbau-Service: Wir stellen deine Nordmanntanne direkt im Ständer auf – für 19,90 €. Du hast noch keinen Ständer? Einen Standfuß bekommst du bei uns für 34,90 €. Und im Januar holen wir den Baum auf Wunsch für 14,90 € wieder ab.
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 **Hashtags:**
 #Wetzlar #Garbenheim #Gießen #Lahnau #Aßlar #Mittelhessen #Weihnachtsbaum #Nordmanntanne #Aufbauservice #StressfreieWeihnachten
@@ -184,7 +184,7 @@ Jetzt Wunschtermin sichern: [domain.de]
 | 0–2 s | Leere Zimmerecke, in der der Baum stehen sollte; Blick auf den Kalender | Noch keinen Baum? | Noch keinen Baum? Jetzt wird's knapp. |
 | 2–7 s | Baum wird an eine Haustür geliefert (echtes Material aus den ersten Liefertagen) | Jetzt wird's knapp: Unser letzter Liefertag ist Montag, der einundzwanzigste Dezember. | Letzter Liefertag: Mo, 21.12. |
 | 7–12 s | Kalender-Grafik: 17.12. rot markiert | Bestellen kannst du dafür bis Donnerstag, den siebzehnten. | Bestellschluss: Do, 17.12. |
-| 12–15 s | Endkarte mit [Firmenname], [domain.de] | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · [domain.de] |
+| 12–15 s | Endkarte mit Tannentaxi, tannentaxi.de | Jetzt Wunschtermin sichern. | Jetzt Wunschtermin sichern · tannentaxi.de |
 
 **Varianten für die Tage davor (nur On-Screen-Text und Voiceover in Szene 2 und 3 tauschen):**
 
@@ -196,7 +196,7 @@ Jetzt Wunschtermin sichern: [domain.de]
 
 **Caption:**
 Noch keinen Baum? Unser letzter Liefertag ist Montag, der 21. Dezember. Bestellen kannst du dafür bis Donnerstag, den 17. Dezember. Echte Nordmanntanne, frisch vom Förster aus der Region, direkt an deine Haustür in Wetzlar und Umgebung.
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 **Hashtags:**
 #Wetzlar #Gießen #Lahnau #Aßlar #Mittelhessen #Weihnachtsbaum #Nordmanntanne #LastMinute #Weihnachten2026 #Advent
@@ -269,7 +269,7 @@ Die automatische Text-Normalisierung ist laut Doku standardmäßig aktiv, das Er
 | 21.12. | einundzwanzigster Dezember |
 | 4.–21. Dezember | vom vierten bis einundzwanzigsten Dezember |
 | Mo, Fr, Sa | montags, freitags und samstags |
-| [domain.de] | nicht vorlesen lassen – nur einblenden |
+| tannentaxi.de | nicht vorlesen lassen – nur einblenden |
 
 Weitere Tipps: keine Abkürzungen („z. B.", „ca.", „inkl.") im Sprechtext, Ortsnamen einmal Probe hören (Aßlar, Lahnau, Garbenheim, Gießen) und bei falscher Betonung lautnah umschreiben.
 

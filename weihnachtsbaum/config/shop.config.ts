@@ -53,7 +53,7 @@ export const shopConfig = {
   /* Firmendaten – PLATZHALTER, vor dem Launch ausfüllen                 */
   /* ------------------------------------------------------------------ */
   company: {
-    name: '[Firmenname]',
+    name: 'Tannentaxi',
     claim: 'Weihnachtsbaum-Lieferservice Wetzlar',
     owner: 'Sayder Karakaplan',
     street: '[Straße und Hausnummer]',

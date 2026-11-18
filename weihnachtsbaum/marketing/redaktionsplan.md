@@ -1,7 +1,7 @@
-# Redaktionsplan 23.11.–23.12.2026 – [Firmenname]
+# Redaktionsplan 23.11.–23.12.2026 – Tannentaxi
 
 Stand: 18.11.2026 · Kanäle: Instagram, Facebook, TikTok, lokale WhatsApp-/Facebook-Gruppen
-Ziel: Bestellungen für die Liefertage 4.–21. Dezember 2026 · CTA überall: **„Jetzt Wunschtermin sichern"** → [domain.de]
+Ziel: Bestellungen für die Liefertage 4.–21. Dezember 2026 · CTA überall: **„Jetzt Wunschtermin sichern"** → tannentaxi.de
 
 ## Liefertage und Bestellfristen (Grundlage für alle Posts)
 
@@ -39,9 +39,9 @@ Reel-Nummern beziehen sich auf `video-skripte.md`, Caption- und Gruppentext-Numm
 
 | Datum | Kanal | Format | Thema | Kernaussage | CTA |
 |---|---|---|---|---|---|
-| Mo 23.11. | IG, FB | Post | Vorstellung: Wir sind [Firmenname] (Caption 1) | Echte Nordmanntannen, frisch vom Förster aus der Region, geliefert an die Haustür in Wetzlar und Umgebung | Jetzt Wunschtermin sichern |
+| Mo 23.11. | IG, FB | Post | Vorstellung: Wir sind Tannentaxi (Caption 1) | Echte Nordmanntannen, frisch vom Förster aus der Region, geliefert an die Haustür in Wetzlar und Umgebung | Jetzt Wunschtermin sichern |
 | Mo 23.11. | IG, TikTok, FB | Reel | Skript 1 „Kein Schleppen, kein Stress" | Kein Schleppen, kein Stress – dein Baum kommt zum Wunschtermin | Jetzt Wunschtermin sichern |
-| Di 24.11. | WhatsApp-/FB-Gruppen | Gruppenpost | Persönliche Vorstellung (Gruppentext 1) | Sayder aus Garbenheim liefert Weihnachtsbäume nach Hause | Infos und Bestellung auf [domain.de] |
+| Di 24.11. | WhatsApp-/FB-Gruppen | Gruppenpost | Persönliche Vorstellung (Gruppentext 1) | Sayder aus Garbenheim liefert Weihnachtsbäume nach Hause | Infos und Bestellung auf tannentaxi.de |
 | Mi 25.11. | IG, FB | Story | Wer steckt dahinter? Sayder aus Garbenheim, 2–3 kurze Clips | Lokal, persönlich, nur diese Saison | Link-Sticker: Jetzt Wunschtermin sichern |
 | Do 26.11. | IG, FB | Post | Woher die Bäume kommen (Caption 2) | Premium-Nordmanntanne, frisch vom Förster aus der Region | Jetzt Wunschtermin sichern |
 | Fr 27.11. | IG, TikTok, FB | Reel | Skript 2 „Dein Baum in 3 Schritten" | Größe wählen, Termin wählen, Tür aufmachen | Jetzt Wunschtermin sichern |
@@ -58,7 +58,7 @@ Reel-Nummern beziehen sich auf `video-skripte.md`, Caption- und Gruppentext-Numm
 | Sa 05.12. | IG, TikTok, FB | Reel | Lieferimpressionen vom ersten Wochenende (echtes Material) | So sieht's aus, wenn dein Baum ankommt | Jetzt Wunschtermin sichern |
 | So 06.12. | IG, FB | Post | 2. Advent/Nikolaus: schlank, normal oder breit? (Caption 5) | Baumform frei wählbar, ohne Aufpreis | Jetzt Wunschtermin sichern |
 | Mo 07.12. | IG, FB | Story | Frist-Erinnerung | Heute letzter Bestelltag für Fr 11.12. | Jetzt Wunschtermin sichern |
-| Mo 07.12. | WhatsApp-/FB-Gruppen | Gruppenpost | Halbzeit-Erinnerung mit Terminen (Gruppentext 2) | Noch Liefertage am 12., 14., 18., 19. und 21.12. | Infos und Bestellung auf [domain.de] |
+| Mo 07.12. | WhatsApp-/FB-Gruppen | Gruppenpost | Halbzeit-Erinnerung mit Terminen (Gruppentext 2) | Noch Liefertage am 12., 14., 18., 19. und 21.12. | Infos und Bestellung auf tannentaxi.de |
 | Di 08.12. | IG, TikTok, FB | Reel | Skript 4 „Aufstellen? Machen wir." | Aufbau im Ständer für 19,90 € | Jetzt Wunschtermin sichern |
 | Di 08.12. | IG, FB | Story | Frist-Erinnerung | Heute letzter Bestelltag für Sa 12.12. | Jetzt Wunschtermin sichern |
 | Mi 09.12. | IG, FB | Post | Extras im Überblick (Caption 6) | Aufbau 19,90 € · Standfuß 34,90 € · Zweige 3–4 Stück 6 € · Abholung im Januar 14,90 € | Jetzt Wunschtermin sichern |
@@ -70,7 +70,7 @@ Reel-Nummern beziehen sich auf `video-skripte.md`, Caption- und Gruppentext-Numm
 | Mo 14.12. | IG, TikTok, FB | Reel | Skript 5 „Letzte Termine" | Letzter Liefertag Mo 21.12., Bestellschluss Do 17.12. | Jetzt Wunschtermin sichern |
 | Mo 14.12. | IG, FB | Story | Frist-Erinnerung | Heute letzter Bestelltag für Fr 18.12. | Jetzt Wunschtermin sichern |
 | Di 15.12. | IG, FB | Story | Frist-Erinnerung | Heute letzter Bestelltag für Sa 19.12. | Jetzt Wunschtermin sichern |
-| Di 15.12. | WhatsApp-/FB-Gruppen | Gruppenpost | Letzte Termine (Gruppentext 3) | Letzter Liefertag Mo 21.12., bestellen bis Do 17.12. | Infos und Bestellung auf [domain.de] |
+| Di 15.12. | WhatsApp-/FB-Gruppen | Gruppenpost | Letzte Termine (Gruppentext 3) | Letzter Liefertag Mo 21.12., bestellen bis Do 17.12. | Infos und Bestellung auf tannentaxi.de |
 | Mi 16.12. | IG, FB | Post | Morgen ist Bestellschluss (Caption 9) | Do 17.12. ist der letzte Bestelltag der Saison | Jetzt Wunschtermin sichern |
 | Mi 16.12. | TikTok | Reel | Skript 5 erneut | Bestellschluss Do 17.12. | Jetzt Wunschtermin sichern |
 | Do 17.12. | IG, FB | Story (morgens + abends) | Letzter Bestelltag | Heute letzte Chance für Lieferung am Mo 21.12. | Jetzt Wunschtermin sichern |
@@ -98,15 +98,15 @@ Emojis nach Geschmack ergänzen, sparsam. Hashtag-Block am Ende kann für alle P
 
 ### Caption 1 – Vorstellung (Mo 23.11.)
 
-Hallo Wetzlar! Wir sind [Firmenname] und bringen dir dieses Jahr deinen Weihnachtsbaum nach Hause.
+Hallo Wetzlar! Wir sind Tannentaxi und bringen dir dieses Jahr deinen Weihnachtsbaum nach Hause.
 
 Kein Schleppen, kein Stress – dein Baum kommt zum Wunschtermin, auf Wunsch fertig aufgestellt.
 
 Was du bekommst: eine echte Nordmanntanne in Premium-Qualität, frisch vom Förster aus der Region. Du suchst Größe und Form aus, wählst deinen Liefertag zwischen dem 4. und 21. Dezember – und machst nur noch die Tür auf.
 
-Hinter [Firmenname] steckt Sayder aus Garbenheim. Geliefert wird in Wetzlar und Umgebung.
+Hinter Tannentaxi steckt Sayder aus Garbenheim. Geliefert wird in Wetzlar und Umgebung.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 2 – Herkunft und Qualität (Do 26.11.)
 
@@ -116,7 +116,7 @@ Unsere Nordmanntannen kommen frisch vom Förster aus der Region. Wir liefern aus
 
 Du entscheidest, wie dein Baum aussehen soll: schlank, normal oder breit. Kostet alles dasselbe.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 3 – 1. Advent, Start der Liefersaison (So 29.11.)
 
@@ -126,7 +126,7 @@ Am Freitag, 4. Dezember, starten wir mit den ersten Lieferungen. Wenn dein Baum 
 
 Zur Erinnerung: Wir liefern montags, freitags und samstags zwischen 9 und 16 Uhr. Bestellen kannst du bis 4 Tage vor deinem Wunschtermin.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 4 – Preisliste (Do 03.12.)
 
@@ -146,7 +146,7 @@ Zone 1, Wetzlar inkl. Garbenheim – 12,90 €
 Zone 2, bis ca. 15 km, z. B. Lahnau, Aßlar – 17,90 €
 Zone 3, bis ca. 25 km, z. B. Gießen – 24,90 €
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 5 – Baumform (So 06.12.)
 
@@ -158,7 +158,7 @@ Schlank passt gut in die Ecke oder neben das Sofa. Breit braucht Platz, macht ab
 
 Schreib uns in die Kommentare, welche Form bei dir einzieht.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 6 – Extras (Mi 09.12.)
 
@@ -169,7 +169,7 @@ Standfuß zum Kauf – 34,90 €. Falls du noch keinen hast.
 Zweige, 3–4 Stück – 6 €. Zum Dekorieren von Tisch, Tür oder Fensterbank.
 Abholung im Januar – 14,90 €. Wir holen den Baum nach den Feiertagen wieder ab.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 7 – Liefergebiet (Fr 11.12.)
 
@@ -183,7 +183,7 @@ Du wohnst weiter weg? Schreib uns – das klären wir auf Anfrage.
 
 Aktuell noch buchbar: Fr 18., Sa 19. und Mo 21. Dezember. Denk an die 4 Tage Vorlauf.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 8 – 3. Advent, Countdown (So 13.12.)
 
@@ -196,7 +196,7 @@ Mo 21.12. – bestellen bis Do 17.12.
 
 Echte Nordmanntanne, frisch vom Förster aus der Region, direkt an deine Haustür. Auf Wunsch stellen wir sie gleich auf.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 9 – Letzter Bestelltag (Mi 16.12.)
 
@@ -206,7 +206,7 @@ Wer bis morgen bestellt, bekommt seinen Baum am Montag, 21. Dezember, zwischen 9
 
 Danach nehmen wir für 2026 keine Bestellungen mehr an.
 
-Jetzt Wunschtermin sichern: [domain.de]
+Jetzt Wunschtermin sichern: tannentaxi.de
 
 ### Caption 10 – Weihnachtsgruß (Mi 23.12.)
 
@@ -216,7 +216,7 @@ Danke an alle in Wetzlar und Umgebung, die sich in dieser Saison ihren Baum von 
 
 Wir wünschen euch frohe Weihnachten und entspannte Feiertage.
 
-Sayder von [Firmenname]
+Sayder von Tannentaxi
 
 ### Hashtag-Block
 
@@ -239,7 +239,7 @@ Kurze Admin-Anfrage als Vorlage:
 >
 > Bäume gibt es ab 39 €, die Lieferung in Wetzlar kostet 12,90 €. Liefertage sind montags, freitags und samstags vom 4. bis 21. Dezember.
 >
-> Alle Infos: [domain.de]
+> Alle Infos: tannentaxi.de
 > Fragen gern hier oder per Nachricht an mich.
 
 ### Gruppentext 2 – Erinnerung zur Halbzeit (Mo 07.12.)
@@ -250,7 +250,7 @@ Kurze Admin-Anfrage als Vorlage:
 >
 > Nordmanntannen von 1,25 m bis 2,75 m, auf Wunsch mit Aufbau im Ständer (19,90 €).
 >
-> Infos und Bestellung: [domain.de]
+> Infos und Bestellung: tannentaxi.de
 > Danke an alle, die schon bestellt haben!
 
 ### Gruppentext 3 – Letzte Termine (Di 15.12.)
@@ -259,7 +259,7 @@ Kurze Admin-Anfrage als Vorlage:
 >
 > Mein letzter Liefertag für Weihnachtsbäume ist Montag, der 21. Dezember. Bestellen könnt ihr dafür noch bis Donnerstag, den 17. Dezember. Danach ist für diese Saison Schluss.
 >
-> Wer noch einen Baum braucht und ihn nicht selbst schleppen möchte: [domain.de]
+> Wer noch einen Baum braucht und ihn nicht selbst schleppen möchte: tannentaxi.de
 >
 > Schöne Adventszeit euch allen!
 > Sayder aus Garbenheim
@@ -272,7 +272,7 @@ Kurz, freundlich, immer mit Link. Nichts zusagen, was nicht im Angebot steht (ke
 
 ### Preis – „Was kostet ein Baum?"
 
-> Hi! Unsere Nordmanntannen gibt es ab 39 € (1,25–1,50 m) bis 89 € (2,50–2,75 m), jeweils inkl. MwSt. Die Lieferung kommt je nach Zone dazu, in Wetzlar sind das 12,90 €. Alle Größen und Preise findest du hier: [domain.de]
+> Hi! Unsere Nordmanntannen gibt es ab 39 € (1,25–1,50 m) bis 89 € (2,50–2,75 m), jeweils inkl. MwSt. Die Lieferung kommt je nach Zone dazu, in Wetzlar sind das 12,90 €. Alle Größen und Preise findest du hier: tannentaxi.de
 
 Preise zum Nachschlagen: 39 € · 49 € · 59 € · 69 € · 79 € · 89 € (in 25-cm-Schritten von 1,25 m bis 2,75 m). Form schlank/normal/breit ohne Aufpreis.
 
@@ -284,7 +284,7 @@ Preise zum Nachschlagen: 39 € · 49 € · 59 € · 69 € · 79 € · 89 �
 
 ### Termin – „Wann liefert ihr?" / „Geht auch Mittwoch?"
 
-> Wir liefern montags, freitags und samstags zwischen 9 und 16 Uhr, vom 4. bis 21. Dezember. Deinen Wunschtermin wählst du direkt bei der Bestellung aus. Wichtig: Bitte mindestens 4 Tage vorher bestellen. Hier geht's zur Terminauswahl: [domain.de]
+> Wir liefern montags, freitags und samstags zwischen 9 und 16 Uhr, vom 4. bis 21. Dezember. Deinen Wunschtermin wählst du direkt bei der Bestellung aus. Wichtig: Bitte mindestens 4 Tage vorher bestellen. Hier geht's zur Terminauswahl: tannentaxi.de
 
 - [ ] Vor dem Antworten in der Fristen-Tabelle oben prüfen, welche Liefertage noch buchbar sind.
 - [ ] Andere Wochentage und Uhrzeiten außerhalb 9–16 Uhr nicht zusagen.
@@ -292,13 +292,13 @@ Preise zum Nachschlagen: 39 € · 49 € · 59 € · 69 € · 79 € · 89 �
 
 ### Aufbau – „Stellt ihr den Baum auch auf?"
 
-> Ja, gern! Für 19,90 € stellen wir deinen Baum direkt im Ständer auf. Wenn du noch keinen Ständer hast, kannst du einen Standfuß für 34,90 € mitbestellen. Einfach bei der Bestellung auswählen: [domain.de]
+> Ja, gern! Für 19,90 € stellen wir deinen Baum direkt im Ständer auf. Wenn du noch keinen Ständer hast, kannst du einen Standfuß für 34,90 € mitbestellen. Einfach bei der Bestellung auswählen: tannentaxi.de
 
 - [ ] Deko-Anfragen: Deko gibt es nicht im Shop, nur auf Anfrage – individuell klären, nichts pauschal zusagen.
 
 ### Abholung – „Was mache ich nach Weihnachten mit dem Baum?"
 
-> Wenn du magst, holen wir den Baum im Januar wieder bei dir ab – das kostet 14,90 € und lässt sich direkt mitbuchen: [domain.de]
+> Wenn du magst, holen wir den Baum im Januar wieder bei dir ab – das kostet 14,90 € und lässt sich direkt mitbuchen: tannentaxi.de
 
 - [ ] Genauen Abholtermin im Januar nicht in Kommentaren zusagen, sondern individuell abstimmen.
 

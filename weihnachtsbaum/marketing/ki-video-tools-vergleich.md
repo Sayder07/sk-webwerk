@@ -1,4 +1,4 @@
-# KI-Video-Tools im Vergleich – für kurze Werbeclips von [Firmenname]
+# KI-Video-Tools im Vergleich – für kurze Werbeclips von Tannentaxi
 
 Recherchestand: **18.11.2026** (Websuche und Abruf der Anbieterseiten). Preise, Credits und Modelle ändern sich in diesem Markt oft innerhalb von Wochen – vor dem Kauf die verlinkten Preisseiten prüfen.
 
@@ -89,7 +89,7 @@ Puffer einplanen: Reichen die 1.000 Flow-Credits nicht, lieber mehr echtes Mater
 2. **Optional: Foto in Adobe Firefly/Express aufbereiten** (Zuschnitt 9:16, Helligkeit, Hintergrund beruhigen). Den Baum selbst nicht „verschönern" – er soll so aussehen, wie er geliefert wird.
 3. **Bild-zu-Video in Flow:** Foto als Start- bzw. Referenzbild, dazu ein kurzer Bewegungs-Prompt (z. B. „slow push-in, branches move slightly, warm light"). Format 9:16, Länge 4–8 s, 720p/1080p. Pro Szene 2–3 Varianten erzeugen, die beste behalten. Fertige Prompts stehen in `video-skripte.md`.
 4. **Voiceover in ElevenLabs:** Text aus den Skripten Szene für Szene einzeln generieren (Modell Eleven v4, deutsche Stimme, Zahlen ausgeschrieben). Den vom Videomodell erzeugten Ton stummschalten oder nur leise als Atmosphäre nutzen.
-5. **Schnitt in Adobe Express:** Clips in Szenenreihenfolge, Voiceover darüber, Untertitel/On-Screen-Texte gemäß Skript, Endkarte mit [Firmenname], [domain.de] und „Jetzt Wunschtermin sichern". Preise und Daten immer als Text-Grafik setzen, nie von der KI ins Bild generieren lassen.
+5. **Schnitt in Adobe Express:** Clips in Szenenreihenfolge, Voiceover darüber, Untertitel/On-Screen-Texte gemäß Skript, Endkarte mit Tannentaxi, tannentaxi.de und „Jetzt Wunschtermin sichern". Preise und Daten immer als Text-Grafik setzen, nie von der KI ins Bild generieren lassen.
 6. **Musik** leise darunter, nur mit Lizenz für kommerzielle Nutzung.
 7. **Export** 1080 × 1920 px, MP4. Für Instagram, Facebook und TikTok jeweils die Originaldatei hochladen (kein Download mit fremdem Plattform-Wasserzeichen).
 8. **Abgleich vor dem Posten:** Stimmen alle Preise, Daten und Wochentage? Zeigt das Video nur, was wirklich geliefert wird (echte Nordmanntanne, ungeschmückt, keine Deko, kein Fantasie-Lieferwagen)?
@@ -102,7 +102,7 @@ Stand der Recherche (Sekundärquellen, keine Rechtsberatung):
 - **TikTok** verlangt, dass KI-generierte oder stark KI-bearbeitete Inhalte mit **realistisch wirkenden Szenen oder Personen** gekennzeichnet werden. Ungekennzeichnete Inhalte können entfernt, eingeschränkt oder von TikTok selbst gelabelt werden. Beim Hochladen den Schalter für KI-generierte Inhalte aktivieren.
 - **Instagram/Facebook (Meta)** nutzen das Label **„KI-Info"**. Meta setzt es automatisch, wenn eigene KI-Werkzeuge genutzt wurden oder die Erkennung (u. a. über Metadaten wie C2PA/SynthID) Fremd-KI feststellt. Beim Posten gibt es zusätzlich eine Option zur eigenen Kennzeichnung – bei fotorealistischen KI-Szenen aktiv setzen.
 - **EU-KI-Verordnung, Art. 50:** Die Transparenzpflichten gelten laut Quelle seit 02.08.2026. Täuschend echte KI-Bilder, -Videos und -Audios („Deepfakes") müssen als künstlich erzeugt offengelegt werden.
-- **Praxisregel für [Firmenname]:**
+- **Praxisregel für Tannentaxi:**
   - Jedes Video mit fotorealistischer KI-Szene über die Plattform-Funktion als KI-Inhalt kennzeichnen.
   - Zusätzlich in der Caption oder klein im Bild: „Symbolbild, KI-generiert".
   - Das KI-Voiceover allein ist weniger kritisch, die Kennzeichnung schadet aber nicht.

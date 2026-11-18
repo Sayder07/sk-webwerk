@@ -1,4 +1,4 @@
-# Weihnachtsbaum-Lieferservice Wetzlar – Shop, Saison 2026
+# Tannentaxi – Weihnachtsbaum-Lieferservice Wetzlar, Shop, Saison 2026
 
 Website mit Konfigurator, Lieferterminwahl, Checkout (Stripe), Admin-Bereich und Marketing-Vorlagen.
 Technik: Next.js 15, Postgres, Stripe Checkout, Resend. Kein Tracking, keine Cookies außer dem Admin-Login.
@@ -67,12 +67,11 @@ Solange Test-Schlüssel (oder gar kein Stripe) aktiv sind, zeigt die Website obe
 ## Flyer
 
 ```bash
-npm run flyer -- https://deine-domain.de "Dein Firmenname"
+npm run flyer -- https://tannentaxi.de "Tannentaxi"
 ```
 
 erzeugt `marketing/flyer/flyer-a6.pdf` (Vorder-/Rückseite, A6 mit 3 mm Beschnitt) inklusive QR-Code auf die
-angegebene Adresse. **Das mitgelieferte PDF enthält einen Platzhalter-QR-Code** (example.com) – vor dem Druck mit
-der echten Domain neu erzeugen.
+angegebene Adresse. Das mitgelieferte PDF zeigt auf https://tannentaxi.de.
 
 ## Marketing-Unterlagen (`marketing/`)
 
@@ -84,7 +83,7 @@ der echten Domain neu erzeugen.
 
 ## Vor dem Launch (Betreiber)
 
-- [ ] Firmenname, Adresse, Telefon, E-Mail, USt-Angabe in `config/shop.config.ts` eintragen
+- [ ] Adresse, Telefon, E-Mail, USt-Angabe in `config/shop.config.ts` eintragen
 - [ ] **PLZ-Liste prüfen** – sie ist ein Vorschlag nach ungefährer Entfernung
 - [ ] Rechtstexte vervollständigen und prüfen lassen (insbesondere Widerrufsrecht bei frischen Bäumen)
 - [ ] Stripe im Testmodus einmal komplett durchspielen (Bestellung, E-Mail, Admin), dann Live-Schlüssel

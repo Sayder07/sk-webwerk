@@ -1,7 +1,7 @@
 /**
  * Erzeugt den A6-Flyer (Vorder- und Rückseite) als druckfertiges PDF mit QR-Code.
  *
- *   npm run flyer -- https://deine-domain.de "Dein Firmenname"
+ *   npm run flyer -- https://tannentaxi.de "Tannentaxi"
  *
  * Ausgabe: marketing/flyer/flyer-a6.pdf  (2 Seiten, 111 × 154 mm = A6 + 3 mm Beschnitt je Seite)
  *          marketing/flyer/flyer-a6.html (zum Nachbearbeiten, z. B. Import in Adobe Express)
@@ -14,9 +14,8 @@ import QRCode from 'qrcode';
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(dir, '../..');
-const url = process.argv[2] || 'https://example.com';
-const firma = process.argv[3] || '[Firmenname]';
-const isPlaceholder = !process.argv[2];
+const url = process.argv[2] || 'https://tannentaxi.de';
+const firma = process.argv[3] || 'Tannentaxi';
 
 const font = (p) => `data:font/woff2;base64,${fs.readFileSync(path.join(root, 'node_modules', p)).toString('base64')}`;
 const fraunces = font('@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2');
@@ -152,4 +151,3 @@ try {
 } catch (err) {
   console.log('PDF übersprungen (Playwright/Chromium nicht verfügbar):', err.message.split('\n')[0]);
 }
-if (isPlaceholder) console.log('\nACHTUNG: QR-Code zeigt auf den Platzhalter https://example.com – vor dem Druck mit der echten Domain neu erzeugen:\n  npm run flyer -- https://deine-domain.de "Dein Firmenname"');
